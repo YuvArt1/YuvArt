@@ -27,8 +27,8 @@ export default function Footer() {
             <h3 className="text-base font-semibold font-space-grotesk text-gray-900">Contact</h3>
             <div className="space-y-1 font-inter text-xs">
               <div>
-                <a href="mailto:yuvrajchavhan849@gmail.com" className="text-gray-800 hover:text-gray-900 transition-colors block">
-                  yuvrajchavhan849@gmail.com
+                <a href="mailto:designyuv16@gmail.com" className="text-gray-800 hover:text-gray-900 transition-colors block">
+                  designyuv16@gmail.com
                 </a>
               </div>
               <div>

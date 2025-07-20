@@ -69,9 +69,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-black mb-3 font-space-grotesk">What we do:</h3>
                 <ul className="space-y-2">
                   <li>• Motion Graphics & Animation</li>
-                  <li>• Brand Identity & Visual Design</li>
-                  <li>• Digital Experiences & Interfaces</li>
-                  <li>• Creative Direction & Strategy</li>
+                  <li>• Product Visualization</li>
                 </ul>
               </div>
             </div>
