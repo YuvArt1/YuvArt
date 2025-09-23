@@ -60,11 +60,15 @@ export default function Project2Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 font-inter">
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Product</h3>
-              <p className="text-gray-700">Zeroco Handwash</p>
+              <p className="text-gray-700">ZeroCO Speaker (upcycled tennis ball)</p>
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
               <p className="text-gray-700">2025</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Focus</h3>
+              <p className="text-gray-700">Sustainability, portability, everyday use</p>
             </div>
           </div>
 
@@ -115,19 +119,19 @@ export default function Project2Page() {
           {/* Project Description */}
           <div className="prose prose-lg max-w-none font-inter mb-12">
             <p className="text-gray-700 leading-relaxed mb-6">
-              With this one, I wanted to explore clean, elegant, and minimal motion, something that complements the product instead of distracting from it.
+              ZeroCO is a compact speaker made from a used tennis ball — an upcycled shell that gives the product its character, grip, and a soft tactile feel. The idea was simple: take something familiar and overlooked, and turn it into sound you can carry.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              What stood out to me about Zeroco's product was the color palette. The contrast between deep greens and warm reds made the whole set visually rich, without feeling loud. I leaned into that contrast through subtle movement and framing, letting the colors do most of the talking.
+              To show its portability, I placed it across everyday scenes: clipped to a backpack on the go, on a desk beside a laptop, resting on a park bench, by a bedside lamp, and on a kitchen counter. Each setup focuses on scale, texture, and lighting to keep it grounded and real.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              The lighting was soft in places and harsh in others, casting shadows that added depth and mood. Instead of fighting those shadows, I used them, letting certain elements stay hidden or half-lit to keep things interesting.
+              The visuals highlight how the tennis-ball form factor isn’t just a look — it’s functional. It’s durable, easy to grab, and sits naturally on uneven surfaces. The animations are minimal and intentional, keeping the attention on context and usefulness rather than flashy motion.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              This project was more about feel than function. Minimal motion, beautiful color, and lighting that leaves room for the viewer to look a little closer.
+              Overall, the piece is about reuse with purpose. A familiar object, a fresh role, and scenes that show how it fits into daily life without trying too hard.
             </p>
           </div>
 
@@ -139,7 +143,7 @@ export default function Project2Page() {
                 <div key={index} className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
                   <img
                     src={src}
-                    alt={`Zeroco Still ${index}`}
+                    alt={`ZeroCO Still ${index}`}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                     onClick={() => setSelectedImage(src)}
                   />
