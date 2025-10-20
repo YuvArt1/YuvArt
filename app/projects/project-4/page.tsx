@@ -106,12 +106,18 @@ export default function Project4Page() {
           )}
 
           {/* Navigation */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
+          <div className="mt-16 pt-8 border-t border-gray-200 flex justify-between">
             <Link
               href="/projects/project-3"
               className="inline-flex items-center text-gray-600 hover:text-black transition-colors font-inter"
             >
               ← Previous: Portronics
+            </Link>
+            <Link
+              href="/projects/outer"
+              className="inline-flex items-center text-black hover:text-gray-600 transition-colors font-inter"
+            >
+              Next Project: Outer →
             </Link>
           </div>
         </div>
