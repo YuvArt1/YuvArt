@@ -71,17 +71,16 @@ export default function HomePage() {
               {/* Top row - 3 equal cards with background images */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Link
-                  href="/projects/outer"
+                  href="/projects/GullyLab"
                   className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
                   <img
-                    src="/Outer (4).png"
-                    alt="Outer"
+                    src="/GullyLab (1).png"
+                    alt="GullyLab"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/20 z-0" />
                   <span className="relative text-white font-medium font-inter z-10">
-                    Outer
+                    GullyLab
                   </span>
                 </Link>
 
@@ -94,7 +93,6 @@ export default function HomePage() {
                     alt="HearO"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/20 z-0" />
                   <span className="relative text-white font-medium font-inter z-10">
                     HearO
                   </span>
@@ -111,7 +109,6 @@ export default function HomePage() {
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
                   {/* Optional overlay for readability */}
-                  <div className="absolute inset-0 bg-black/20 z-0" />
                   {/* Text */}
                   <span className="relative text-white font-medium font-inter z-10">
                     TangentGC
@@ -119,7 +116,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Second row - ZeroCO & Portronics */}
+              {/* Second row - ZeroCO, Portronics & Outer */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Link
                   href="/projects/project-2"
@@ -130,7 +127,6 @@ export default function HomePage() {
                     alt="ZeroCO"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/20 z-0" />
                   <span className="relative text-white font-medium font-inter z-10">
                     ZeroCO
                   </span>
@@ -145,9 +141,22 @@ export default function HomePage() {
                     alt="Portronics"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/20 z-0" />
                   <span className="relative text-white font-medium font-inter z-10">
                     Portronics
+                  </span>
+                </Link>
+
+                <Link
+                  href="/projects/outer"
+                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
+                  <img
+                    src="/Outer (4).png"
+                    alt="Outer"
+                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                  <span className="relative text-white font-medium font-inter z-10">
+                    Outer
                   </span>
                 </Link>
               </div>

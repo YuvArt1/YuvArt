@@ -72,3 +72,21 @@ a {
   position: relative;
   z-index: 4;
 }
+
+/* Remove noise/grain overlays */
+canvas[style*="imageRendering"] {
+  display: none !important;
+}
+
+body::before,
+body::after,
+html::before,
+html::after {
+  display: none !important;
+}
+
+*[style*="noise"],
+*[class*="noise"],
+*[class*="grain"] {
+  display: none !important;
+}
