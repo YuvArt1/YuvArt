@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import Footer from "@/components/footer";
 
 export default function GullyLabProjectPage() {
@@ -68,41 +69,17 @@ export default function GullyLabProjectPage() {
           </div>
 
           {/* Project Video */}
-          <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden mb-12">
+          <div className="mb-12" style={{ padding: "75% 0 0 0", position: "relative" }}>
             <iframe
-              src="https://player.vimeo.com/video/1128834963?badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/1150857148?badge=0&autopause=0&player_id=0&app_id=58479"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              className="w-full h-full"
-              title="Outer Furniture"
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              title="Gully Lab Animation"
             ></iframe>
           </div>
-
-          {/* Additional Project Video */}
-          <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden mb-12">
-            <iframe
-              src="https://player.vimeo.com/video/1128940767?badge=0&autopause=0&player_id=0&app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              className="w-full h-full"
-              title="Outer Animation"
-            ></iframe>
-          </div>
-
-          {/* Process Title */}
-          <h2 className="text-2xl font-bold text-black mb-6 font-space-grotesk">Process</h2>
-          <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden mb-12">
-            <iframe
-              src="https://player.vimeo.com/video/1128947398?badge=0&autopause=0&player_id=0&app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              className="w-full h-full"
-              title="compiled"
-            ></iframe>
-          </div>
+          <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
 
           {/* Stills Title */}
           <h2 className="text-2xl font-bold text-black mb-6 font-space-grotesk">Stills</h2>

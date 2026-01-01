@@ -28,85 +28,142 @@ export default function WorkPage() {
       </header>
 
       {/* Work Page Content */}
-      <main className="px-6 py-32 bg-white flex-1 mb-16">
+      <main className="px-6 py-8 bg-white flex-1 mb-16">
         <div className="max-w-7xl mx-auto">
-          {/* Left-aligned title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-12 font-space-grotesk">Work</h1>
+          {/* Navigation */}
+          <div className="mb-4">
+            <span className="text-gray-600 text-sm font-inter">OVERVIEW / INDEX</span>
+          </div>
 
-          {/* Work Section */}
-          <div className="space-y-6">
-            {/* Top row - 3 equal cards (GullyLab first) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Bento Box Grid - 6 column system */}
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-2 md:gap-3">
+            {/* Row 1 */}
+            {/* GullyLab - Tall vertical (2 cols, 2 rows) */}
+            <div className="md:col-span-2 md:row-span-2 flex flex-col">
               <Link
                 href="/projects/GullyLab"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[3/4] md:aspect-auto min-h-[300px] flex-1 w-full"
               >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.1.1</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
                 <img
                   src="/GullyLab (1).png"
                   alt="GullyLab"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="relative text-white font-medium font-inter z-10">GullyLab</span>
               </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">GullyLab</div>
+              </div>
+            </div>
+
+            {/* HearO - Wide horizontal (4 cols, 1 row) */}
+            <div className="md:col-span-4 flex flex-col">
               <Link
                 href="/projects/project-4"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[16/9]"
               >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.2.2</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals</div>
+                </div>
                 <img
                   src="/HeroO (1).png"
                   alt="HearO"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="relative text-white font-medium font-inter z-10">HearO</span>
               </Link>
-              <Link
-                href="/projects/project-1"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
-                <img
-                  src="/Tangent.png"
-                  alt="TangentGC"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                />
-                <span className="relative text-white font-medium font-inter z-10">TangentGC</span>
-              </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">HearO</div>
+              </div>
             </div>
 
-            {/* Second row - ZeroCO, Portronics & Outer */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link
-                href="/projects/project-2"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
-                <img
-                  src="/Zeroco.png"
-                  alt="ZeroCO"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                />
-                <span className="relative text-white font-medium font-inter z-10">ZeroCO</span>
-              </Link>
+            {/* Row 2 */}
+            {/* Portronics - Medium vertical (2 cols, 1 row) - moved up to fill space */}
+            <div className="md:col-span-2 flex flex-col">
               <Link
                 href="/projects/project-3"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[3/4]"
               >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.1.5</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
                 <img
                   src="/Portronics.jpg"
                   alt="Portronics"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="relative text-white font-medium font-inter z-10">Portronics</span>
               </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">Portronics</div>
+              </div>
+            </div>
+
+            {/* TangentGC - Medium square (2 cols, 1 row) */}
+            <div className="md:col-span-2 flex flex-col">
+              <Link
+                href="/projects/project-1"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
+              >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.2.3</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
+                <img
+                  src="/Tangent.png"
+                  alt="TangentGC"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+              </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">TangentGC</div>
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            {/* ZeroCO - Wide horizontal (3 cols, 1 row) */}
+            <div className="md:col-span-3 flex flex-col">
+              <Link
+                href="/projects/project-2"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[16/9]"
+              >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.3.4</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
+                <img
+                  src="/Zeroco.png"
+                  alt="ZeroCO"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+              </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">ZeroCO</div>
+              </div>
+            </div>
+
+            {/* Outer - Wide horizontal (3 cols, 1 row) */}
+            <div className="md:col-span-3 flex flex-col">
               <Link
                 href="/projects/outer"
-                className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[16/9]"
               >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.3.6</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
                 <img
                   src="/Outer (4).png"
                   alt="Outer"
-                  className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="relative text-white font-medium font-inter z-10">Outer</span>
               </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">Outer</div>
+              </div>
             </div>
           </div>
         </div>
