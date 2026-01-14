@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import Footer from "@/components/footer";
 
 export default function MoodProjectPage() {
@@ -55,19 +56,17 @@ export default function MoodProjectPage() {
 
           {/* Hero (video if available, falls back to image) */}
           <div className="mb-10">
-            <div className="aspect-[16/9] bg-gray-200 rounded-lg overflow-hidden mb-6">
-              <video
-                controls
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
-              >
-                <source src="/MoodNz (1).mp4" type="video/mp4" />
-                {/* fallback image */}
-                <img src="/MoodNz (1).png" alt="Mood hero" />
-              </video>
+            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/1154253992?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                title="Mood Nz Bed Animation"
+              ></iframe>
             </div>
+            <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
 
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-4 font-space-grotesk">Mood</h1>
 
