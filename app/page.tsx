@@ -67,9 +67,25 @@ export default function HomePage() {
               WORK
             </h2>
 
+            {/* keep grid squarish; Mood appears among the top cards */}
+
             <div className="space-y-6">
-              {/* Top row - 3 equal cards with background images */}
+              {/* Grid of projects (Mood first) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <Link
+                  href="/projects/Mood"
+                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
+                  <img
+                    src="/MoodNz (4).png"
+                    alt="Mood"
+                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                  <span className="relative text-white font-medium font-inter z-10">
+                    Mood
+                  </span>
+                </Link>
+
                 <Link
                   href="/projects/GullyLab"
                   className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
@@ -102,22 +118,16 @@ export default function HomePage() {
                   href="/projects/project-1"
                   className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
-                  {/* Background image */}
                   <img
                     src="/Tangent.png"
                     alt="TangentGC"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                  {/* Optional overlay for readability */}
-                  {/* Text */}
                   <span className="relative text-white font-medium font-inter z-10">
                     TangentGC
                   </span>
                 </Link>
-              </div>
 
-              {/* Second row - ZeroCO, Portronics & Outer */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Link
                   href="/projects/project-2"
                   className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
@@ -160,6 +170,8 @@ export default function HomePage() {
                   </span>
                 </Link>
               </div>
+
+              {/* removed bottom Mood section to keep layout consistent */}
             </div>
           </div>
         </section>

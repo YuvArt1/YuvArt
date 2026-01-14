@@ -38,24 +38,24 @@ export default function WorkPage() {
           {/* Bento Box Grid - 6 column system */}
           <div className="grid grid-cols-1 md:grid-cols-6 gap-2 md:gap-3">
             {/* Row 1 */}
-            {/* GullyLab - Tall vertical (2 cols, 2 rows) */}
+            {/* Mood - Tall vertical (2 cols, 2 rows) - featured first */}
             <div className="md:col-span-2 md:row-span-2 flex flex-col">
               <Link
-                href="/projects/GullyLab"
+                href="/projects/Mood"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[3/4] md:aspect-auto min-h-[300px] flex-1 w-full"
               >
                 <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
                   <div className="text-xs text-gray-500 font-mono mb-0.5">01.1.1</div>
-                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Motion</div>
                 </div>
                 <img
-                  src="/GullyLab (1).png"
-                  alt="GullyLab"
+                  src="/MoodNz (1).png"
+                  alt="Mood"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
               <div className="mt-2">
-                <div className="text-sm font-semibold text-black font-space-grotesk">GullyLab</div>
+                <div className="text-sm font-semibold text-black font-space-grotesk">Mood</div>
               </div>
             </div>
 
@@ -163,6 +163,28 @@ export default function WorkPage() {
               </Link>
               <div className="mt-2">
                 <div className="text-sm font-semibold text-black font-space-grotesk">Outer</div>
+              </div>
+            </div>
+
+            {/* Row 4 */}
+            {/* GullyLab - Wide horizontal (6 cols, 1 row) - moved down */}
+            <div className="md:col-span-6 flex flex-col">
+              <Link
+                href="/projects/GullyLab"
+                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[16/9]"
+              >
+                <div className="absolute top-2 left-2 md:top-3 md:left-3 z-10">
+                  <div className="text-xs text-gray-500 font-mono mb-0.5">01.4.1</div>
+                  <div className="text-xs text-gray-700 font-inter">Product Visuals and Animation</div>
+                </div>
+                <img
+                  src="/GullyLab (1).png"
+                  alt="GullyLab"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+              </Link>
+              <div className="mt-2">
+                <div className="text-sm font-semibold text-black font-space-grotesk">GullyLab</div>
               </div>
             </div>
           </div>

@@ -43,11 +43,7 @@ export default function Project1Page() {
           <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 font-space-grotesk">TangentGC</h1>
 
           {/* Project Details */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 font-inter">
-            <div>
-              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Client</h3>
-              <p className="text-gray-700">Brand Studio Inc.</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 font-inter">
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
               <p className="text-gray-700">2024</p>
