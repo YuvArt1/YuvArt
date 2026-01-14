@@ -36,6 +36,11 @@ export default function Footer() {
                   @yuv_3d
                 </a>
               </div>
+              <div>
+                <a href="https://linkedin.com/in/yuv-raj-0abb66386" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors block">
+                  linkedin.com/in/yuv-raj-0abb66386
+                </a>
+              </div>
             </div>
           </div>
 

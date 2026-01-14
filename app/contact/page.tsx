@@ -77,6 +77,19 @@ export default function ContactPage() {
                     @yuv_3d
                   </a>
                 </div>
+
+                {/* LinkedIn */}
+                <div className="space-y-2">
+                  <h3 className="text-xl font-semibold text-black font-space-grotesk">LinkedIn</h3>
+                  <a
+                    href="https://linkedin.com/in/yuv-raj-0abb66386"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-black transition-colors text-lg"
+                  >
+                    linkedin.com/in/yuv-raj-0abb66386
+                  </a>
+                </div>
               </div>
             </div>
           </div>
