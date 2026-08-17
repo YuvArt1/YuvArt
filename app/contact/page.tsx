@@ -69,12 +69,12 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-black font-space-grotesk">Instagram</h3>
                   <a
-                    href="https://www.instagram.com/yuv_3d/"
+                    href="https://www.instagram.com/yuuuvvvvv/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-black transition-colors text-lg"
                   >
-                    @yuv_3d
+                    @yuuuvvvvv
                   </a>
                 </div>
 

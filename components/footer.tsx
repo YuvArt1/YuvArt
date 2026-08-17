@@ -32,8 +32,8 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <a href="https://www.instagram.com/yuv_3d/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors block">
-                  @yuv_3d
+                <a href="https://www.instagram.com/yuuuvvvvv/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors block">
+                  @yuuuvvvvv
                 </a>
               </div>
               <div>

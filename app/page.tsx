@@ -70,105 +70,136 @@ export default function HomePage() {
             {/* keep grid squarish; Mood appears among the top cards */}
 
             <div className="space-y-6">
-              {/* Grid of projects (Mood first) */}
+
+              {/* Grid of projects (Fable first) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Link
-                  href="/projects/Mood"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/MoodNz (4).png"
-                    alt="Mood"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/Fable"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/Fable.png"
+                      alt="Fable"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
+                    Fable
+                  </span>
+                </div>
+
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/Mood"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/MoodNz (4).png"
+                      alt="Mood"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     Mood
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/GullyLab"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/GullyLab (1).png"
-                    alt="GullyLab"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/GullyLab"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/GullyLab (1).png"
+                      alt="GullyLab"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     GullyLab
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/project-4"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/HeroO (1).png"
-                    alt="HearO"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/project-4"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/HeroO (1).png"
+                      alt="HearO"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     HearO
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/project-1"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Tangent.png"
-                    alt="TangentGC"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/project-1"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/Tangent.png"
+                      alt="TangentGC"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     TangentGC
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/project-2"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Zeroco.png"
-                    alt="ZeroCO"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/project-2"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/Zeroco.png"
+                      alt="ZeroCO"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     ZeroCO
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/project-3"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Portronics.jpg"
-                    alt="Portronics"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/project-3"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/Portronics.jpg"
+                      alt="Portronics"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     Portronics
                   </span>
-                </Link>
+                </div>
 
-                <Link
-                  href="/projects/outer"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Outer (4).png"
-                    alt="Outer"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <span className="relative text-white font-medium font-inter z-10">
+                <div className="flex flex-col">
+                  <Link
+                    href="/projects/outer"
+                    className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src="/Outer (4).png"
+                      alt="Outer"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </Link>
+                  <span className="mt-3 text-black font-medium font-space-grotesk">
                     Outer
                   </span>
-                </Link>
+                </div>
               </div>
 
               {/* removed bottom Mood section to keep layout consistent */}
