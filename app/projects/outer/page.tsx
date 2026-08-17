@@ -18,7 +18,7 @@ export default function OuterProjectPage() {
   return (
     <div className="min-h-screen bg-gray-50 relative">
       {/* Header */}
-      <header className="bg-transparent px-6 py-4">
+      <header className="fixed top-0 left-0 w-full bg-transparent z-20 px-6 py-4">
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
           <Link
             href="/"
@@ -27,28 +27,33 @@ export default function OuterProjectPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-8 font-inter">
-            <Link href="/work" className="text-black hover:text-gray-600 transition-colors">
-              Work
-            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
             </Link>
             <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
               Contact
             </Link>
+            <a
+              href="https://cal.com/yuv-raj-pao2g5/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold"
+            >
+              Book a Call
+            </a>
           </div>
         </nav>
       </header>
 
       {/* Project Content */}
-      <main className="px-6 py-16 bg-white">
+      <main className="px-6 py-16 pt-20 bg-white">
         <div className="max-w-4xl mx-auto">
-          {/* Back to Work */}
+          {/* Back to Home */}
           <Link
-            href="/work"
+            href="/"
             className="inline-flex items-center text-gray-600 hover:text-black transition-colors mb-8 font-inter"
           >
-            ← Back to Work
+            ← Back to Home
           </Link>
 
           {/* Project Title */}
@@ -139,14 +144,31 @@ export default function OuterProjectPage() {
             </div>
           )}
 
-          {/* Navigation */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <Link
-              href="/projects/project-4"
-              className="inline-flex items-center text-gray-600 hover:text-black transition-colors font-inter"
-            >
-              ← Previous: HearO
+          {/* Project Navigation */}
+          <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
+            <Link href="/projects/Portronics" className="text-left hover:text-gray-600 transition-colors">
+              <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Portronics</p>
             </Link>
+            <Link href="/projects/Fable" className="text-right hover:text-gray-600 transition-colors">
+              <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Fable</p>
+            </Link>
+          </div>
+
+          {/* Book a Call Section */}
+          <div className="mt-8 pt-8 border-t border-gray-200">
+            <a
+              href="https://cal.com/yuv-raj-pao2g5/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold text-lg font-space-grotesk"
+            >
+              Book a Call
+            </a>
+            <p className="mt-4 text-gray-600 text-sm font-inter">
+              Let's discuss your next project
+            </p>
           </div>
         </div>
       </main>

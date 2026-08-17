@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50 relative">
       {/* Header */}
-      <header className="bg-white px-6 py-4">
+      <header className="fixed top-0 left-0 w-full bg-white z-20 px-6 py-4">
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
           <Link
             href="/"
@@ -15,21 +15,26 @@ export default function AboutPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-8 font-inter">
-            <Link href="/work" className="text-black hover:text-gray-600 transition-colors">
-              Work
-            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors font-semibold">
               About
             </Link>
             <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
               Contact
             </Link>
+            <a
+              href="https://cal.com/yuv-raj-pao2g5/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold"
+            >
+              Book a Call
+            </a>
           </div>
         </nav>
       </header>
 
       {/* About Content */}
-      <main className="px-6 py-16 bg-white">
+      <main className="px-6 py-12 pt-20 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Large Image */}
