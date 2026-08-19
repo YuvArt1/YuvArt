@@ -137,7 +137,7 @@ export default function WorkPage() {
             {/* Outer */}
             <div className="flex flex-col">
               <Link
-                href="/projects/outer"
+                href="/projects/Outer"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
