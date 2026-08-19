@@ -154,21 +154,6 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/Outer"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Outer (4).png"
-                    alt="Outer"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  Outer
-                </span>
-              </div>
             </div>
           </div>
         </section>

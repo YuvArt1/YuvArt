@@ -138,10 +138,6 @@ export default function Project3Page() {
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
               <p className="text-lg font-bold text-black font-space-grotesk">ZeroCO</p>
             </Link>
-            <Link href="/projects/Outer" className="text-right hover:text-gray-600 transition-colors">
-              <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">Outer</p>
-            </Link>
           </div>
 
           {/* Book a Call Section */}

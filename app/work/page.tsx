@@ -134,23 +134,6 @@ export default function WorkPage() {
               </div>
             </div>
 
-            {/* Outer */}
-            <div className="flex flex-col">
-              <Link
-                href="/projects/Outer"
-                className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
-              >
-                <img
-                  src="/Outer (4).png"
-                  alt="Outer"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                />
-              </Link>
-              <div className="mt-3">
-                <div className="text-sm font-semibold text-black font-space-grotesk">Outer</div>
-              </div>
-            </div>
-
             {/* GullyLab */}
             <div className="flex flex-col">
               <Link
