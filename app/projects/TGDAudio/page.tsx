@@ -1,10 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Script from "next/script";
+import Image from "next/image";
 import Footer from "@/components/footer";
 
 export default function TGDAudioProjectPage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const imageSources = [
+    "/TGD/Final.png",
+    "/TGD/Front.png",
+    "/TGD/TopDown.png",
+    "/TGD/BottomTop.png",
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 relative">
       <header className="fixed top-0 left-0 w-full bg-transparent z-20 px-6 py-4">
@@ -70,13 +81,41 @@ export default function TGDAudioProjectPage() {
           </div>
           <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
 
-          <div className="mb-12 rounded-sm overflow-hidden">
-            <img
-              src="/TGD/Final.png"
-              alt="TGD Audio Thumbnail"
-              className="w-full h-auto object-cover"
-            />
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-black mb-6 font-space-grotesk">Still</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {imageSources.map((src, index) => (
+                <div
+                  key={index}
+                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  <Image
+                    src={src}
+                    alt={`TGD Audio Still ${index + 1}`}
+                    width={900}
+                    height={675}
+                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+
+          {selectedImage && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+              onClick={() => setSelectedImage(null)}
+            >
+              <Image
+                src={selectedImage}
+                alt="Full screen view"
+                width={1600}
+                height={1200}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          )}
 
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
             <div></div>
