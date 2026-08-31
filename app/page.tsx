@@ -44,17 +44,20 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex flex-col">
                 <Link
-                  href="/projects/Fable"
+                  href="/projects/TGDAudio"
                   className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
                   <img
-                    src="/Fable.png"
-                    alt="Fable"
+                    src="/TGD/Final.png"
+                    alt="TGD Audio"
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                   />
                 </Link>
                 <span className="mt-3 text-black font-medium font-space-grotesk">
-                  Fable
+                  TGD Audio
+                </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Social media content
                 </span>
               </div>
 
@@ -72,6 +75,9 @@ export default function HomePage() {
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   Mood
                 </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Website content
+                </span>
               </div>
 
               <div className="flex flex-col">
@@ -87,6 +93,9 @@ export default function HomePage() {
                 </Link>
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   GullyLab
+                </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Social media content / motion design
                 </span>
               </div>
 
@@ -104,6 +113,9 @@ export default function HomePage() {
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   HearO
                 </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Website content / social media
+                </span>
               </div>
 
               <div className="flex flex-col">
@@ -119,6 +131,9 @@ export default function HomePage() {
                 </Link>
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   TangentGC
+                </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Social media
                 </span>
               </div>
 
@@ -136,6 +151,9 @@ export default function HomePage() {
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   ZeroCO
                 </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Website / social media
+                </span>
               </div>
 
               <div className="flex flex-col">
@@ -151,6 +169,9 @@ export default function HomePage() {
                 </Link>
                 <span className="mt-3 text-black font-medium font-space-grotesk">
                   Portronics
+                </span>
+                <span className="text-sm text-gray-600 font-inter">
+                  Social media
                 </span>
               </div>
 

@@ -32,20 +32,21 @@ export default function WorkPage() {
         <div className="max-w-7xl mx-auto">
           {/* Simple Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Fable */}
+            {/* TGD Audio */}
             <div className="flex flex-col">
               <Link
-                href="/projects/Fable"
+                href="/projects/TGDAudio"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
-                  src="/Fable.png"
-                  alt="Fable"
+                  src="/TGD/Final.png"
+                  alt="TGD Audio"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
               <div className="mt-3">
-                <div className="text-sm font-semibold text-black font-space-grotesk">Fable</div>
+                <div className="text-sm font-semibold text-black font-space-grotesk">TGD Audio</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Social media content</div>
               </div>
             </div>
 
@@ -63,6 +64,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">Mood</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Website content</div>
               </div>
             </div>
 
@@ -80,6 +82,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">HearO</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Website content / social media</div>
               </div>
             </div>
 
@@ -97,6 +100,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">Portronics</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Social media</div>
               </div>
             </div>
 
@@ -114,6 +118,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">TangentGC</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Social media</div>
               </div>
             </div>
 
@@ -131,6 +136,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">ZeroCO</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Website / social media</div>
               </div>
             </div>
 
@@ -148,6 +154,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">GullyLab</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Social media content / motion design</div>
               </div>
             </div>
           </div>

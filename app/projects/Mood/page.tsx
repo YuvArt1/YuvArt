@@ -151,9 +151,9 @@ export default function MoodProjectPage() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/Fable" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/TGDAudio" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">Fable</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">TGD Audio</p>
             </Link>
             <Link href="/projects/GullyLab" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
