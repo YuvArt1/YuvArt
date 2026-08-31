@@ -51,7 +51,7 @@ export default function Project1Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 font-inter">
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
-              <p className="text-gray-700">2024</p>
+              <p className="text-gray-700">2026</p>
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Services</h3>

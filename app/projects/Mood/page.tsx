@@ -89,7 +89,7 @@ export default function MoodProjectPage() {
               <aside className="md:col-span-1 text-sm text-gray-700">
                   <div className="mb-4">
                     <div className="font-semibold">Year</div>
-                    <div>2025</div>
+                    <div>2026</div>
                   </div>
 
                   <div>

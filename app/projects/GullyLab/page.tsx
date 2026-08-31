@@ -69,7 +69,7 @@ export default function GullyLabProjectPage() {
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
-              <p className="text-gray-700">2025</p>
+              <p className="text-gray-700">2026</p>
             </div>
           </div>
 
