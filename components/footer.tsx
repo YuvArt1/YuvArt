@@ -27,20 +27,31 @@ export default function Footer() {
             <h3 className="text-base font-semibold font-space-grotesk text-gray-900">Contact</h3>
             <div className="space-y-1 font-inter text-xs">
               <div>
-                <a href="mailto:designyuv16@gmail.com" className="text-gray-800 hover:text-gray-900 transition-colors block">
-                  designyuv16@gmail.com
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@designyuv.com&su=Project%20Inquiry"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-800 hover:text-gray-900 transition-colors block"
+                >
+                  hello@designyuv.com
                 </a>
               </div>
-              <div>
-                <a href="https://www.instagram.com/yuuuvvvvv/" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors block">
-                  @yuuuvvvvv
-                </a>
-              </div>
-              <div>
-                <a href="https://linkedin.com/in/yuv-raj-0abb66386" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors block">
-                  linkedin.com/in/yuv-raj-0abb66386
-                </a>
-              </div>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 hover:text-gray-900 transition-colors block"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 hover:text-gray-900 transition-colors block"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
 

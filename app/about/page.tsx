@@ -14,12 +14,12 @@ export default function AboutPage() {
           >
             Yuv
           </Link>
-          <div className="flex items-center space-x-8 font-inter">
+          <div className="flex items-center space-x-4 md:space-x-8 font-inter">
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors font-semibold">
               About
             </Link>
             <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
-              Contact
+              Contact Me
             </Link>
             <a
               href="https://cal.com/yuv-raj-pao2g5/30min"
@@ -76,6 +76,28 @@ export default function AboutPage() {
                   <li>• Motion Graphics & Animation</li>
                   <li>• Product Visualization</li>
                 </ul>
+              </div>
+
+              <div className="pt-2">
+                <h3 className="text-xl font-semibold text-black mb-3 font-space-grotesk">Connect</h3>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-black rounded-md text-sm font-medium text-black hover:bg-gray-100 transition-colors"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-black rounded-md text-sm font-medium text-white hover:bg-gray-800 transition-colors"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Design Studio",
   description: "Design. Animate. Captivate.",
   generator: "v0.dev",
+  icons: {
+    icon: "/Fable.png",
+    apple: "/Fable.png",
+  },
 };
 
 export default function RootLayout({
