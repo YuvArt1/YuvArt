@@ -1,186 +1,92 @@
-import Link from "next/link"
-import Footer from "@/components/footer"
+import Link from "next/link";
+import Footer from "@/components/footer";
+
+const projects = [
+  ["TGD Audio", "Social media content and visual design", "/projects/TGDAudio", "/TGD/Final.png", "TGD Audio visual design and social media content"],
+  ["Mood", "Web visual content and visual storytelling", "/projects/Mood", "/MoodNz (4).png", "Mood web visual content and visual design"],
+  ["GullyLab", "Social media content and motion design", "/projects/GullyLab", "/GullyLab (1).png", "GullyLab social media and motion design"],
+  ["HearO", "Web visual content and social media design", "/projects/HearO", "/HeroO (1).png", "HearO web visual content and social media design"],
+  ["TangentGC", "Social media content and brand visuals", "/projects/TangentGC", "/Tangent.png", "TangentGC social media design"],
+  ["ZeroCO", "Web visual content and social media design", "/projects/ZeroCO", "/Zeroco.png", "ZeroCO web visual content and visual design"],
+  ["Portronics", "Social media content and creative design", "/projects/Portronics", "/Portronics.jpg", "Portronics social media design"],
+] as const;
+
+const problems = [
+  ["Your brand looks inconsistent", "Different visuals, styles and messaging can make your business look unclear and forgettable."],
+  ["Your content isn't grabbing attention", "Good ideas can get ignored when the visuals don't communicate quickly or stand out from competitors."],
+  ["Your visual presence feels outdated", "Your web visuals and social media should represent the quality of your business and build trust."],
+] as const;
+
+const services = [
+  ["Web Visual Content", "Clear, engaging visuals that help your business communicate across digital platforms."],
+  ["Social Media Content", "Visual content designed to stop the scroll and communicate your brand effectively."],
+  ["Motion & Visual Design", "Motion and creative visuals that make ideas easier to understand and harder to ignore."],
+] as const;
+
+const callUrl = "https://cal.com/yuv-raj-pao2g5/30min";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 relative">
-      {/* Header */}
-      <header className="fixed top-0 left-0 w-full bg-transparent z-20 px-6 py-4">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
-          <Link
-            href="/"
-            className="text-2xl font-bold text-black hover:text-gray-600 transition-colors font-space-grotesk"
-          >
-            Yuv
-          </Link>
-          <div className="flex items-center space-x-4 md:space-x-8 font-inter">
-            <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
-              About
-            </Link>
-            <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
-              Contact Me
-            </Link>
-            <a
-              href="https://cal.com/yuv-raj-pao2g5/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold"
-            >
-              Book a Call
-            </a>
+    <div className="flex min-h-screen flex-col bg-gray-50">
+      <header className="fixed left-0 top-0 z-20 w-full bg-white/90 px-6 py-4 backdrop-blur-sm">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between">
+          <Link href="/" className="font-space-grotesk text-2xl font-bold text-black transition-colors hover:text-gray-600">Yuv</Link>
+          <div className="flex items-center space-x-4 font-inter md:space-x-8">
+            <Link href="/work" className="text-black transition-colors hover:text-gray-600">Work</Link>
+            <Link href="/about" className="text-black transition-colors hover:text-gray-600">About</Link>
+            <Link href="/contact" className="text-black transition-colors hover:text-gray-600">Contact Me</Link>
+            <a href={callUrl} target="_blank" rel="noopener noreferrer" className="rounded-md bg-black px-4 py-2 font-semibold text-white transition-colors hover:bg-gray-800">Book a Call</a>
           </div>
         </nav>
       </header>
 
-      {/* Main Content: Work Section */}
-      <div className="flex-1 flex flex-col">
-        {/* Work Section - Top */}
-        <section className="px-6 py-16 pt-20 bg-white\">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-center text-2xl font-bold text-black mb-12 tracking-wider font-space-grotesk">
-              WORK
-            </h2>
+      <main className="flex-1">
+        <section className="bg-white px-6 pb-20 pt-32">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="font-space-grotesk text-4xl font-bold leading-tight text-black md:text-6xl">Design that helps your business stand out and get noticed.</h1>
+            <p className="mx-auto mt-8 max-w-3xl font-inter text-lg leading-relaxed text-gray-600 md:text-xl">I help businesses turn weak visual communication into clear, engaging and memorable design through web visual content, social media content, motion design and creative visuals.</p>
+            <a href={callUrl} target="_blank" rel="noopener noreferrer" className="mt-10 inline-block rounded-md bg-black px-6 py-3 font-semibold text-white transition-colors hover:bg-gray-800">Let&apos;s Talk</a>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/TGDAudio"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/TGD/Final.png"
-                    alt="TGD Audio"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  TGD Audio
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Social media content
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/Mood"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/MoodNz (4).png"
-                    alt="Mood"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  Mood
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Website content
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/GullyLab"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/GullyLab (1).png"
-                    alt="GullyLab"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  GullyLab
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Social media content / motion design
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/HearO"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/HeroO (1).png"
-                    alt="HearO"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  HearO
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Website content / social media
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/TangentGC"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Tangent.png"
-                    alt="TangentGC"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  TangentGC
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Social media
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/ZeroCO"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Zeroco.png"
-                    alt="ZeroCO"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  ZeroCO
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Website / social media
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <Link
-                  href="/projects/Portronics"
-                  className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
-                  <img
-                    src="/Portronics.jpg"
-                    alt="Portronics"
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </Link>
-                <span className="mt-3 text-black font-medium font-space-grotesk">
-                  Portronics
-                </span>
-                <span className="text-sm text-gray-600 font-inter">
-                  Social media
-                </span>
-              </div>
-
+        <section className="bg-gray-50 px-6 py-20">
+          <div className="mx-auto max-w-5xl">
+            <h2 className="text-center font-space-grotesk text-3xl font-bold text-black md:text-4xl">Is your business struggling to communicate visually?</h2>
+            <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
+              {problems.map(([title, description]) => <div key={title} className="rounded-md bg-white p-8"><h3 className="font-space-grotesk text-xl font-bold text-black">{title}</h3><p className="mt-4 font-inter leading-relaxed text-gray-600">{description}</p></div>)}
             </div>
           </div>
         </section>
-      </div>
+
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="font-space-grotesk text-3xl font-bold text-black md:text-4xl">Turning business problems into clear visual experiences.</h2>
+            <p className="mt-6 font-inter text-lg leading-relaxed text-gray-600">I work with businesses and brands to create visual content that communicates clearly, captures attention and gives people a stronger reason to engage with your brand.</p>
+            <div className="mt-14 grid grid-cols-1 gap-8 text-left md:grid-cols-3">
+              {services.map(([title, description]) => <div key={title}><h3 className="font-space-grotesk text-xl font-bold text-black">{title}</h3><p className="mt-3 font-inter text-gray-600">{description}</p></div>)}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-50 px-6 py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 text-center"><h2 className="font-space-grotesk text-3xl font-bold tracking-wider text-black">WORK</h2><p className="mt-4 font-inter text-gray-600">A selection of projects across web visual content, social media and motion design.</p></div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              {projects.map(([name, description, href, image, alt]) => <div key={name} className="flex flex-col"><Link href={href} className="group relative aspect-[4/3] overflow-hidden rounded-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"><img src={image} alt={alt} className="absolute inset-0 h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" /></Link><h3 className="mt-3 font-space-grotesk font-medium text-black">{name}</h3><p className="font-inter text-sm text-gray-600">{description}</p></div>)}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-black px-6 py-24 text-white">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-space-grotesk text-3xl font-bold md:text-5xl">Have a business problem design can solve?</h2>
+            <p className="mt-6 font-inter text-lg text-gray-300">Let&apos;s talk about your business, your audience and how better visual communication can help.</p>
+            <a href={callUrl} target="_blank" rel="noopener noreferrer" className="mt-10 inline-block rounded-md bg-white px-6 py-3 font-semibold text-black transition-colors hover:bg-gray-200">Book a Call</a>
+          </div>
+        </section>
+      </main>
 
       <Footer />
     </div>
-  )
+  );
 }

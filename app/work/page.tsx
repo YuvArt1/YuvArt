@@ -27,10 +27,17 @@ export default function WorkPage() {
         </nav>
       </header>
 
-      {/* Work Page Content */}
       <main className="px-6 py-8 bg-white flex-1 mb-16">
         <div className="max-w-7xl mx-auto">
-          {/* Simple Grid */}
+          <div className="mb-12 max-w-3xl">
+            <h1 className="text-4xl font-bold text-black font-space-grotesk md:text-5xl">
+              Web visual content, social media and motion design.
+            </h1>
+            <p className="mt-5 text-lg leading-relaxed text-gray-600 font-inter">
+              A selection of visual work created to help products, brands and ideas communicate clearly and stand out.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* TGD Audio */}
             <div className="flex flex-col">
@@ -64,14 +71,14 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">Mood</div>
-                <div className="text-xs text-gray-600 font-inter mt-1">Website content</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Web visual content</div>
               </div>
             </div>
 
             {/* HearO */}
             <div className="flex flex-col">
               <Link
-                href="/projects/project-4"
+                  href="/projects/HearO"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
@@ -82,14 +89,14 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">HearO</div>
-                <div className="text-xs text-gray-600 font-inter mt-1">Website content / social media</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Web visual content / social media</div>
               </div>
             </div>
 
             {/* Portronics */}
             <div className="flex flex-col">
               <Link
-                href="/projects/project-3"
+                  href="/projects/Portronics"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
@@ -107,7 +114,7 @@ export default function WorkPage() {
             {/* TangentGC */}
             <div className="flex flex-col">
               <Link
-                href="/projects/project-1"
+                  href="/projects/TangentGC"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
@@ -125,7 +132,7 @@ export default function WorkPage() {
             {/* ZeroCO */}
             <div className="flex flex-col">
               <Link
-                href="/projects/project-2"
+                  href="/projects/ZeroCO"
                 className="relative group overflow-hidden bg-white border border-gray-200 hover:border-gray-400 transition-all duration-300 cursor-pointer aspect-[4/3]"
               >
                 <img
@@ -136,7 +143,7 @@ export default function WorkPage() {
               </Link>
               <div className="mt-3">
                 <div className="text-sm font-semibold text-black font-space-grotesk">ZeroCO</div>
-                <div className="text-xs text-gray-600 font-inter mt-1">Website / social media</div>
+                <div className="text-xs text-gray-600 font-inter mt-1">Web visual content / social media</div>
               </div>
             </div>
 

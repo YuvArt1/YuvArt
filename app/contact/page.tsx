@@ -135,7 +135,7 @@ export default function ContactPage() {
                   <option value="Motion Graphics">Motion Graphics</option>
                   <option value="Branding">Branding</option>
                   <option value="Social Media Content">Social Media Content</option>
-                  <option value="Website Design">Website Design</option>
+                  <option value="Web Visual Content">Web Visual Content</option>
                   <option value="Creative Direction">Creative Direction</option>
                   <option value="Other">Other</option>
                 </select>
