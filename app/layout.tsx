@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://designyuv.com"),
+  metadataBase: new URL("https://www.designyuv.com"),
 
   title: {
     default:
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://designyuv.com",
+    url: "https://www.designyuv.com",
     siteName: "DesignYuv",
     title: "DesignYuv | Visuals & Animation That Help Products Stand Out",
     description:
@@ -123,7 +123,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://designyuv.com/",
+    canonical: "https://www.designyuv.com/",
   },
 };
 

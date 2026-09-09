@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://designyuv.com/sitemap.xml",
+    sitemap: "https://www.designyuv.com/sitemap.xml",
   };
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "/projects/TGDAudio",
+    canonical: "https://www.designyuv.com/projects/TGDAudio",
   },
 }
 

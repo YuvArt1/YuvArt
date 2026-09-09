@@ -4,7 +4,7 @@ import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "/work",
+    canonical: "https://www.designyuv.com/work",
   },
 }
 
