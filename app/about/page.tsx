@@ -1,6 +1,13 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+  },
+}
 
 export default function AboutPage() {
   return (
@@ -82,7 +89,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-black mb-3 font-space-grotesk">Connect</h3>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/yuuuvvvvv/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 border border-black rounded-md text-sm font-medium text-black hover:bg-gray-100 transition-colors"
@@ -90,7 +97,7 @@ export default function AboutPage() {
                     Instagram
                   </a>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/yuv-raj-0abb66386/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-black rounded-md text-sm font-medium text-white hover:bg-gray-800 transition-colors"

@@ -1,5 +1,12 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/work",
+  },
+}
 
 export default function WorkPage() {
   return (

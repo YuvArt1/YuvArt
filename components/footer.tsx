@@ -37,7 +37,7 @@ export default function Footer() {
                 </a>
               </div>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/yuuuvvvvv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900 transition-colors block"
@@ -45,7 +45,7 @@ export default function Footer() {
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/yuv-raj-0abb66386/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 hover:text-gray-900 transition-colors block"
