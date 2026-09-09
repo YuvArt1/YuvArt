@@ -27,27 +27,61 @@ export const metadata: Metadata = {
     "DesignYuv helps brands and businesses turn products, ideas and stories into compelling visuals, 3D animation and creative experiences that capture attention, communicate value and make products stand out.",
 
   keywords: [
-    "make my product stand out",
-    "how to showcase a product",
+    // Core long-tail service terms (niched to D2C + 3D animation)
+    "3D product animation for D2C brands",
+    "3D product animation freelancer",
+    "product animation for Shopify brands",
+    "3D animation studio for small brands",
+    "product visualization for D2C brands",
+    "3D render for D2C product launch",
+    "explainer animation for D2C brands",
+    "motion design for consumer brands",
+    "archviz rendering freelancer",
+    "architectural visualization for small studios",
+
+    // US audience-targeted long-tail (hiring intent)
+    "hire visual designer USA",
+    "hire freelance visual designer",
+    "freelance designer vs agency",
+    "visual content designer for hire",
+    "hire freelance 3D animator USA",
+
+    // Brand & web visuals topic cluster
+    "brand visual identity",
+    "why visual branding matters",
+    "website visual content",
+    "web design visuals that convert",
+    "social media vs website design",
+    "social media visual content",
+    "social media design tips",
+
+    // Startup & e-commerce visuals cluster
+    "visual content for startups",
+    "visual identity for startups",
+    "startup brand design",
+    "best visuals for e-commerce",
+    "product visual content",
+    "e-commerce product visuals",
+
+    // Brand consistency & motion design cluster
+    "brand consistency tips",
+    "inconsistent brand visuals",
+    "motion design for brands",
+    "motion graphics for business",
+    "motion design branding",
+
+    // Intent-based long-tail (what buyers actually search)
+    "how to make product marketing more engaging",
+    "how to showcase a product with 3D animation",
     "how to explain a product visually",
-    "make product marketing more engaging",
-    "product launch visuals",
-    "product marketing content",
-    "creative product advertising",
-    "visual communication for brands",
+    "creative visuals for product launch",
+    "make my product stand out online",
+
+    // Broader terms (lower priority, kept for context)
     "product visualization",
     "3D product visualization",
-    "3D product animation",
-    "product animation",
-    "product rendering",
     "creative advertising",
     "visual storytelling",
-    "explainer animation",
-    "product launch creative agency",
-    "product animation services",
-    "3D animation for brands",
-    "product visualization services",
-    "creative design for brands",
   ],
 
   authors: [{ name: "Yuv" }],
