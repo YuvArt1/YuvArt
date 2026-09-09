@@ -26,11 +26,11 @@ export default function Project3Page() {
             Yuv
           </Link>
           <div className="flex items-center space-x-4 md:space-x-8 font-inter">
+            <Link href="/work" className="text-black hover:text-gray-600 transition-colors">
+              Work
+            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
-            </Link>
-            <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
-              Contact Me
             </Link>
             <a
               href="https://cal.com/yuv-raj-pao2g5/30min"

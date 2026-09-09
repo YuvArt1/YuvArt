@@ -20,9 +20,14 @@ export default function WorkPage() {
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
             </Link>
-            <Link href="/contact" className="text-black hover:text-gray-600 transition-colors">
-              Contact
-            </Link>
+            <a
+              href="https://cal.com/yuv-raj-pao2g5/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-black px-4 py-2 font-semibold text-white transition-colors hover:bg-gray-800"
+            >
+              Book a Call
+            </a>
           </div>
         </nav>
       </header>
