@@ -18,16 +18,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.designyuv.com"),
 
   title: {
-    default:
-      "DesignYuv | Product Visuals, Animation & Design That Help Brands Stand Out",
+    default: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     template: "%s | DesignYuv",
   },
 
   description:
-    "DesignYuv helps brands and businesses turn products, ideas and stories into compelling visuals, 3D animation and creative experiences that capture attention, communicate value and make products stand out.",
+    "3D product animation, motion design, and product visualization for D2C brands. DesignYuv turns products and ideas into visuals that capture attention and drive sales.",
 
   keywords: [
-    // Core long-tail service terms (niched to D2C + 3D animation)
+    // Core service terms
     "3D product animation for D2C brands",
     "3D product animation freelancer",
     "product animation for Shopify brands",
@@ -39,59 +38,28 @@ export const metadata: Metadata = {
     "archviz rendering freelancer",
     "architectural visualization for small studios",
 
-    // US audience-targeted long-tail (hiring intent)
+    // US audience-targeted
     "hire visual designer USA",
     "hire freelance visual designer",
-    "freelance designer vs agency",
-    "visual content designer for hire",
     "hire freelance 3D animator USA",
 
-    // Brand & web visuals topic cluster
+    // Brand & web visuals
     "brand visual identity",
-    "why visual branding matters",
-    "website visual content",
     "web design visuals that convert",
-    "social media vs website design",
-    "social media visual content",
-    "social media design tips",
 
-    // Startup & e-commerce visuals cluster
+    // Startup & e-commerce
     "visual content for startups",
-    "visual identity for startups",
-    "startup brand design",
-    "best visuals for e-commerce",
-    "product visual content",
     "e-commerce product visuals",
 
-    // Brand consistency & motion design cluster
-    "brand consistency tips",
-    "inconsistent brand visuals",
-    "motion design for brands",
-    "motion graphics for business",
-    "motion design branding",
-
-    // Intent-based long-tail (what buyers actually search)
-    "how to make product marketing more engaging",
-    "how to showcase a product with 3D animation",
-    "how to explain a product visually",
-    "creative visuals for product launch",
-    "make my product stand out online",
-
-    // Broader terms (lower priority, kept for context)
+    // Broader
     "product visualization",
     "3D product visualization",
-    "creative advertising",
     "visual storytelling",
   ],
 
   authors: [{ name: "Yuv" }],
   creator: "Yuv",
   publisher: "DesignYuv",
-
-  icons: {
-    icon: "/Fable.png",
-    apple: "/Fable.png",
-  },
 
   robots: {
     index: true,
@@ -110,21 +78,50 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.designyuv.com",
     siteName: "DesignYuv",
-    title: "DesignYuv | Visuals & Animation That Help Products Stand Out",
+    title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     description:
-      "Helping brands turn products and ideas into compelling visuals, 3D animation and creative experiences that capture attention and communicate value.",
+      "3D product animation, motion design, and product visualization for D2C brands.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "DesignYuv — 3D Product Animation & Visuals",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DesignYuv | Visuals & Animation That Help Products Stand Out",
+    title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     description:
-      "Helping brands turn products and ideas into compelling visuals, 3D animation and creative experiences that capture attention and communicate value.",
+      "3D product animation, motion design, and product visualization for D2C brands.",
+    images: ["/og-image.jpg"],
   },
 
   alternates: {
     canonical: "https://www.designyuv.com/",
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "DesignYuv",
+  url: "https://www.designyuv.com",
+  description:
+    "3D product animation, motion design, and product visualization for D2C brands.",
+  founder: {
+    "@type": "Person",
+    name: "Yuvraj Chavhan",
+  },
+  areaServed: "US",
+  serviceType: [
+    "3D Product Animation",
+    "Motion Design",
+    "Architectural Visualization",
+    "Product Visualization",
+  ],
 };
 
 export default function RootLayout({
@@ -135,6 +132,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable} font-inter antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <Analytics />
       </body>

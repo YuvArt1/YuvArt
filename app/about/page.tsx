@@ -4,6 +4,9 @@ import Image from "next/image"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
+  title: "About Yuvraj Chavhan | Motion Designer & 3D Product Animator",
+  description:
+    "Meet the motion designer and visual storyteller behind DesignYuv — bringing brands and products to life through 3D animation, motion graphics, and product visualization.",
   alternates: {
     canonical: "https://www.designyuv.com/about",
   },

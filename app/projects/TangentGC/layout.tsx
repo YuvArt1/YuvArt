@@ -1,8 +1,17 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  title: "TangentGC | 3D Product Visualization Case Study",
+  description:
+    "3D product visuals for TangentGC - a case study in product visualization by DesignYuv.",
   alternates: {
     canonical: "https://www.designyuv.com/projects/TangentGC",
+  },
+  openGraph: {
+    title: "TangentGC | 3D Product Visualization Case Study",
+    description: "3D product visuals for TangentGC by DesignYuv.",
+    url: "https://www.designyuv.com/projects/TangentGC",
+    images: [{ url: "/Tangent.png", width: 1200, height: 630 }],
   },
 }
 
