@@ -122,6 +122,12 @@ const jsonLd = {
     "Architectural Visualization",
     "Product Visualization",
   ],
+  sameAs: [
+    "https://www.behance.net/DesignYuv",
+    "https://dribbble.com/DesignYuv",
+    "https://www.instagram.com/yuuuvvvvv/",
+    "https://www.linkedin.com/in/yuv-raj-0abb66386/",
+  ],
 };
 
 export default function RootLayout({
