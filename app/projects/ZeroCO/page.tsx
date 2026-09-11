@@ -148,7 +148,7 @@ export default function Project2Page() {
                 <div key={index} className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
                   <img
                     src={src}
-                    alt={`ZeroCO Still ${index}`}
+                    alt={`ZeroCO project still ${index + 1}`}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                     onClick={() => setSelectedImage(src)}
                   />
@@ -165,7 +165,7 @@ export default function Project2Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged"
+                alt="Enlarged ZeroCO project still"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>

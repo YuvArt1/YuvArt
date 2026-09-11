@@ -87,7 +87,7 @@ export default function Project4Page() {
               >
                 <Image
                   src={src}
-                  alt={`HearO ${index + 1}`}
+                  alt={`HearO project still ${index + 1}`}
                   width={600}
                   height={400}
                   className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -104,7 +104,7 @@ export default function Project4Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged"
+                alt="Enlarged HearO project still"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>

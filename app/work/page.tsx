@@ -3,8 +3,17 @@ import Link from "next/link"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
+  title: "Selected Work | DesignYuv",
+  description:
+    "Explore selected 3D product animation, motion design, and visual content projects by DesignYuv.",
   alternates: {
     canonical: "https://www.designyuv.com/work",
+  },
+  openGraph: {
+    title: "Selected Work | DesignYuv",
+    description: "Selected 3D product animation and motion design projects by DesignYuv.",
+    url: "https://www.designyuv.com/work",
+    images: [{ url: "/TGD/Final.png", width: 1200, height: 630, alt: "Selected DesignYuv work" }],
   },
 }
 
@@ -59,7 +68,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/TGD/Final.png"
-                  alt="TGD Audio"
+                  alt="TGD Audio social media visual"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -77,7 +86,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/MoodNz (1).png"
-                  alt="Mood"
+                  alt="Mood web visual content"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -95,7 +104,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/HeroO (1).png"
-                  alt="HearO"
+                  alt="HearO web visual content"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -113,7 +122,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/Portronics.jpg"
-                  alt="Portronics"
+                  alt="Portronics social media visual"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -131,7 +140,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/Tangent.png"
-                  alt="TangentGC"
+                  alt="TangentGC brand visual"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -149,7 +158,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/Zeroco.png"
-                  alt="ZeroCO"
+                  alt="ZeroCO web visual content"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>
@@ -167,7 +176,7 @@ export default function WorkPage() {
               >
                 <img
                   src="/GullyLab (1).png"
-                  alt="GullyLab"
+                  alt="GullyLab social media visual"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </Link>

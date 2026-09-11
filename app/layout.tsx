@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.designyuv.com"),
 
   title: {
-    default: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
+    default: "DesignYuv | 3D Product Animation Studio",
     template: "%s | DesignYuv",
   },
 
   description:
-    "3D product animation, motion design, and product visualization for D2C brands. DesignYuv turns products and ideas into visuals that capture attention and drive sales.",
+    "3D product animation, motion design, and product visualization for brands. DesignYuv turns products and ideas into visuals that capture attention.",
 
   keywords: [
     // Core service terms
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.designyuv.com",
     siteName: "DesignYuv",
-    title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
+    title: "DesignYuv | 3D Product Animation Studio",
     description:
       "3D product animation, motion design, and product visualization for D2C brands.",
     images: [
@@ -106,27 +106,33 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "DesignYuv",
-  url: "https://www.designyuv.com",
-  description:
-    "3D product animation, motion design, and product visualization for D2C brands.",
-  founder: {
-    "@type": "Person",
-    name: "Yuvraj Chavhan",
-  },
-  areaServed: "US",
-  serviceType: [
-    "3D Product Animation",
-    "Motion Design",
-    "Architectural Visualization",
-    "Product Visualization",
-  ],
-  sameAs: [
-    "https://www.behance.net/DesignYuv",
-    "https://dribbble.com/DesignYuv",
-    "https://www.instagram.com/yuuuvvvvv/",
-    "https://www.linkedin.com/in/yuv-raj-0abb66386/",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.designyuv.com/#organization",
+      name: "DesignYuv",
+      url: "https://www.designyuv.com/",
+      logo: "https://www.designyuv.com/og-image.jpg",
+      description:
+        "3D product animation, motion design, and product visualization for brands.",
+      founder: {
+        "@type": "Person",
+        name: "Yuvraj Chavhan",
+      },
+      sameAs: [
+        "https://www.behance.net/DesignYuv",
+        "https://dribbble.com/DesignYuv",
+        "https://www.instagram.com/yuuuvvvvv/",
+        "https://www.linkedin.com/in/yuv-raj-0abb66386/",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.designyuv.com/#website",
+      url: "https://www.designyuv.com/",
+      name: "DesignYuv",
+      publisher: { "@id": "https://www.designyuv.com/#organization" },
+    },
   ],
 };
 

@@ -92,7 +92,7 @@ export default function TGDAudioProjectPage() {
                 >
                   <Image
                     src={src}
-                    alt={`TGD Audio Still ${index + 1}`}
+                    alt={`TGD Audio project still ${index + 1}`}
                     width={900}
                     height={675}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -109,7 +109,7 @@ export default function TGDAudioProjectPage() {
             >
               <Image
                 src={selectedImage}
-                alt="Full screen view"
+                alt="Full-screen TGD Audio project still"
                 width={1600}
                 height={1200}
                 className="max-w-full max-h-full object-contain"

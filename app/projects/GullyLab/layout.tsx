@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "GullyLab | 3D Product Visualization Case Study",
+  title: "GullyLab 3D Product Visuals",
   description:
     "3D product visuals for GullyLab — a case study in product animation and visualization by DesignYuv, 2026.",
   alternates: {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "GullyLab | 3D Product Visualization Case Study",
     description: "3D product visuals for GullyLab by DesignYuv.",
     url: "https://www.designyuv.com/projects/GullyLab",
-    images: [{ url: "/GullyLab (1).png", width: 1200, height: 630 }],
+    images: [{ url: "/GullyLab (1).png", width: 1200, height: 630, alt: "GullyLab 3D product visualization" }],
   },
 }
 

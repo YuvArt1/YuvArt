@@ -105,7 +105,7 @@ export default function MoodProjectPage() {
               <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/MoodNz (2).png"
-                  alt="Mood large"
+                  alt="Mood product animation feature still"
                   width={1400}
                   height={800}
                   className="w-full h-auto object-cover"
@@ -122,7 +122,7 @@ export default function MoodProjectPage() {
                   >
                     <Image
                       src={src}
-                      alt={`Mood ${idx + 3}`}
+                      alt={`Mood project still ${idx + 3}`}
                       width={900}
                       height={675}
                       className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -141,7 +141,7 @@ export default function MoodProjectPage() {
             >
               <Image
                 src={selectedImage}
-                alt="Full screen view"
+                alt="Full-screen Mood project still"
                 width={1600}
                 height={1200}
                 className="max-w-full max-h-full object-contain"

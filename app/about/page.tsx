@@ -4,11 +4,17 @@ import Image from "next/image"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "About Yuvraj Chavhan | Motion Designer & 3D Product Animator",
+  title: "About Yuvraj Chavhan",
   description:
-    "Meet the motion designer and visual storyteller behind DesignYuv — bringing brands and products to life through 3D animation, motion graphics, and product visualization.",
+    "Meet Yuvraj Chavhan, the motion designer behind DesignYuv, creating 3D animation, motion graphics, and product visuals.",
   alternates: {
     canonical: "https://www.designyuv.com/about",
+  },
+  openGraph: {
+    title: "About Yuvraj Chavhan | Motion Designer",
+    description: "Meet the motion designer behind DesignYuv and its 3D product visuals.",
+    url: "https://www.designyuv.com/about",
+    images: [{ url: "/imah1.jpg", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
   },
 }
 
