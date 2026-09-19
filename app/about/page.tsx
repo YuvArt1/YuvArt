@@ -31,6 +31,9 @@ export default function AboutPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-4 md:space-x-8 font-inter">
+            <Link href="/what-do-we-do" className="text-black hover:text-gray-600 transition-colors">
+              What We Do
+            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors font-semibold">
               About
             </Link>
@@ -68,13 +71,13 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 font-space-grotesk">About</h1>
               <div className="space-y-4 text-gray-900 leading-relaxed font-inter text-base">
                 <p>
-                  Hey — I’m a motion designer and visual storyteller. I run a small creative studio where I bring brands, stories, and ideas to life through animation, design, and a bit of controlled chaos.
+                  Hey, I’m a motion designer and visual storyteller. I run a small creative studio where I bring brands, stories, and ideas to life through animation, design, and a bit of controlled chaos.
                 </p>
                 <p>
-                  I’ve been doing this for a while now — worked with all kinds of people, from early-stage startups to huge companies. But no matter who it's for, the goal’s the same: make things that feel good, look good, and actually connect.
+                  I’ve been doing this for a while now, working with all kinds of people, from early-stage startups to huge companies. But no matter who it’s for, the goal’s the same: make things that feel good, look good, and actually connect.
                 </p>
                 <p>
-                  I’m really into the details — how something moves, how it lands, how it makes you feel. Motion graphics, brand identity, UI moments, weird little animations that make you pause for a second — that’s my playground.
+                  I’m really into the details, how something moves, how it lands, how it makes you feel. Motion graphics, brand identity, UI moments, weird little animations that make you pause for a second, that’s my playground.
                 </p>
                 <p>
                   I’m flexible and willing to shift my working hours to best fit the needs of the project or team.

@@ -86,7 +86,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "DesignYuv — 3D Product Animation & Visuals",
+        alt: "DesignYuv - 3D Product Animation & Visuals",
       },
     ],
   },

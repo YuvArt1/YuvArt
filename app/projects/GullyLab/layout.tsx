@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "GullyLab 3D Product Visuals",
   description:
-    "3D product visuals for GullyLab — a case study in product animation and visualization by DesignYuv, 2026.",
+    "3D product visuals for GullyLab - a case study in product animation and visualization by DesignYuv, 2026.",
   alternates: {
     canonical: "https://www.designyuv.com/projects/GullyLab",
   },

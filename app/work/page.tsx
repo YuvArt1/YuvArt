@@ -30,6 +30,9 @@ export default function WorkPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-8 font-inter">
+            <Link href="/what-do-we-do" className="text-black hover:text-gray-600 transition-colors">
+              What We Do
+            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
             </Link>

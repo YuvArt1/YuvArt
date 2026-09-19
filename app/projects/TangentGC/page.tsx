@@ -71,7 +71,7 @@ export default function Project1Page() {
           {/* Project Description */}
           <div className="prose prose-lg max-w-none font-inter">
             <p className="text-gray-700 leading-relaxed mb-6">
-              This one started as a simple idea. The product looked great in a still, but I wanted to see it move. No big story or concept behind it — just the urge to let the box open on its own and see how that would feel.
+              This one started as a simple idea. The product looked great in a still, but I wanted to see it move. No big story or concept behind it, just the urge to let the box open on its own and see how that would feel.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -79,7 +79,7 @@ export default function Project1Page() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              There wasn't a fixed narrative here. The motion was the point — letting the product speak through how it unfolds. Just about keeping it simple, smooth, and true to the way it was designed.
+              There wasn’t a fixed narrative here. The motion was the point, letting the product speak through how it unfolds. Just about keeping it simple, smooth, and true to the way it was designed.
             </p>
           </div>
 

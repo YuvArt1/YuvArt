@@ -88,11 +88,11 @@ export default function Project3Page() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              The animation kicks off with the product rising up, then breaking down into its parts — showing what it's made of. After that, I wanted to show off its functionality, so it charges three devices at once, all in sync. The piece wraps up by revealing the color variants to close it with some pop.
+              The animation kicks off with the product rising up, then breaking down into its parts, showing what it’s made of. After that, I wanted to show off its functionality, so it charges three devices at once, all in sync. The piece wraps up by revealing the color variants to close it with some pop.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              It's short, structured, and designed to get the point across fast — clean visuals, clear features, and motion that keeps you watching.
+              It’s short, structured, and designed to get the point across fast, with clean visuals, clear features, and motion that keeps you watching.
             </p>
           </div>
 
