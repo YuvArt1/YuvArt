@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "About Yuvraj Chavhan | Motion Designer",
     description: "Meet the motion designer behind DesignYuv and its 3D product visuals.",
     url: "https://www.designyuv.com/about",
-    images: [{ url: "/imah1.jpg", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
+    images: [{ url: "/aboutme.jpeg", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
   },
 }
 
@@ -31,9 +31,6 @@ export default function AboutPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-4 md:space-x-8 font-inter">
-            <Link href="/work" className="text-black hover:text-gray-600 transition-colors">
-              Work
-            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors font-semibold">
               About
             </Link>
@@ -57,7 +54,7 @@ export default function AboutPage() {
             <div className="order-2 lg:order-1">
               <div className="aspect-[4/5] bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/imah1.jpg"
+                  src="/aboutme.jpeg"
                   alt="About Yuvraj Chavhan"
                   width={480}
                   height={600}

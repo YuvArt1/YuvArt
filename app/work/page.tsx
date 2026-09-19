@@ -3,14 +3,14 @@ import Link from "next/link"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Selected Work | DesignYuv",
+  title: "Case Study | DesignYuv",
   description:
     "Explore selected 3D product animation, motion design, and visual content projects by DesignYuv.",
   alternates: {
     canonical: "https://www.designyuv.com/work",
   },
   openGraph: {
-    title: "Selected Work | DesignYuv",
+    title: "Case Study | DesignYuv",
     description: "Selected 3D product animation and motion design projects by DesignYuv.",
     url: "https://www.designyuv.com/work",
     images: [{ url: "/TGD/Final.png", width: 1200, height: 630, alt: "Selected DesignYuv work" }],
@@ -30,9 +30,6 @@ export default function WorkPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-8 font-inter">
-            <Link href="/work" className="text-black hover:text-gray-600 transition-colors font-semibold">
-              Work
-            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
             </Link>

@@ -30,9 +30,6 @@ export default function MoodProjectPage() {
             Yuv
           </Link>
           <div className="flex items-center space-x-4 md:space-x-8 font-inter">
-            <Link href="/work" className="text-black hover:text-gray-600 transition-colors">
-              Work
-            </Link>
             <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
               About
             </Link>
