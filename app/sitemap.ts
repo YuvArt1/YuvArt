@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...[
       "GullyLab",
+      "FoldenLane",
       "HearO",
       "Mood",
       "Portronics",

@@ -60,6 +60,24 @@ export default function WorkPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Folden Lane */}
+            <div className="flex flex-col">
+              <Link
+                href="/projects/FoldenLane"
+                className="group relative aspect-[4/3] overflow-hidden border border-gray-200 transition-all duration-300 hover:border-gray-400"
+              >
+                <img
+                  src="/foldenlane.png"
+                  alt="Folden Lane web content thumbnail"
+                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+              </Link>
+              <div className="mt-3">
+                <div className="font-space-grotesk text-sm font-semibold text-black">Folden Lane</div>
+                <div className="mt-1 font-inter text-xs text-gray-600">Web content · Work in progress</div>
+              </div>
+            </div>
+
             {/* TGD Audio */}
             <div className="flex flex-col">
               <Link
@@ -185,6 +203,7 @@ export default function WorkPage() {
                 <div className="text-xs text-gray-600 font-inter mt-1">Social media content / motion design</div>
               </div>
             </div>
+
           </div>
         </div>
       </main>

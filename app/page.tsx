@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 
 const projects = [
+  ["Folden Lane", "Web content · Work in progress", "/projects/FoldenLane", "/foldenlane.png", "Folden Lane web content thumbnail"],
   ["TGD Audio", "Social media content and visual design", "/projects/TGDAudio", "/TGD/Final.png", "TGD Audio visual design and social media content"],
   ["Mood", "Web visual content and visual storytelling", "/projects/Mood", "/MoodNz (4).png", "Mood web visual content and visual design"],
   ["GullyLab", "Social media content and motion design", "/projects/GullyLab", "/GullyLab (1).png", "GullyLab social media and motion design"],
@@ -36,8 +37,12 @@ export default function HomePage() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {projects.map(([name, description, href, image, alt]) => (
                 <div key={name} className="flex flex-col">
-                  <Link href={href} className="group relative aspect-[4/3] overflow-hidden rounded-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-                    <img src={image} alt={alt} className="absolute inset-0 h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
+                  <Link href={href} className="group relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-sm bg-black text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+                    {image ? (
+                      <img src={image} alt={alt} className="absolute inset-0 h-full w-full object-cover opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
+                    ) : (
+                      <span className="font-space-grotesk text-2xl font-semibold">Folden Lane</span>
+                    )}
                   </Link>
                   <h3 className="mt-3 font-space-grotesk font-medium text-black">{name}</h3>
                   <p className="font-inter text-sm text-gray-600">{description}</p>
