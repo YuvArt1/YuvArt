@@ -74,10 +74,10 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-4 pt-3 border-t border-white/40">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-1 md:space-y-0">
-            <div className="font-inter text-gray-700 text-xs">© 2024 Yuv Studio. All rights reserved.</div>
+            <div className="font-inter text-gray-700 text-xs">© 2026 DesignYuv. All rights reserved.</div>
             <div className="font-space-grotesk text-lg font-bold">
               <Link href="/" className="hover:text-gray-600 transition-colors text-gray-900">
-                Yuv
+                DesignYuv
               </Link>
             </div>
           </div>

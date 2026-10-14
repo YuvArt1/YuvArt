@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import InquiryForm from "@/components/inquiry-form";
 import StudioHeader from "@/components/studio-header";
 import ProjectCarousel from "@/components/project-carousel";
+import PossibilityGallery from "@/components/possibility-gallery";
 
 const projects = [
   {
@@ -52,11 +53,11 @@ const possibilities = [
 ] as const;
 
 const benefits = [
-  ["More creative flexibility", "Explore different compositions, environments, colors, and concepts around the same product."],
-  ["More content variations", "Build a set of stills or motion assets from a consistent product model when the project scope supports it."],
-  ["Fewer physical constraints", "Create visual changes digitally where they do not require a new physical shoot."],
-  ["A consistent product story", "Keep lighting, materials, and presentation coherent across a family of assets."],
-  ["Content for more channels", "Plan deliverables for product pages, paid ads, social media, and product launches."],
+  ["You need more product visuals without more photoshoots.", "New angles, product variations, and campaign assets shouldn't mean starting from scratch every time."],
+  ["You want your product pages to sell better.", "Your products deserve visuals that grab attention, communicate value, and help customers make confident buying decisions."],
+  ["You're launching products faster than you can create content.", "You need high-quality visuals ready for new launches, campaigns, and product variations without slowing your team down."],
+  ["You need more creative freedom.", "Test new concepts, explore different settings, and create campaign visuals without the cost and logistics of a physical shoot."],
+  ["You want every touchpoint to look like your brand.", "From product pages to paid ads, your visuals should feel consistent, intentional, and unmistakably yours."],
 ] as const;
 
 const process = [
@@ -103,16 +104,7 @@ export default function HomePage() {
             <h2>Build a visual system around the product.</h2>
             <p>Explore the product from a new angle, bring out a detail, or place it in a campaign-ready scene. The right asset mix depends on your brief.</p>
           </div>
-          <div className="studio-possibility-grid">
-            {possibilities.map((item, index) => (
-              <figure className={`studio-possibility studio-possibility-${index + 1}`} key={item.label}>
-                <div className="studio-possibility-image">
-                  <Image src={item.image} alt={item.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
-                </div>
-                <figcaption><span>0{index + 1}</span>{item.label}</figcaption>
-              </figure>
-            ))}
-          </div>
+          <PossibilityGallery items={[...possibilities]} />
           <div className="studio-capability-line"><span>STILLS</span><span>MOTION</span><span>CAMPAIGN VISUALS</span><span>PRODUCT VARIATIONS</span></div>
         </section>
 
@@ -142,9 +134,8 @@ export default function HomePage() {
 
         <section className="studio-benefits studio-section">
           <div className="studio-benefits-heading">
-            <p className="studio-eyebrow">MADE FOR THE WAY TEAMS WORK</p>
-            <h2>More room to make the right asset.</h2>
-            <p>3D gives product, creative, and marketing teams another way to plan and produce visual content.</p>
+            <p className="studio-eyebrow">WHO THIS IS FOR</p>
+            <h2>We're probably a good fit if...</h2>
           </div>
           <div className="studio-benefit-list">
             {benefits.map(([title, description], index) => (
@@ -154,6 +145,10 @@ export default function HomePage() {
                 <p>{description}</p>
               </article>
             ))}
+            <div className="studio-fit-cta">
+              <p>If you're ready to get more out of your product visuals, let's talk.</p>
+              <a className="studio-button studio-button-dark" href="#contact">Discuss Your Next Project <ArrowUpRight size={17} aria-hidden="true" /></a>
+            </div>
           </div>
         </section>
 

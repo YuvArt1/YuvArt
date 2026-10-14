@@ -6,13 +6,53 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Pause, Play } from "lucide-react";
 import { projectAssets } from "@/lib/project-assets";
 
+type CarouselSlide = {
+  name: string;
+  href: string;
+  image: string;
+  alt: string;
+  description: string;
+};
+
+const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselSlide[] => {
+  if (project.name === "TGD Audio") {
+    return [
+      { ...project, image: "/TGD/BottomTop.png", alt: "TGD Audio product view from below" },
+      { ...project, image: "/TGD/Front.png", alt: "TGD Audio product front view" },
+      { ...project, image: "/TGD/Final.png", alt: "TGD Audio product visual" },
+    ];
+  }
+
+  if (project.name === "HearO") {
+    return [
+      { ...project, image: "/HeroO (3).png", alt: "HearO product visual, frame three" },
+      { ...project, image: "/HeroO (4).png", alt: "HearO product visual, frame four" },
+      { ...project, image: "/HeroO (1).png", alt: "HearO product visual" },
+    ];
+  }
+
+  if (project.name === "GullyLab") {
+    return [{ ...project, image: "/GullyLab (5).png", alt: "GullyLab product visual, frame five" }];
+  }
+
+  if (project.name === "Mood") {
+    return [{ ...project, image: "/MoodNz (4).png", alt: "Mood product visual, frame four" }];
+  }
+
+  if (project.name === "Portronics") {
+    return [{ ...project, image: "/Portronics1.jpg", alt: "Portronics product animation still" }];
+  }
+
+  return [project];
+});
+
 export default function ProjectCarousel() {
-  const zeroCoIndex = projectAssets.findIndex((project) => project.name === "ZeroCO");
+  const zeroCoIndex = carouselSlides.findIndex((project) => project.name === "ZeroCO");
   const [activeIndex, setActiveIndex] = useState(zeroCoIndex);
   const [interactionPaused, setInteractionPaused] = useState(false);
   const [manuallyPaused, setManuallyPaused] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-  const activeProject = projectAssets[activeIndex];
+  const activeProject = carouselSlides[activeIndex];
 
   useEffect(() => {
     const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -27,14 +67,14 @@ export default function ProjectCarousel() {
     if (interactionPaused || manuallyPaused || prefersReducedMotion) return;
 
     const intervalId = window.setInterval(() => {
-      setActiveIndex((currentIndex) => (currentIndex + 1) % projectAssets.length);
+      setActiveIndex((currentIndex) => (currentIndex + 1) % carouselSlides.length);
     }, 6000);
 
     return () => window.clearInterval(intervalId);
   }, [interactionPaused, manuallyPaused, prefersReducedMotion]);
 
   function showSlide(index: number) {
-    setActiveIndex((index + projectAssets.length) % projectAssets.length);
+    setActiveIndex((index + carouselSlides.length) % carouselSlides.length);
   }
 
   return (
@@ -66,7 +106,7 @@ export default function ProjectCarousel() {
         </Link>
         <div className="studio-image-caption" aria-live="polite">
           <span>{activeProject.name.toUpperCase()}</span>
-          <span>{String(activeIndex + 1).padStart(2, "0")} / {String(projectAssets.length).padStart(2, "0")}</span>
+          <span>{String(activeIndex + 1).padStart(2, "0")} / {String(carouselSlides.length).padStart(2, "0")}</span>
         </div>
         <Link href={activeProject.href} className="studio-image-link" aria-label={`Explore ${activeProject.name}`}><ArrowUpRight size={20} aria-hidden="true" /></Link>
       </div>
@@ -74,12 +114,12 @@ export default function ProjectCarousel() {
         <p className="studio-carousel-description">{activeProject.description}</p>
         <div className="studio-carousel-actions">
           <div className="studio-carousel-indicators" aria-label="Choose a project">
-            {projectAssets.map((project, index) => (
+            {carouselSlides.map((project, index) => (
               <button
-                aria-label={`Show ${project.name}`}
+                aria-label={`Show ${project.name} still ${index + 1}`}
                 aria-current={activeIndex === index ? "true" : undefined}
                 className={activeIndex === index ? "is-active" : ""}
-                key={project.name}
+                key={`${project.name}-${project.image}`}
                 onClick={() => showSlide(index)}
                 type="button"
               />
