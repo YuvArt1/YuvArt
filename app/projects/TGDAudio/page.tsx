@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 import StudioHeader from "@/components/studio-header";
 import ProjectInquiryCTA from "@/components/project-inquiry-cta";
 
-export default function TGDAudioProjectPage() {
+export default function TDGAudioProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
@@ -32,7 +32,7 @@ export default function TGDAudioProjectPage() {
           </Link>
 
           <div className="mb-6">
-            <h1 className="text-4xl md:text-6xl font-bold text-black font-space-grotesk">TGD Audio</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-black font-space-grotesk">TDG Audio</h1>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 font-inter">
@@ -44,6 +44,12 @@ export default function TGDAudioProjectPage() {
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
               <p className="text-gray-700">2026</p>
             </div>
+          </div>
+
+          <div className="prose prose-lg max-w-none font-inter mb-12">
+            <p className="text-gray-700 leading-relaxed">
+              This project pairs a product animation with a set of stills to present TDG Audio from multiple angles. The stills give the product a clear, considered showcase, while the motion adds another way to experience its form. Keeping the views and visual treatment cohesive makes the assets work together as a product-focused set.
+            </p>
           </div>
 
           <div className="mb-12" style={{ padding: "125% 0 0 0", position: "relative" }}>
@@ -69,7 +75,7 @@ export default function TGDAudioProjectPage() {
                 >
                   <Image
                     src={src}
-                    alt={`TGD Audio project still ${index + 1}`}
+                    alt={`TDG Audio project still ${index + 1}`}
                     width={900}
                     height={675}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -86,7 +92,7 @@ export default function TGDAudioProjectPage() {
             >
               <Image
                 src={selectedImage}
-                alt="Full-screen TGD Audio project still"
+                alt="Full-screen TDG Audio project still"
                 width={1600}
                 height={1200}
                 className="max-w-full max-h-full object-contain"

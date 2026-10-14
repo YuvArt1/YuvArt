@@ -49,6 +49,12 @@ export default function GullyLabProjectPage() {
             </div>
           </div>
 
+          <div className="prose prose-lg max-w-none font-inter mb-12">
+            <p className="text-gray-700 leading-relaxed">
+              This project combines a product animation with a set of still images. The animation gives the product a sense of movement, while the stills let its form read clearly in composed views. A consistent visual treatment brings both formats together as one product presentation.
+            </p>
+          </div>
+
           {/* Project Video */}
           <div className="mb-12" style={{ padding: "75% 0 0 0", position: "relative" }}>
             <iframe

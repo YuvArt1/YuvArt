@@ -74,15 +74,15 @@ export const mediaProjects: MediaProject[] = [
     videos: [{ id: "1102750316", title: "Portronics Animation" }],
   },
   {
-    name: "TGD Audio",
+    name: "TDG Audio",
     href: "/projects/TGDAudio",
     stills: [
-      { src: "/TGD/Final.webp", alt: "TGD Audio final product still" },
-      { src: "/TGD/Front.webp", alt: "TGD Audio front view" },
-      { src: "/TGD/TopDown.webp", alt: "TGD Audio top-down view" },
-      { src: "/TGD/BottomTop.webp", alt: "TGD Audio bottom-up view" },
+      { src: "/TGD/Final.webp", alt: "TDG Audio final product still" },
+      { src: "/TGD/Front.webp", alt: "TDG Audio front view" },
+      { src: "/TGD/TopDown.webp", alt: "TDG Audio top-down view" },
+      { src: "/TGD/BottomTop.webp", alt: "TDG Audio bottom-up view" },
     ],
-    videos: [{ id: "1222345243", title: "TGD Audio product animation" }],
+    videos: [{ id: "1222345243", title: "TDG Audio product animation" }],
   },
   {
     name: "Folden Lane",

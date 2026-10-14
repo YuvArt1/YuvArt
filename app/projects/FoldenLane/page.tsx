@@ -33,6 +33,12 @@ export default function FoldenLaneProjectPage() {
             </div>
           </div>
 
+          <div className="prose prose-lg mb-12 max-w-none font-inter">
+            <p className="text-gray-700 leading-relaxed">
+              This project brings Folden Lane to life through video-led content for web and social. The work focuses on shaping each piece for its digital setting, using a clear visual presentation and pacing that keeps the brand front and center. The project is still in progress, so more details will be added as the work develops.
+            </p>
+          </div>
+
           <div className="relative mb-8 aspect-video w-full overflow-hidden bg-black">
             <iframe
               src="https://player.vimeo.com/video/1233846508?badge=0&autopause=0&player_id=0&app_id=58479"

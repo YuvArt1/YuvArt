@@ -7,10 +7,10 @@ export const projectAssets = [
     description: "Web content. Work in progress.",
   },
   {
-    name: "TGD Audio",
+    name: "TDG Audio",
     href: "/projects/TGDAudio",
     image: "/TGD/Final.webp",
-    alt: "TGD Audio social media visual",
+    alt: "TDG Audio social media visual",
     description: "Social media content and visual design.",
   },
   {

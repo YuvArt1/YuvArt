@@ -53,6 +53,25 @@ export default function Project2Page() {
             </div>
           </div>
 
+          {/* Project Description */}
+          <div className="prose prose-lg max-w-none font-inter mb-12">
+            <p className="text-gray-700 leading-relaxed mb-6">
+              ZeroCO is a compact speaker made from a used tennis ball, an upcycled shell that gives the product its character, grip, and a soft tactile feel. The idea was simple: take something familiar and overlooked, and turn it into sound you can carry.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              To show its portability, I placed it across everyday scenes: clipped to a backpack on the go, on a desk beside a laptop, resting on a park bench, by a bedside lamp, and on a kitchen counter. Each setup focuses on scale, texture, and lighting to keep it grounded and real.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              The visuals highlight how the tennis-ball form factor isn’t just a look, it’s functional. It’s durable, easy to grab, and sits naturally on uneven surfaces. The animations are minimal and intentional, keeping the attention on context and usefulness rather than flashy motion.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed">
+              Overall, the piece is about reuse with purpose. A familiar object, a fresh role, and scenes that show how it fits into daily life without trying too hard.
+            </p>
+          </div>
+
           {/* Video Sections */}
           <div className="space-y-12 mb-12">
             <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden">
@@ -95,25 +114,6 @@ export default function Project2Page() {
                 title="Scene4 Zero"
               ></iframe>
             </div>
-          </div>
-
-          {/* Project Description */}
-          <div className="prose prose-lg max-w-none font-inter mb-12">
-            <p className="text-gray-700 leading-relaxed mb-6">
-              ZeroCO is a compact speaker made from a used tennis ball, an upcycled shell that gives the product its character, grip, and a soft tactile feel. The idea was simple: take something familiar and overlooked, and turn it into sound you can carry.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              To show its portability, I placed it across everyday scenes: clipped to a backpack on the go, on a desk beside a laptop, resting on a park bench, by a bedside lamp, and on a kitchen counter. Each setup focuses on scale, texture, and lighting to keep it grounded and real.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              The visuals highlight how the tennis-ball form factor isn’t just a look, it’s functional. It’s durable, easy to grab, and sits naturally on uneven surfaces. The animations are minimal and intentional, keeping the attention on context and usefulness rather than flashy motion.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed">
-              Overall, the piece is about reuse with purpose. A familiar object, a fresh role, and scenes that show how it fits into daily life without trying too hard.
-            </p>
           </div>
 
           {/* Still Section */}

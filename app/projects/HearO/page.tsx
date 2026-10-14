@@ -49,8 +49,14 @@ export default function Project4Page() {
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Status</h3>
-              <p className="text-gray-700">Finalizing assets</p>
+              <p className="text-gray-700">Assets finalized</p>
             </div>
+          </div>
+
+          <div className="prose prose-lg max-w-none font-inter mb-12">
+            <p className="text-gray-700 leading-relaxed">
+              For this consumer audio launch, I created a consistent set of product visuals built around controlled angles and polished lighting. The views are composed to make the product easy to understand while giving the image set a cohesive feel across launch and social placements. The assets are finalized.
+            </p>
           </div>
 
           {/* Gallery */}
