@@ -47,7 +47,7 @@ export const mediaProjects: MediaProject[] = [
   {
     name: "HearO",
     href: "/projects/HearO",
-    stills: [1, 2, 3, 4, 5, 6].map((number) => ({
+    stills: [6, 1, 4, 3, 2, 5].map((number) => ({
       src: `/hearo-product-visual-${String(number).padStart(2, "0")}.webp`,
       alt: `HearO project still ${number}`,
     })),
@@ -56,7 +56,7 @@ export const mediaProjects: MediaProject[] = [
   {
     name: "Mood",
     href: "/projects/Mood",
-    stills: [1, 2, 3, 4, 5, 6].map((number) => ({
+    stills: [2, 4, 6, 1, 3, 5].map((number) => ({
       src: `/mood-product-visual-${String(number).padStart(2, "0")}.webp`,
       alt: `Mood project still ${number}`,
     })),

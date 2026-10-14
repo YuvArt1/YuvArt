@@ -73,9 +73,6 @@ export default function Footer() {
         <div className="mt-4 pt-3 border-t border-white/40">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-1 md:space-y-0">
             <div className="font-inter text-gray-700 text-xs">© 2026 DesignYuv. All rights reserved.</div>
-            <Link href="/#top" className="inline-flex items-center gap-1 text-gray-800 hover:text-gray-900 transition-colors font-inter text-xs">
-              <ArrowUp size={14} aria-hidden="true" /> Back to top
-            </Link>
             <div className="font-space-grotesk text-lg font-bold">
               <Link href="/" className="hover:text-gray-600 transition-colors text-gray-900">
                 DesignYuv
@@ -84,6 +81,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <Link href="#" className="studio-back-to-top" aria-label="Back to top" title="Back to top">
+        <ArrowUp size={18} aria-hidden="true" />
+      </Link>
     </footer>
   )
 }
