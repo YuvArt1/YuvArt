@@ -16,11 +16,7 @@ type CarouselSlide = {
 
 const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselSlide[] => {
   if (project.name === "TGD Audio") {
-    return [
-      { ...project, image: "/TGD/BottomTop.png", alt: "TGD Audio product view from below" },
-      { ...project, image: "/TGD/Front.png", alt: "TGD Audio product front view" },
-      { ...project, image: "/TGD/Final.png", alt: "TGD Audio product visual" },
-    ];
+    return [{ ...project, image: "/TGD/BottomTop.png", alt: "TGD Audio product view from below" }];
   }
 
   if (project.name === "HearO") {
