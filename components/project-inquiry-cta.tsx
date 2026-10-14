@@ -9,9 +9,19 @@ export default function ProjectInquiryCTA() {
         <h2>Let’s talk about what you need.</h2>
         <p>Share the product, the brief, and the content your team is looking for.</p>
       </div>
-      <Link className="studio-button studio-button-dark" href="/#contact">
-        Discuss Your Next Project <ArrowUpRight size={17} aria-hidden="true" />
-      </Link>
+      <div className="studio-detail-cta-actions">
+        <Link className="studio-button studio-button-dark" href="/#contact">
+          Discuss Your Next Project <ArrowUpRight size={17} aria-hidden="true" />
+        </Link>
+        <a
+          className="studio-button studio-button-light"
+          href="https://cal.com/yuv-raj-pao2g5/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book a free discovery call <ArrowUpRight size={17} aria-hidden="true" />
+        </a>
+      </div>
     </section>
   );
 }

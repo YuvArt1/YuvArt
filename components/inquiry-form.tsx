@@ -73,7 +73,7 @@ export default function InquiryForm() {
       </button>
       {draftReady ? (
         <p className="studio-form-status" role="status">
-          Your email app should open with a prepared inquiry. Review and send it to complete your message. If it does not open, email <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly.
+          Your email app should open with a prepared inquiry. Review and send it to complete your message. If it does not open, email <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly or <a href="https://cal.com/yuv-raj-pao2g5/30min" target="_blank" rel="noopener noreferrer">book a free discovery call</a>.
         </p>
       ) : (
         <p className="studio-form-note">This prepares an email draft you can review before sending.</p>

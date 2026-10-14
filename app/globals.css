@@ -163,6 +163,12 @@ html::after {
   line-height: 1.6;
 }
 
+.studio-detail-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .studio-header {
   position: sticky;
   top: 0;

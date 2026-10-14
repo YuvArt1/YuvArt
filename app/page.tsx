@@ -144,6 +144,14 @@ export default function HomePage() {
             <h2>Tell me about your product.</h2>
             <p>Share the product, the deliverables you need, and your ideal timeline. I’ll review the brief and follow up by email.</p>
             <a className="studio-contact-email" href="mailto:hello@designyuv.com">hello@designyuv.com <ArrowUpRight size={16} aria-hidden="true" /></a>
+            <a
+              className="studio-button studio-button-dark mt-5"
+              href="https://cal.com/yuv-raj-pao2g5/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a free discovery call <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
           </div>
           <InquiryForm />
         </section>

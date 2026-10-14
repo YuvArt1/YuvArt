@@ -34,6 +34,14 @@ export default function Footer() {
                 </a>
               </div>
               <a
+                href="https://cal.com/yuv-raj-pao2g5/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 hover:text-gray-900 transition-colors block"
+              >
+                Book a free discovery call
+              </a>
+              <a
                 href="https://www.instagram.com/yuuuvvvvv/"
                 target="_blank"
                 rel="noopener noreferrer"

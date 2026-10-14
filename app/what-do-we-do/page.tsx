@@ -48,7 +48,7 @@ export default function WhatWeDoPage() {
               rel="noopener noreferrer"
               className="inline-block rounded-md bg-black px-6 py-3 font-semibold text-white transition-colors hover:bg-gray-800"
             >
-              Let&apos;s Talk
+              Book a free discovery call
             </a>
           </section>
 
