@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import BackToTop from "@/components/back-to-top";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -140,6 +141,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <BackToTop />
         <Analytics />
       </body>
     </html>

@@ -1571,8 +1571,8 @@ html::after {
 .studio-back-to-top {
   position: fixed;
   z-index: 1000;
+  right: calc(16px + env(safe-area-inset-right));
   bottom: calc(16px + env(safe-area-inset-bottom));
-  left: calc(16px + env(safe-area-inset-left));
   display: grid;
   width: 42px;
   height: 42px;
@@ -1582,7 +1582,18 @@ html::after {
   background: var(--studio-white);
   color: var(--studio-ink);
   box-shadow: 0 3px 12px rgb(0 0 0 / 12%);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 160ms ease, transform 160ms ease, box-shadow 160ms ease, visibility 160ms ease;
+}
+
+.studio-back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .studio-back-to-top:hover {

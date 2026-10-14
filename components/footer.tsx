@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { ArrowUp } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -81,9 +80,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <Link href="#" className="studio-back-to-top" aria-label="Back to top" title="Back to top">
-        <ArrowUp size={18} aria-hidden="true" />
-      </Link>
     </footer>
   )
 }
