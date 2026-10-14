@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Footer from "@/components/footer";
 import InquiryForm from "@/components/inquiry-form";
 import StudioHeader from "@/components/studio-header";
@@ -86,35 +86,45 @@ export default function HomePage() {
       <main>
         <section className="studio-hero" id="top">
           <div className="studio-hero-copy">
-            <p className="studio-eyebrow"><span /> 3D PRODUCT VISUALS FOR GROWING TEAMS</p>
+            <p className="studio-eyebrow"><span /> 01 / ATTENTION</p>
             <h1>Scale your product content, not your production workload.</h1>
             <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams that need more assets, more flexibility, and fewer production bottlenecks.</p>
             <div className="studio-hero-actions">
-              <a className="studio-button studio-button-dark" href="#contact">Discuss Your Next Project <ArrowUpRight size={17} aria-hidden="true" /></a>
-              <a className="studio-text-link" href="#work">Explore the Work <ArrowDown size={16} aria-hidden="true" /></a>
+              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <Link className="studio-text-link" href="/work">Explore the work <ArrowUpRight size={16} aria-hidden="true" /></Link>
             </div>
             <p className="studio-hero-note">For product brands and the teams building their next launch.</p>
           </div>
           <ProjectCarousel />
         </section>
 
-        <section className="studio-possibilities studio-section" id="services">
-          <div className="studio-section-heading">
-            <p className="studio-eyebrow">A PRODUCT, MANY POSSIBILITIES</p>
-            <h2>Build a visual system around the product.</h2>
-            <p>Explore the product from a new angle, bring out a detail, or place it in a campaign-ready scene. The right asset mix depends on your brief.</p>
+        <section className="studio-benefits studio-section">
+          <div className="studio-benefits-heading">
+            <p className="studio-eyebrow">02 / SELF-QUALIFICATION</p>
+            <h2>We're probably a good fit if...</h2>
           </div>
-          <PossibilityGallery items={[...possibilities]} />
-          <div className="studio-capability-line"><span>STILLS</span><span>MOTION</span><span>CAMPAIGN VISUALS</span><span>PRODUCT VARIATIONS</span></div>
+          <div className="studio-benefit-list">
+            {benefits.map(([title, description], index) => (
+              <article className="studio-benefit" key={title}>
+                <span className="studio-benefit-index">0{index + 1}</span>
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </article>
+            ))}
+            <div className="studio-fit-cta">
+              <p>If you're ready to get more out of your product visuals, let's talk.</p>
+              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
+            </div>
+          </div>
         </section>
 
         <section className="studio-work studio-section" id="work">
           <div className="studio-work-heading">
             <div>
-              <p className="studio-eyebrow">SELECTED WORK</p>
-              <h2>Product visuals with a point of view.</h2>
+              <p className="studio-eyebrow">03 / PROOF</p>
+              <h2>See what we can create.</h2>
             </div>
-            <p>Explore the product, the visual approach, and the assets in each project.</p>
+            <p>Explore product imagery, animation, and case studies built around real projects.</p>
           </div>
           <div className="studio-project-grid">
             {projects.map((project, index) => (
@@ -132,24 +142,24 @@ export default function HomePage() {
           <Link className="studio-inline-link" href="/work">View all work <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </section>
 
-        <section className="studio-benefits studio-section">
-          <div className="studio-benefits-heading">
-            <p className="studio-eyebrow">WHO THIS IS FOR</p>
-            <h2>We're probably a good fit if...</h2>
+        <section className="studio-contact studio-section" id="contact">
+          <div className="studio-contact-copy">
+            <p className="studio-eyebrow">04 / CONVERSION</p>
+            <h2>Tell us about your product.</h2>
+            <p>Share the product, the deliverables you need, and your ideal timeline. I’ll review the brief and follow up by email.</p>
+            <a className="studio-contact-email" href="mailto:hello@designyuv.com">hello@designyuv.com <ArrowUpRight size={16} aria-hidden="true" /></a>
           </div>
-          <div className="studio-benefit-list">
-            {benefits.map(([title, description], index) => (
-              <article className="studio-benefit" key={title}>
-                <span className="studio-benefit-index">0{index + 1}</span>
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </article>
-            ))}
-            <div className="studio-fit-cta">
-              <p>If you're ready to get more out of your product visuals, let's talk.</p>
-              <a className="studio-button studio-button-dark" href="#contact">Discuss Your Next Project <ArrowUpRight size={17} aria-hidden="true" /></a>
-            </div>
+          <InquiryForm />
+        </section>
+
+        <section className="studio-possibilities studio-section" id="services">
+          <div className="studio-section-heading">
+            <p className="studio-eyebrow">A PRODUCT, MANY POSSIBILITIES</p>
+            <h2>Build a visual system around the product.</h2>
+            <p>Explore the product from a new angle, bring out a detail, or place it in a campaign-ready scene. The right asset mix depends on your brief.</p>
           </div>
+          <PossibilityGallery items={[...possibilities]} />
+          <div className="studio-capability-line"><span>STILLS</span><span>MOTION</span><span>CAMPAIGN VISUALS</span><span>PRODUCT VARIATIONS</span></div>
         </section>
 
         <section className="studio-process studio-section" id="process">
@@ -199,15 +209,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="studio-contact studio-section" id="contact">
-          <div className="studio-contact-copy">
-            <p className="studio-eyebrow">START A CONVERSATION</p>
-            <h2>Have a product that deserves better visuals?</h2>
-            <p>Tell me what you're launching, what content you need, or where your current production process is falling short. Let's explore how 3D product imagery could help.</p>
-            <a className="studio-contact-email" href="mailto:hello@designyuv.com">hello@designyuv.com <ArrowUpRight size={16} aria-hidden="true" /></a>
-          </div>
-          <InquiryForm />
-        </section>
       </main>
 
       <Footer />

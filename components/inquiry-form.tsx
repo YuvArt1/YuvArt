@@ -14,8 +14,9 @@ export default function InquiryForm() {
     const body = [
       `Name: ${formData.get("name")}`,
       `Work email: ${formData.get("email")}`,
-      `Company or brand: ${formData.get("company") || "Not provided"}`,
-      `What I need help with: ${formData.get("need")}`,
+      `Product or brand: ${formData.get("product")}`,
+      `Deliverables: ${formData.get("deliverables")}`,
+      `Ideal timeline: ${formData.get("timeline")}`,
       `Project details or references: ${formData.get("details") || "Not provided"}`,
     ].join("\n");
     const composeUrl = new URL("https://mail.google.com/mail/");
@@ -44,18 +45,29 @@ export default function InquiryForm() {
         </label>
       </div>
       <label>
-        Company or brand
-        <input name="company" autoComplete="organization" />
+        Product or brand <span>*</span>
+        <input name="product" autoComplete="organization" placeholder="What product are you working on?" required />
       </label>
       <label>
-        What do you need help with? <span>*</span>
-        <select name="need" defaultValue="" required>
-          <option value="" disabled>Select a project type</option>
+        What deliverables do you need? <span>*</span>
+        <select name="deliverables" defaultValue="" required>
+          <option value="" disabled>Select deliverables</option>
           <option>Product imagery</option>
           <option>Product animation</option>
           <option>Campaign visuals</option>
           <option>Multiple product variations</option>
           <option>Something else</option>
+        </select>
+      </label>
+      <label>
+        Ideal timeline <span>*</span>
+        <select name="timeline" defaultValue="" required>
+          <option value="" disabled>Select a timeline</option>
+          <option>As soon as possible</option>
+          <option>Within one month</option>
+          <option>One to three months</option>
+          <option>Flexible</option>
+          <option>Not sure yet</option>
         </select>
       </label>
       <label>
