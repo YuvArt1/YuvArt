@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ArrowUp } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -9,15 +10,14 @@ export default function Footer() {
           <div className="space-y-2">
             <h3 className="text-base font-semibold font-space-grotesk text-gray-900">About Yuv</h3>
             <p className="text-gray-800 leading-relaxed font-inter text-xs">
-              A creative studio specializing in motion design, animation, and visual storytelling. We help brands tell
-              better stories through motion and detail.
+              I create 3D product visuals for ecommerce brands, with animation and motion design to bring product details to life.
             </p>
             <div>
               <Link
                 href="/about"
                 className="text-gray-900 hover:text-gray-600 transition-colors font-inter underline text-xs"
               >
-                Learn more about us
+                Learn more about me
               </Link>
             </div>
           </div>
@@ -28,9 +28,7 @@ export default function Footer() {
             <div className="space-y-1 font-inter text-xs">
               <div>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@designyuv.com&su=Project%20Inquiry"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:hello@designyuv.com"
                   className="text-gray-800 hover:text-gray-900 transition-colors block"
                 >
                   hello@designyuv.com
@@ -75,6 +73,9 @@ export default function Footer() {
         <div className="mt-4 pt-3 border-t border-white/40">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-1 md:space-y-0">
             <div className="font-inter text-gray-700 text-xs">© 2026 DesignYuv. All rights reserved.</div>
+            <Link href="/#top" className="inline-flex items-center gap-1 text-gray-800 hover:text-gray-900 transition-colors font-inter text-xs">
+              <ArrowUp size={14} aria-hidden="true" /> Back to top
+            </Link>
             <div className="font-space-grotesk text-lg font-bold">
               <Link href="/" className="hover:text-gray-600 transition-colors text-gray-900">
                 DesignYuv

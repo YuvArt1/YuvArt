@@ -61,7 +61,7 @@ export default function ProjectStillCarousel({ projectName, stills }: ProjectSti
       } else {
         track.scrollBy({ left: step, behavior: "smooth" });
       }
-    }, 3600);
+    }, 2500);
 
     return () => window.clearInterval(intervalId);
   }, [isVisible, isInteracting, isPaused, prefersReducedMotion, selectedStill, stills.length]);

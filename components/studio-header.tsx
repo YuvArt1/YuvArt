@@ -24,7 +24,6 @@ export default function StudioHeader({ currentPage = "home" }: StudioHeaderProps
           <Link href={`${homeHref}#services`}>Services</Link>
           <Link href={`${homeHref}#process`}>Process</Link>
           <Link href="/about" aria-current={currentPage === "about" ? "page" : undefined}>About</Link>
-          <Link href="/blog/3d-product-visualization-ecommerce" aria-current={currentPage === "insights" ? "page" : undefined}>Insights</Link>
         </div>
         <Link className="studio-mobile-work" href="/work">Work</Link>
         <details className="studio-nav-dropdown studio-mobile-portfolio">
@@ -34,7 +33,6 @@ export default function StudioHeader({ currentPage = "home" }: StudioHeaderProps
             <Link href="/3d-product-animations" aria-current={currentPage === "animations" ? "page" : undefined}>3D product animations</Link>
           </div>
         </details>
-        <Link className="studio-mobile-insights" href="/blog/3d-product-visualization-ecommerce" aria-current={currentPage === "insights" ? "page" : undefined}>Insights</Link>
         <Link className="studio-nav-cta" href={`${homeHref}#contact`}>Discuss your next product launch <ArrowUpRight size={16} aria-hidden="true" /></Link>
       </nav>
     </header>

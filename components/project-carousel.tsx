@@ -21,9 +21,9 @@ const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselS
 
   if (project.name === "HearO") {
     return [
-      { ...project, image: "/HeroO (3).webp", alt: "HearO product visual, frame three" },
-      { ...project, image: "/HeroO (4).webp", alt: "HearO product visual, frame four" },
-      { ...project, image: "/HeroO (1).webp", alt: "HearO product visual" },
+      { ...project, image: "/hearo-product-visual-03.webp", alt: "HearO product visual, frame three" },
+      { ...project, image: "/hearo-product-visual-04.webp", alt: "HearO product visual, frame four" },
+      { ...project, image: "/hearo-product-visual-01.webp", alt: "HearO product visual" },
     ];
   }
 
@@ -32,7 +32,7 @@ const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselS
   }
 
   if (project.name === "Mood") {
-    return [{ ...project, image: "/MoodNz (4).webp", alt: "Mood product visual, frame four" }];
+    return [{ ...project, image: "/mood-product-visual-04.webp", alt: "Mood product visual, frame four" }];
   }
 
   if (project.name === "Portronics") {
@@ -64,7 +64,7 @@ export default function ProjectCarousel() {
 
     const intervalId = window.setInterval(() => {
       setActiveIndex((currentIndex) => (currentIndex + 1) % carouselSlides.length);
-    }, 6000);
+    }, 2500);
 
     return () => window.clearInterval(intervalId);
   }, [interactionPaused, manuallyPaused, prefersReducedMotion]);

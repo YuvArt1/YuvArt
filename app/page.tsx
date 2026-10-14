@@ -11,16 +11,16 @@ const projects = [
   {
     name: "HearO",
     product: "Product visuals",
-    description: "A set of product-focused visuals for a consumer audio product.",
+    description: "A consistent set of polished product visuals for a consumer audio launch, created to show the product from controlled angles.",
     href: "/projects/HearO",
-    image: "/HeroO (1).webp",
+    image: "/hearo-product-visual-01.webp",
     alt: "HearO product visualization",
     type: "Product visualization",
   },
   {
     name: "TangentGC",
     product: "Product animation",
-    description: "Packaging animations with considered motion and a clean visual approach.",
+    description: "Controlled packaging animations reveal the box construction one deliberate movement at a time.",
     href: "/projects/TangentGC",
     image: "/Tangent.webp",
     alt: "TangentGC packaging animation still",
@@ -29,16 +29,16 @@ const projects = [
   {
     name: "Mood",
     product: "Product visuals suite",
-    description: "High-fidelity stills, motion, and art direction built around color and texture.",
+    description: "A product-visual suite pairing high-fidelity stills with short-form motion to explore color, texture, and material.",
     href: "/projects/Mood",
-    image: "/MoodNz (2).webp",
+    image: "/mood-product-visual-02.webp",
     alt: "Mood product visual with considered material and lighting",
     type: "Stills and motion",
   },
   {
     name: "Portronics",
     product: "Luxcell Wireless Mini",
-    description: "A product animation with a feature breakdown and color-variant reveal.",
+    description: "A short product animation moves from a feature reveal to a charging demo and color-variant sequence.",
     href: "/projects/Portronics",
     image: "/Portronics2.webp",
     alt: "Portronics Luxcell Wireless Mini product detail visualization",
@@ -47,9 +47,9 @@ const projects = [
 ] as const;
 
 const possibilities = [
-  { label: "Product detail", image: "/Zeroco.webp", alt: "ZeroCO speaker product detail" },
-  { label: "Campaign scene", image: "/Zeroco (1).webp", alt: "ZeroCO speaker presented in a campaign scene" },
-  { label: "Product in context", image: "/Zeroco (2).webp", alt: "ZeroCO speaker shown in a different composition" },
+  { label: "Product detail", image: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO speaker product detail" },
+  { label: "Campaign scene", image: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO speaker presented in a campaign scene" },
+  { label: "Product in context", image: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO speaker shown in a different composition" },
 ] as const;
 
 const benefits = [
@@ -60,7 +60,7 @@ const benefits = [
   ["You want every touchpoint to look like your brand.", "From product pages to paid ads, your visuals should feel consistent, intentional, and unmistakably yours."],
 ] as const;
 
-const process = [
+const processSteps = [
   ["01", "Brief", "Share the product, goals, references, and the assets your team needs."],
   ["02", "Create", "Develop the 3D product visuals and the agreed creative direction."],
   ["03", "Refine", "Review the work together and make the agreed revisions."],
@@ -86,7 +86,6 @@ export default function HomePage() {
       <main>
         <section className="studio-hero" id="top">
           <div className="studio-hero-copy">
-            <p className="studio-eyebrow"><span /> 01 / ATTENTION</p>
             <h1>Scale your product content, not your production workload.</h1>
             <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams that need more assets, more flexibility, and fewer production bottlenecks.</p>
             <div className="studio-hero-actions">
@@ -100,8 +99,7 @@ export default function HomePage() {
 
         <section className="studio-benefits studio-section">
           <div className="studio-benefits-heading">
-            <p className="studio-eyebrow">02 / SELF-QUALIFICATION</p>
-            <h2>We're probably a good fit if...</h2>
+            <h2>I may be a good fit if...</h2>
           </div>
           <div className="studio-benefit-list">
             {benefits.map(([title, description], index) => (
@@ -121,8 +119,7 @@ export default function HomePage() {
         <section className="studio-work studio-section" id="work">
           <div className="studio-work-heading">
             <div>
-              <p className="studio-eyebrow">03 / PROOF</p>
-              <h2>See what we can create.</h2>
+              <h2>See what I can create.</h2>
             </div>
             <p>Explore product imagery, animation, and case studies built around real projects.</p>
           </div>
@@ -144,8 +141,7 @@ export default function HomePage() {
 
         <section className="studio-contact studio-section" id="contact">
           <div className="studio-contact-copy">
-            <p className="studio-eyebrow">04 / CONVERSION</p>
-            <h2>Tell us about your product.</h2>
+            <h2>Tell me about your product.</h2>
             <p>Share the product, the deliverables you need, and your ideal timeline. I’ll review the brief and follow up by email.</p>
             <a className="studio-contact-email" href="mailto:hello@designyuv.com">hello@designyuv.com <ArrowUpRight size={16} aria-hidden="true" /></a>
           </div>
@@ -169,7 +165,7 @@ export default function HomePage() {
             <p>Know what is happening at each stage, with scope and review expectations agreed up front.</p>
           </div>
           <div className="studio-process-grid">
-            {process.map(([number, title, description]) => (
+            {processSteps.map(([number, title, description]) => (
               <article className="studio-process-step" key={number}>
                 <span>{number}</span>
                 <h3>{title}</h3>

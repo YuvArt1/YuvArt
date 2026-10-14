@@ -20,13 +20,13 @@ export const mediaProjects: MediaProject[] = [
     name: "ZeroCO",
     href: "/projects/ZeroCO",
     stills: [
-      { src: "/Zeroco.webp", alt: "ZeroCO project still 1" },
-      { src: "/Zeroco (1).webp", alt: "ZeroCO project still 2" },
-      { src: "/Zeroco (2).webp", alt: "ZeroCO project still 3" },
-      { src: "/Zeroco (3).webp", alt: "ZeroCO project still 4" },
-      { src: "/Zeroco (4).webp", alt: "ZeroCO project still 5" },
-      { src: "/Zeroco (5).webp", alt: "ZeroCO project still 6" },
-      { src: "/Zeroco (7).webp", alt: "ZeroCO project still 7" },
+      { src: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO project still 1" },
+      { src: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO project still 2" },
+      { src: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO project still 3" },
+      { src: "/zero-co-speaker-visual-04.webp", alt: "ZeroCO project still 4" },
+      { src: "/zero-co-speaker-visual-05.webp", alt: "ZeroCO project still 5" },
+      { src: "/zero-co-speaker-visual-06.webp", alt: "ZeroCO project still 6" },
+      { src: "/zero-co-speaker-visual-07.webp", alt: "ZeroCO project still 7" },
     ],
     videos: [
       { id: "1102749162", title: "Zeroco_Scen1.mp4" },
@@ -48,7 +48,7 @@ export const mediaProjects: MediaProject[] = [
     name: "HearO",
     href: "/projects/HearO",
     stills: [1, 2, 3, 4, 5, 6].map((number) => ({
-      src: `/HeroO (${number}).webp`,
+      src: `/hearo-product-visual-${String(number).padStart(2, "0")}.webp`,
       alt: `HearO project still ${number}`,
     })),
     videos: [],
@@ -57,7 +57,7 @@ export const mediaProjects: MediaProject[] = [
     name: "Mood",
     href: "/projects/Mood",
     stills: [1, 2, 3, 4, 5, 6].map((number) => ({
-      src: `/MoodNz (${number}).webp`,
+      src: `/mood-product-visual-${String(number).padStart(2, "0")}.webp`,
       alt: `Mood project still ${number}`,
     })),
     videos: [{ id: "1154253992", title: "Mood Nz Bed Animation" }],

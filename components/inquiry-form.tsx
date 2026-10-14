@@ -8,9 +8,7 @@ export default function InquiryForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     const formData = new FormData(event.currentTarget);
-    const subject = `Project inquiry from ${formData.get("name")}`;
     const body = [
       `Name: ${formData.get("name")}`,
       `Work email: ${formData.get("email")}`,
@@ -19,16 +17,12 @@ export default function InquiryForm() {
       `Ideal timeline: ${formData.get("timeline")}`,
       `Project details or references: ${formData.get("details") || "Not provided"}`,
     ].join("\n");
-    const composeUrl = new URL("https://mail.google.com/mail/");
-    composeUrl.search = new URLSearchParams({
-      view: "cm",
-      fs: "1",
-      to: "hello@designyuv.com",
-      su: subject,
+    const params = new URLSearchParams({
+      subject: `Project inquiry from ${formData.get("name")}`,
       body,
-    }).toString();
+    });
 
-    window.open(composeUrl.toString(), "_blank", "noopener,noreferrer");
+    window.location.href = `mailto:hello@designyuv.com?${params.toString()}`;
     setDraftReady(true);
   }
 
@@ -79,10 +73,10 @@ export default function InquiryForm() {
       </button>
       {draftReady ? (
         <p className="studio-form-status" role="status">
-          Your draft should be open in a new tab. Send it there to complete your inquiry. If it did not open, email <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly.
+          Your email app should open with a prepared inquiry. Review and send it to complete your message. If it does not open, email <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly.
         </p>
       ) : (
-        <p className="studio-form-note">This opens a prefilled email draft. You can review it before sending.</p>
+        <p className="studio-form-note">This prepares an email draft you can review before sending.</p>
       )}
     </form>
   );

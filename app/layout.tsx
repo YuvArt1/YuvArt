@@ -35,26 +35,14 @@ export const metadata: Metadata = {
     "3D render for D2C product launch",
     "explainer animation for D2C brands",
     "motion design for consumer brands",
-    "archviz rendering freelancer",
-    "architectural visualization for small studios",
+    "hire freelance 3D animator",
 
-    // US audience-targeted
-    "hire visual designer USA",
-    "hire freelance visual designer",
-    "hire freelance 3D animator USA",
-
-    // Brand & web visuals
-    "brand visual identity",
-    "web design visuals that convert",
-
-    // Startup & e-commerce
-    "visual content for startups",
+    // E-commerce product visuals
     "e-commerce product visuals",
 
     // Broader
     "product visualization",
     "3D product visualization",
-    "visual storytelling",
   ],
 
   authors: [{ name: "Yuv" }],

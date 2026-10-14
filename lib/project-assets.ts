@@ -16,14 +16,14 @@ export const projectAssets = [
   {
     name: "Mood",
     href: "/projects/Mood",
-    image: "/MoodNz (1).webp",
+    image: "/mood-product-visual-01.webp",
     alt: "Mood product visual",
     description: "Product visuals, stills, and motion.",
   },
   {
     name: "HearO",
     href: "/projects/HearO",
-    image: "/HeroO (1).webp",
+    image: "/hearo-product-visual-01.webp",
     alt: "HearO product visual",
     description: "Product visuals and social content.",
   },
@@ -44,7 +44,7 @@ export const projectAssets = [
   {
     name: "ZeroCO",
     href: "/projects/ZeroCO",
-    image: "/Zeroco.webp",
+    image: "/zero-co-speaker-visual-01.webp",
     alt: "ZeroCO web visual content",
     description: "Web visual content and social design.",
   },

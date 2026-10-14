@@ -10,13 +10,13 @@ export default function Project2Page() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const stillImages = [
-    "/Zeroco.webp",
-    "/Zeroco (1).webp",
-    "/Zeroco (2).webp",
-    "/Zeroco (3).webp",
-    "/Zeroco (4).webp",
-    "/Zeroco (5).webp",
-    "/Zeroco (7).webp",
+    "/zero-co-speaker-visual-01.webp",
+    "/zero-co-speaker-visual-02.webp",
+    "/zero-co-speaker-visual-03.webp",
+    "/zero-co-speaker-visual-04.webp",
+    "/zero-co-speaker-visual-05.webp",
+    "/zero-co-speaker-visual-06.webp",
+    "/zero-co-speaker-visual-07.webp",
   ];
 
   return (
