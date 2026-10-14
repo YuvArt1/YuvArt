@@ -1,7 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 import Footer from "@/components/footer"
+import StudioHeader from "@/components/studio-header"
 
 export const metadata: Metadata = {
   title: "About Yuvraj Chavhan",
@@ -20,104 +22,34 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50 relative">
-      {/* Header */}
-      <header className="fixed top-0 left-0 w-full bg-white z-20 px-6 py-4">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
-          <Link
-            href="/"
-            className="text-2xl font-bold text-black hover:text-gray-600 transition-colors font-space-grotesk"
-          >
-            Yuv
-          </Link>
-          <div className="flex items-center space-x-4 md:space-x-8 font-inter">
-            <Link href="/what-do-we-do" className="text-black hover:text-gray-600 transition-colors">
-              What We Do
-            </Link>
-            <Link href="/about" className="text-black hover:text-gray-600 transition-colors font-semibold">
-              About
-            </Link>
-            <a
-              href="https://cal.com/yuv-raj-pao2g5/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold"
-            >
-              Book a Call
-            </a>
+    <div className="studio-page">
+      <StudioHeader currentPage="about" />
+      <main>
+        <section className="studio-about-page studio-section">
+          <div className="studio-about-image">
+            <Image src="/aboutme.jpeg" alt="Yuvraj Chavhan, motion designer and visual storyteller" fill priority sizes="(max-width: 760px) 100vw, 44vw" />
+            <span>YUVRAJ CHAVHAN / DESIGNYUV</span>
           </div>
-        </nav>
-      </header>
-
-      {/* About Content */}
-      <main className="px-6 py-12 pt-20 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Large Image */}
-            <div className="order-2 lg:order-1">
-              <div className="aspect-[4/5] bg-gray-300 rounded-lg overflow-hidden">
-                <Image
-                  src="/aboutme.jpeg"
-                  alt="About Yuvraj Chavhan"
-                  width={480}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <div className="studio-about-copy">
+            <p className="studio-eyebrow">ABOUT THE STUDIO</p>
+            <h1>Thoughtful visuals, made with movement and detail.</h1>
+            <p className="studio-about-intro">I’m Yuvraj, a motion designer and visual storyteller. I run a small creative studio bringing products, brands, and ideas to life through animation and design.</p>
+            <p>I work with teams ranging from early-stage startups to larger companies. The focus stays on the details: how a product looks, how a story moves, and how each visual fits the brief.</p>
+            <div className="studio-about-focus">
+              <span>FOCUS</span>
+              <p>Product visualization</p>
+              <p>Motion graphics and animation</p>
             </div>
-
-            {/* Right side - Details */}
-            <div className="order-1 lg:order-2 space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 font-space-grotesk">About</h1>
-              <div className="space-y-4 text-gray-900 leading-relaxed font-inter text-base">
-                <p>
-                  Hey, I’m a motion designer and visual storyteller. I run a small creative studio where I bring brands, stories, and ideas to life through animation, design, and a bit of controlled chaos.
-                </p>
-                <p>
-                  I’ve been doing this for a while now, working with all kinds of people, from early-stage startups to huge companies. But no matter who it’s for, the goal’s the same: make things that feel good, look good, and actually connect.
-                </p>
-                <p>
-                  I’m really into the details, how something moves, how it lands, how it makes you feel. Motion graphics, brand identity, UI moments, weird little animations that make you pause for a second, that’s my playground.
-                </p>
-                <p>
-                  I’m flexible and willing to shift my working hours to best fit the needs of the project or team.
-                </p>
-                <p>
-                  Also: I really love cats. Like... really.
-                </p>
-              </div>
-              <div className="pt-4">
-                <h3 className="text-xl font-semibold text-black mb-3 font-space-grotesk">What we do:</h3>
-                <ul className="space-y-2">
-                  <li>• Motion Graphics & Animation</li>
-                  <li>• Product Visualization</li>
-                </ul>
-              </div>
-
-              <div className="pt-2">
-                <h3 className="text-xl font-semibold text-black mb-3 font-space-grotesk">Connect</h3>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="https://www.instagram.com/yuuuvvvvv/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-black rounded-md text-sm font-medium text-black hover:bg-gray-100 transition-colors"
-                  >
-                    Instagram
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/yuv-raj-0abb66386/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-black rounded-md text-sm font-medium text-white hover:bg-gray-800 transition-colors"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
+            <div className="studio-about-actions">
+              <Link className="studio-button studio-button-dark" href="/work">Explore the Work <ArrowUpRight size={17} aria-hidden="true" /></Link>
+              <Link className="studio-text-link" href="/#contact">Discuss a project <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            </div>
+            <div className="studio-about-socials">
+              <a href="https://www.instagram.com/yuuuvvvvv/" target="_blank" rel="noopener noreferrer">Instagram <ArrowUpRight size={14} aria-hidden="true" /></a>
+              <a href="https://www.linkedin.com/in/yuv-raj-0abb66386/" target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={14} aria-hidden="true" /></a>
             </div>
           </div>
-        </div>
+        </section>
       </main>
       <Footer />
     </div>

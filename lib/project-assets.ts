@@ -1,0 +1,58 @@
+export const projectAssets = [
+  {
+    name: "Folden Lane",
+    href: "/projects/FoldenLane",
+    image: "/foldenlane.png",
+    alt: "Folden Lane web content",
+    description: "Web content. Work in progress.",
+  },
+  {
+    name: "TGD Audio",
+    href: "/projects/TGDAudio",
+    image: "/TGD/Final.png",
+    alt: "TGD Audio social media visual",
+    description: "Social media content and visual design.",
+  },
+  {
+    name: "Mood",
+    href: "/projects/Mood",
+    image: "/MoodNz (1).png",
+    alt: "Mood product visual",
+    description: "Product visuals, stills, and motion.",
+  },
+  {
+    name: "HearO",
+    href: "/projects/HearO",
+    image: "/HeroO (1).png",
+    alt: "HearO product visual",
+    description: "Product visuals and social content.",
+  },
+  {
+    name: "Portronics",
+    href: "/projects/Portronics",
+    image: "/Portronics2.png",
+    alt: "Portronics product visualization",
+    description: "Product animation and social content.",
+  },
+  {
+    name: "TangentGC",
+    href: "/projects/TangentGC",
+    image: "/Tangent.png",
+    alt: "TangentGC motion design visual",
+    description: "Motion graphics and animation.",
+  },
+  {
+    name: "ZeroCO",
+    href: "/projects/ZeroCO",
+    image: "/Zeroco.png",
+    alt: "ZeroCO web visual content",
+    description: "Web visual content and social design.",
+  },
+  {
+    name: "GullyLab",
+    href: "/projects/GullyLab",
+    image: "/GullyLab (1).png",
+    alt: "GullyLab product visual",
+    description: "Product visuals and motion design.",
+  },
+] as const;

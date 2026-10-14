@@ -1,28 +1,13 @@
 import Link from "next/link";
 import Script from "next/script";
 import Footer from "@/components/footer";
+import StudioHeader from "@/components/studio-header";
+import ProjectInquiryCTA from "@/components/project-inquiry-cta";
 
 export default function FoldenLaneProjectPage() {
   return (
-    <div className="relative min-h-screen bg-gray-50">
-      <header className="fixed left-0 top-0 z-20 w-full bg-transparent px-6 py-4">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="font-space-grotesk text-2xl font-bold text-black transition-colors hover:text-gray-600">
-            Yuv
-          </Link>
-          <div className="flex items-center space-x-4 font-inter md:space-x-8">
-            <Link href="/about" className="text-black transition-colors hover:text-gray-600">About</Link>
-            <a
-              href="https://cal.com/yuv-raj-pao2g5/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md bg-black px-4 py-2 font-semibold text-white transition-colors hover:bg-gray-800"
-            >
-              Book a Call
-            </a>
-          </div>
-        </nav>
-      </header>
+    <div className="studio-page studio-project-detail">
+      <StudioHeader currentPage="work" />
 
       <main className="bg-white px-6 py-16 pt-20">
         <div className="mx-auto max-w-4xl">
@@ -68,6 +53,7 @@ export default function FoldenLaneProjectPage() {
             />
           </div>
           <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
+          <ProjectInquiryCTA />
         </div>
       </main>
       <Footer />

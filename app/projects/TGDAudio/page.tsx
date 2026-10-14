@@ -5,6 +5,8 @@ import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import StudioHeader from "@/components/studio-header";
+import ProjectInquiryCTA from "@/components/project-inquiry-cta";
 
 export default function TGDAudioProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -17,30 +19,8 @@ export default function TGDAudioProjectPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 relative">
-      <header className="fixed top-0 left-0 w-full bg-transparent z-20 px-6 py-4">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
-          <Link
-            href="/"
-            className="text-2xl font-bold text-black hover:text-gray-600 transition-colors font-space-grotesk"
-          >
-            Yuv
-          </Link>
-          <div className="flex items-center space-x-4 md:space-x-8 font-inter">
-            <Link href="/about" className="text-black hover:text-gray-600 transition-colors">
-              About
-            </Link>
-            <a
-              href="https://cal.com/yuv-raj-pao2g5/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold"
-            >
-              Book a Call
-            </a>
-          </div>
-        </nav>
-      </header>
+    <div className="studio-page studio-project-detail">
+      <StudioHeader currentPage="work" />
 
       <main className="px-6 py-16 pt-20 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -122,19 +102,7 @@ export default function TGDAudioProjectPage() {
             </Link>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <a
-              href="https://cal.com/yuv-raj-pao2g5/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-semibold text-lg font-space-grotesk"
-            >
-              Book a Call
-            </a>
-            <p className="mt-4 text-gray-600 text-sm font-inter">
-              Let's discuss your next project
-            </p>
-          </div>
+          <ProjectInquiryCTA />
         </div>
       </main>
 
