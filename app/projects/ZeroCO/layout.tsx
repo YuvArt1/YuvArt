@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "ZeroCO | 3D Product Visualization Case Study",
     description: "3D product visuals for ZeroCO by DesignYuv.",
     url: "https://www.designyuv.com/projects/ZeroCO",
-    images: [{ url: "/Zeroco.png", width: 1200, height: 630, alt: "ZeroCO product visualization" }],
+    images: [{ url: "/Zeroco.webp", width: 1200, height: 630, alt: "ZeroCO product visualization" }],
   },
 }
 

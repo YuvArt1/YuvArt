@@ -11,9 +11,9 @@ export default function Project3Page() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/Portronics.jpg",
-    "/Portronics2.png",
-    "/Portronics3.jpg",
+    "/Portronics.webp",
+    "/Portronics2.webp",
+    "/Portronics3.webp",
   ];
 
   return (

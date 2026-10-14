@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Mood | 3D Product Animation Case Study",
     description: "3D product animation for Mood by DesignYuv.",
     url: "https://www.designyuv.com/projects/Mood",
-    images: [{ url: "/MoodNz (1).png", width: 1200, height: 630, alt: "Mood 3D product animation" }],
+    images: [{ url: "/MoodNz (1).webp", width: 1200, height: 630, alt: "Mood 3D product animation" }],
   },
 }
 

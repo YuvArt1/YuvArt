@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Yuvraj Chavhan | Motion Designer",
     description: "Meet the motion designer behind DesignYuv and its 3D product visuals.",
     url: "https://www.designyuv.com/about",
-    images: [{ url: "/aboutme.jpeg", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
+    images: [{ url: "/aboutme.webp", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
   },
 }
 
@@ -27,7 +27,7 @@ export default function AboutPage() {
       <main>
         <section className="studio-about-page studio-section">
           <div className="studio-about-image">
-            <Image src="/aboutme.jpeg" alt="Yuvraj Chavhan, motion designer and visual storyteller" fill priority sizes="(max-width: 760px) 100vw, 44vw" />
+            <Image src="/aboutme.webp" alt="Yuvraj Chavhan, motion designer and visual storyteller" fill priority sizes="(max-width: 760px) 100vw, 44vw" />
             <span>YUVRAJ CHAVHAN / DESIGNYUV</span>
           </div>
           <div className="studio-about-copy">

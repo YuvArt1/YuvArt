@@ -16,27 +16,27 @@ type CarouselSlide = {
 
 const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselSlide[] => {
   if (project.name === "TGD Audio") {
-    return [{ ...project, image: "/TGD/BottomTop.png", alt: "TGD Audio product view from below" }];
+    return [{ ...project, image: "/TGD/BottomTop.webp", alt: "TGD Audio product view from below" }];
   }
 
   if (project.name === "HearO") {
     return [
-      { ...project, image: "/HeroO (3).png", alt: "HearO product visual, frame three" },
-      { ...project, image: "/HeroO (4).png", alt: "HearO product visual, frame four" },
-      { ...project, image: "/HeroO (1).png", alt: "HearO product visual" },
+      { ...project, image: "/HeroO (3).webp", alt: "HearO product visual, frame three" },
+      { ...project, image: "/HeroO (4).webp", alt: "HearO product visual, frame four" },
+      { ...project, image: "/HeroO (1).webp", alt: "HearO product visual" },
     ];
   }
 
   if (project.name === "GullyLab") {
-    return [{ ...project, image: "/GullyLab (5).png", alt: "GullyLab product visual, frame five" }];
+    return [{ ...project, image: "/GullyLab (5).webp", alt: "GullyLab product visual, frame five" }];
   }
 
   if (project.name === "Mood") {
-    return [{ ...project, image: "/MoodNz (4).png", alt: "Mood product visual, frame four" }];
+    return [{ ...project, image: "/MoodNz (4).webp", alt: "Mood product visual, frame four" }];
   }
 
   if (project.name === "Portronics") {
-    return [{ ...project, image: "/Portronics1.jpg", alt: "Portronics product animation still" }];
+    return [{ ...project, image: "/Portronics1.webp", alt: "Portronics product animation still" }];
   }
 
   return [project];

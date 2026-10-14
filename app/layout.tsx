@@ -60,6 +60,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Yuv" }],
   creator: "Yuv",
   publisher: "DesignYuv",
+  icons: {
+    icon: [{ url: "/icon.webp", type: "image/webp", sizes: "32x32" }],
+  },
 
   robots: {
     index: true,
@@ -83,7 +86,7 @@ export const metadata: Metadata = {
       "3D product animation, motion design, and product visualization for D2C brands.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "DesignYuv - 3D Product Animation & Visuals",
@@ -96,7 +99,7 @@ export const metadata: Metadata = {
     title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     description:
       "3D product animation, motion design, and product visualization for D2C brands.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
 
   alternates: {
@@ -112,7 +115,7 @@ const jsonLd = {
       "@id": "https://www.designyuv.com/#organization",
       name: "DesignYuv",
       url: "https://www.designyuv.com/",
-      logo: "https://www.designyuv.com/og-image.jpg",
+      logo: "https://www.designyuv.com/og-image.webp",
       description:
         "3D product animation, motion design, and product visualization for brands.",
       founder: {

@@ -12,11 +12,11 @@ export default function GullyLabProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/GullyLab (1).png",
-    "/GullyLab (2).png",
-    "/GullyLab (3).png",
-    "/GullyLab (4).png",
-    "/GullyLab (5).png",
+    "/GullyLab (1).webp",
+    "/GullyLab (2).webp",
+    "/GullyLab (3).webp",
+    "/GullyLab (4).webp",
+    "/GullyLab (5).webp",
   ];
 
   return (

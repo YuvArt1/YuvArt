@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Discover how 3D product visualization helps ecommerce brands create product images, animations, and campaign assets more flexibly.",
     url: articleUrl,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "DesignYuv product visualization" }],
+    images: [{ url: "/og-image.webp", width: 1200, height: 630, alt: "DesignYuv product visualization" }],
   },
   keywords: [
     "3D product visualization for ecommerce",

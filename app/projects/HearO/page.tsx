@@ -11,12 +11,12 @@ export default function Project4Page() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/HeroO (1).png",
-    "/HeroO (2).png",
-    "/HeroO (3).png",
-    "/HeroO (4).png",
-    "/HeroO (5).png",
-    "/HeroO (6).png",
+    "/HeroO (1).webp",
+    "/HeroO (2).webp",
+    "/HeroO (3).webp",
+    "/HeroO (4).webp",
+    "/HeroO (5).webp",
+    "/HeroO (6).webp",
   ];
 
   return (

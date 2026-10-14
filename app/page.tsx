@@ -13,7 +13,7 @@ const projects = [
     product: "Product visuals",
     description: "A set of product-focused visuals for a consumer audio product.",
     href: "/projects/HearO",
-    image: "/HeroO (1).png",
+    image: "/HeroO (1).webp",
     alt: "HearO product visualization",
     type: "Product visualization",
   },
@@ -22,7 +22,7 @@ const projects = [
     product: "Product animation",
     description: "Packaging animations with considered motion and a clean visual approach.",
     href: "/projects/TangentGC",
-    image: "/Tangent.png",
+    image: "/Tangent.webp",
     alt: "TangentGC packaging animation still",
     type: "Motion graphics",
   },
@@ -31,7 +31,7 @@ const projects = [
     product: "Product visuals suite",
     description: "High-fidelity stills, motion, and art direction built around color and texture.",
     href: "/projects/Mood",
-    image: "/MoodNz (2).png",
+    image: "/MoodNz (2).webp",
     alt: "Mood product visual with considered material and lighting",
     type: "Stills and motion",
   },
@@ -40,16 +40,16 @@ const projects = [
     product: "Luxcell Wireless Mini",
     description: "A product animation with a feature breakdown and color-variant reveal.",
     href: "/projects/Portronics",
-    image: "/Portronics2.png",
+    image: "/Portronics2.webp",
     alt: "Portronics Luxcell Wireless Mini product detail visualization",
     type: "Product animation",
   },
 ] as const;
 
 const possibilities = [
-  { label: "Product detail", image: "/Zeroco.png", alt: "ZeroCO speaker product detail" },
-  { label: "Campaign scene", image: "/Zeroco (1).png", alt: "ZeroCO speaker presented in a campaign scene" },
-  { label: "Product in context", image: "/Zeroco (2).png", alt: "ZeroCO speaker shown in a different composition" },
+  { label: "Product detail", image: "/Zeroco.webp", alt: "ZeroCO speaker product detail" },
+  { label: "Campaign scene", image: "/Zeroco (1).webp", alt: "ZeroCO speaker presented in a campaign scene" },
+  { label: "Product in context", image: "/Zeroco (2).webp", alt: "ZeroCO speaker shown in a different composition" },
 ] as const;
 
 const benefits = [

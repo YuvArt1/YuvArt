@@ -12,10 +12,10 @@ export default function TGDAudioProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/TGD/Final.png",
-    "/TGD/Front.png",
-    "/TGD/TopDown.png",
-    "/TGD/BottomTop.png",
+    "/TGD/Final.webp",
+    "/TGD/Front.webp",
+    "/TGD/TopDown.webp",
+    "/TGD/BottomTop.webp",
   ];
 
   return (

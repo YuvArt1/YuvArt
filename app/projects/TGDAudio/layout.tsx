@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "TGDAudio | 3D Product Visualization Case Study",
     description: "3D product visuals for TGDAudio by DesignYuv.",
     url: "https://www.designyuv.com/projects/TGDAudio",
-    images: [{ url: "/TGD/Final.png", width: 1200, height: 630, alt: "TGD Audio product visualization" }],
+    images: [{ url: "/TGD/Final.webp", width: 1200, height: 630, alt: "TGD Audio product visualization" }],
   },
 }
 

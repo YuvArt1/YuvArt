@@ -12,12 +12,12 @@ export default function MoodProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/MoodNz (1).png",
-    "/MoodNz (2).png",
-    "/MoodNz (3).png",
-    "/MoodNz (4).png",
-    "/MoodNz (5).png",
-    "/MoodNz (6).png",
+    "/MoodNz (1).webp",
+    "/MoodNz (2).webp",
+    "/MoodNz (3).webp",
+    "/MoodNz (4).webp",
+    "/MoodNz (5).webp",
+    "/MoodNz (6).webp",
   ];
 
   return (
@@ -80,7 +80,7 @@ export default function MoodProjectPage() {
               {/* Large full-width still */}
               <div className="rounded-lg overflow-hidden">
                 <Image
-                  src="/MoodNz (2).png"
+                  src="/MoodNz (2).webp"
                   alt="Mood product animation feature still"
                   width={1400}
                   height={800}

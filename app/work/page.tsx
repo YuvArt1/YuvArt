@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Selected Work | DesignYuv",
     description: "Selected product visualization, animation, and design projects by DesignYuv.",
     url: "https://www.designyuv.com/work",
-    images: [{ url: "/TGD/Final.png", width: 1200, height: 630, alt: "Selected DesignYuv work" }],
+    images: [{ url: "/TGD/Final.webp", width: 1200, height: 630, alt: "Selected DesignYuv work" }],
   },
 }
 
