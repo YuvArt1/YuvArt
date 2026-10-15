@@ -31,6 +31,14 @@ export default function WorkPage() {
             <h1>Product visuals, motion, and ideas made tangible.</h1>
             <p>A collection of product and brand projects. Open a project to see its visuals and the thinking behind them.</p>
           </div>
+          <nav className="studio-work-browse" aria-label="Browse work by format">
+            <Link className="studio-button studio-button-dark" href="/ecommerce-product-imagery">
+              Browse product imagery <span aria-hidden="true">↗</span>
+            </Link>
+            <Link className="studio-button studio-button-light" href="/3d-product-animations">
+              Watch product animations <span aria-hidden="true">↗</span>
+            </Link>
+          </nav>
           <div className="studio-archive-grid">
             {projectAssets.map((project, index) => (
               <article className="studio-project" key={project.name}>

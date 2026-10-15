@@ -9,14 +9,14 @@ export const projectAssets = [
   {
     name: "TDG Audio",
     href: "/projects/TGDAudio",
-    image: "/TGD/Final.webp",
+    image: "/TGD/TopDown.webp",
     alt: "TDG Audio social media visual",
     description: "Social media content and visual design.",
   },
   {
     name: "Mood",
     href: "/projects/Mood",
-    image: "/mood-product-visual-01.webp",
+    image: "/mood-product-visual-04.webp",
     alt: "Mood product visual",
     description: "Product visuals, stills, and motion.",
   },

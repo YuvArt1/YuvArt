@@ -1113,6 +1113,13 @@ html::after {
   line-height: 1.7;
 }
 
+.studio-work-browse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: -18px 0 48px;
+}
+
 .studio-archive-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2205,6 +2212,13 @@ html::after {
 
   .studio-work-page-heading {
     margin-bottom: 34px;
+  }
+
+  .studio-work-browse {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -10px;
+    margin-bottom: 38px;
   }
 
   .studio-work-page-heading h1,
