@@ -128,6 +128,68 @@ html::after {
   font-family: var(--font-space-grotesk), sans-serif;
 }
 
+.studio-outer-videos {
+  display: grid;
+  gap: 48px;
+  margin-bottom: 54px;
+}
+
+.studio-outer-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #20221f;
+}
+
+.studio-outer-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.studio-outer-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.studio-outer-gallery-item {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #d4d4d1;
+}
+
+.studio-outer-gallery-item img {
+  object-fit: cover;
+}
+
+.studio-tdg-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.studio-tdg-video {
+  min-width: 0;
+}
+
+.studio-tdg-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 0;
+  background: #20221f;
+}
+
+.studio-tdg-video p {
+  margin: 9px 0 0;
+  color: var(--studio-muted);
+  font-size: 12px;
+}
+
 .studio-project-detail > footer {
   border-color: var(--studio-line);
   background: var(--studio-paper);
@@ -1120,6 +1182,14 @@ html::after {
   margin: -18px 0 48px;
 }
 
+.studio-outer-gallery {
+  grid-template-columns: 1fr;
+}
+
+.studio-tdg-videos {
+  grid-template-columns: 1fr;
+}
+
 .studio-archive-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1141,6 +1211,19 @@ html::after {
   font-family: var(--font-space-grotesk), sans-serif;
   font-size: 20px;
   font-weight: 600;
+}
+
+.studio-work-endnote-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 24px;
+}
+
+.studio-home-insight-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 16px;
 }
 
 .studio-about-page {
@@ -1763,6 +1846,125 @@ html::after {
   line-height: 1.1;
 }
 
+.studio-article-body section h3 {
+  margin: 30px 0 12px;
+  color: var(--studio-ink);
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.studio-article-table-wrap {
+  margin: 28px 0;
+  overflow-x: auto;
+  border: 1px solid var(--studio-line);
+}
+
+.studio-article-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  color: #454840;
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.studio-article-table th,
+.studio-article-table td {
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--studio-line);
+  vertical-align: top;
+}
+
+.studio-article-table thead th {
+  background: #e7e8df;
+  color: var(--studio-ink);
+  font-weight: 700;
+}
+
+.studio-article-table tbody th {
+  color: var(--studio-ink);
+  font-weight: 600;
+}
+
+.studio-article-table tbody tr:last-child th,
+.studio-article-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.studio-article-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px 0 14px;
+}
+
+.studio-article-image-grid figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.studio-article-image-frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e7e8df;
+}
+
+.studio-article-image-frame img {
+  object-fit: cover;
+}
+
+.studio-article-image-grid figcaption,
+.studio-article-video-grid figcaption,
+.studio-article-image-note {
+  margin: 8px 0 0 !important;
+  color: var(--studio-muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.studio-article-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.studio-article-video-grid figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.studio-article-video-frame {
+  position: relative;
+  overflow: hidden;
+  background: #20221f;
+}
+
+.studio-article-video-frame-widescreen {
+  aspect-ratio: 16 / 9;
+}
+
+.studio-article-video-frame-portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.studio-article-video-frame-square {
+  width: min(100%, 420px);
+  aspect-ratio: 1;
+}
+
+.studio-article-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .studio-article-body strong {
   color: var(--studio-ink);
   font-weight: 650;
@@ -2229,6 +2431,18 @@ html::after {
   .studio-archive-grid {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .studio-article-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-article-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-work-endnote-links {
+    justify-content: flex-start;
   }
 
   .studio-work-endnote {

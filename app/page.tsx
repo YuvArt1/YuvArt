@@ -87,7 +87,7 @@ export default function HomePage() {
         <section className="studio-hero" id="top">
           <div className="studio-hero-copy">
             <h1>Scale your product content, not your production workload.</h1>
-            <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams that need more assets, more flexibility, and fewer production bottlenecks.</p>
+            <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams at electronics and furniture brands that need more assets, more flexibility, and fewer production bottlenecks.</p>
             <div className="studio-hero-actions">
               <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
               <Link className="studio-text-link" href="/work">Explore the work <ArrowUpRight size={16} aria-hidden="true" /></Link>
@@ -137,6 +137,9 @@ export default function HomePage() {
             ))}
           </div>
           <Link className="studio-inline-link" href="/work">View all work <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          <Link className="studio-inline-link studio-home-insight-link" href="/blog/benefits-3d-product-visualization-ecommerce">
+            Read the guide: Benefits of 3D product visualization for ecommerce <ArrowUpRight size={16} aria-hidden="true" />
+          </Link>
         </section>
 
         <section className="studio-contact studio-section" id="contact">

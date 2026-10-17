@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Script from "next/script";
 import Image from "next/image";
 import Footer from "@/components/footer";
 import StudioHeader from "@/components/studio-header";
@@ -16,6 +15,13 @@ export default function TDGAudioProjectPage() {
     "/TGD/Front.webp",
     "/TGD/TopDown.webp",
     "/TGD/BottomTop.webp",
+  ];
+
+  const videos = [
+    { id: "1222345243", title: "TDG Audio product animation" },
+    { id: "1236793232", title: "Scene 4" },
+    { id: "1236793231", title: "Scene 2" },
+    { id: "1236793230", title: "Scene 3" },
   ];
 
   return (
@@ -52,17 +58,20 @@ export default function TDGAudioProjectPage() {
             </p>
           </div>
 
-          <div className="mb-12" style={{ padding: "125% 0 0 0", position: "relative" }}>
-            <iframe
-              src="https://player.vimeo.com/video/1222345243?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              title="TestWIthoutAudiowithoutgrain"
-              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-            ></iframe>
-          </div>
-          <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
+          <section className="studio-tdg-videos mb-12" aria-label="TDG Audio product animations">
+            {videos.map((video) => (
+              <div className="studio-tdg-video" key={video.id}>
+                <iframe
+                  src={`https://player.vimeo.com/video/${video.id}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title={video.title}
+                  allowFullScreen
+                />
+                <p>{video.title}</p>
+              </div>
+            ))}
+          </section>
 
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-black mb-6 font-space-grotesk">Still</h2>

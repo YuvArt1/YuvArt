@@ -54,7 +54,12 @@ export default function WorkPage() {
           </div>
           <div className="studio-work-endnote">
             <p>Have a product or launch in mind?</p>
-            <Link className="studio-inline-link" href="/#contact">Discuss your next project <span aria-hidden="true">↗</span></Link>
+            <div className="studio-work-endnote-links">
+              <Link className="studio-inline-link" href="/blog/benefits-3d-product-visualization-ecommerce">
+                Read the ecommerce 3D visualization guide <span aria-hidden="true">↗</span>
+              </Link>
+              <Link className="studio-inline-link" href="/#contact">Discuss your next project <span aria-hidden="true">↗</span></Link>
+            </div>
           </div>
         </section>
       </main>
