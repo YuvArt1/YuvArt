@@ -28,7 +28,7 @@ const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselS
   }
 
   if (project.name === "GullyLab") {
-    return [{ ...project, image: "/GullyLab (5).webp", alt: "GullyLab product visual, frame five" }];
+    return [{ ...project, image: "/gullylab-carousel.webp", alt: "GullyLab product visual, frame five" }];
   }
 
   if (project.name === "Mood") {
