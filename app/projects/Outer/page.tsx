@@ -28,14 +28,14 @@ const projectImages = [
 export default function OuterProjectPage() {
   return (
     <div className="studio-page studio-project-detail">
-      <StudioHeader currentPage="campaign" />
+      <StudioHeader currentPage="work" />
       <main>
         <div className="max-w-5xl mx-auto">
           <Link
-            href="/campaigns"
+            href="/work"
             className="inline-flex items-center text-gray-600 hover:text-black transition-colors mb-8 font-inter"
           >
-            ← Back to campaigns
+            ← Back to work
           </Link>
 
           <h1 className="text-4xl md:text-6xl font-bold text-black mb-5 font-space-grotesk">Outer</h1>

@@ -31,10 +31,10 @@ export default function TDGAudioProjectPage() {
       <main className="px-6 py-16 pt-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <Link
-            href="/"
+            href="/work"
             className="inline-flex items-center text-gray-600 hover:text-black transition-colors mb-8 font-inter"
           >
-            ← Back to Home
+            ← Back to work
           </Link>
 
           <div className="mb-6">

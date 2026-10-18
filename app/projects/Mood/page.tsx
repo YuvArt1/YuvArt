@@ -29,10 +29,10 @@ export default function MoodProjectPage() {
         <div className="max-w-7xl mx-auto">
           {/* Back to Home */}
           <Link
-            href="/"
+            href="/work"
             className="inline-flex items-center text-gray-600 hover:text-black transition-colors mb-8 font-inter"
           >
-            ← Back to Home
+            ← Back to work
           </Link>
 
           {/* Hero (video if available, falls back to image) */}

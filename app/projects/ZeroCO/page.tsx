@@ -28,10 +28,10 @@ export default function Project2Page() {
         <div className="max-w-4xl mx-auto">
           {/* Back to Home */}
           <Link
-            href="/"
+            href="/work"
             className="inline-flex items-center text-gray-600 hover:text-black transition-colors mb-8 font-inter"
           >
-            ← Back to Home
+            ← Back to work
           </Link>
 
           {/* Project Title */}
