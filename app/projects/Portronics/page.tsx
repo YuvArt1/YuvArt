@@ -15,6 +15,11 @@ export default function Project3Page() {
     "/Portronics2.webp",
     "/Portronics3.webp",
   ];
+  const imageAlts = [
+    "3D render of the Portronics Luxcell Wireless Mini power bank on a dark background",
+    "Product detail render of the Portronics Luxcell Wireless Mini power bank",
+    "Portronics Luxcell Wireless Mini shown in a product scene",
+  ];
 
   return (
     <div className="studio-page studio-project-detail">
@@ -71,7 +76,7 @@ export default function Project3Page() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              It’s short, structured, and designed to get the point across fast, with clean visuals, clear features, and motion that keeps you watching.
+              I kept the animation short and structured, with clean visuals, clear features, and motion that presents the product quickly.
             </p>
           </div>
 
@@ -85,7 +90,7 @@ export default function Project3Page() {
               >
                 <Image
                   src={src}
-                  alt={`Portronics project still ${index + 1}`}
+                  alt={imageAlts[index]}
                   width={600}
                   height={400}
                   className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -102,7 +107,7 @@ export default function Project3Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged Portronics project still"
+                alt="Enlarged Portronics Luxcell Wireless Mini power bank product render"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>
@@ -113,6 +118,10 @@ export default function Project3Page() {
             <Link href="/projects/ZeroCO" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
               <p className="text-lg font-bold text-black font-space-grotesk">ZeroCO</p>
+            </Link>
+            <Link href="/projects/Mood" className="text-right hover:text-gray-600 transition-colors">
+              <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Mood</p>
             </Link>
           </div>
 

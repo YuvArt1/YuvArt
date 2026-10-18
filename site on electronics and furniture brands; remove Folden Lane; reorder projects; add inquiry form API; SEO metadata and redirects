@@ -1,0 +1,43 @@
+warning: in the working copy of 'app/projects/Portronics/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/projects/TangentGC/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'next.config.mjs', LF will be replaced by CRLF the next time Git touches it
+ app/3d-product-animations/page.tsx                 |  17 [32m++[m[31m-[m
+ app/about/page.tsx                                 |  32 [32m+++[m[31m--[m
+ .../3d-product-visualization-ecommerce/page.tsx    |  25 [32m++[m[31m--[m
+ .../page.tsx                                       |   8 [32m+[m[31m-[m
+ app/campaigns/page.tsx                             |  47 [32m++++[m[31m----[m
+ app/ecommerce-product-imagery/page.tsx             |  17 [32m++[m[31m-[m
+ app/insights/page.tsx                              |  24 [32m++[m[31m--[m
+ app/layout.tsx                                     |  42 [32m++[m[31m-----[m
+ app/page.tsx                                       | 132 [32m+++++++++++[m[31m----------[m
+ app/projects/FoldenLane/layout.tsx                 |  18 [31m---[m
+ app/projects/FoldenLane/page.tsx                   |  68 [31m-----------[m
+ app/projects/GullyLab/layout.tsx                   |  16 [32m++[m[31m-[m
+ app/projects/GullyLab/page.tsx                     |  31 [32m+++[m[31m--[m
+ app/projects/HearO/layout.tsx                      |  14 [32m++[m[31m-[m
+ app/projects/HearO/page.tsx                        |  18 [32m++[m[31m-[m
+ app/projects/Mood/layout.tsx                       |  14 [32m++[m[31m-[m
+ app/projects/Mood/page.tsx                         |  18 [32m+[m[31m--[m
+ app/projects/Outer/layout.tsx                      |  13 [32m+[m[31m-[m
+ app/projects/Outer/page.tsx                        |  27 [32m++[m[31m---[m
+ app/projects/Portronics/layout.tsx                 |  14 [32m++[m[31m-[m
+ app/projects/Portronics/page.tsx                   |  15 [32m++[m[31m-[m
+ app/projects/TangentGC/layout.tsx                  |  14 [32m++[m[31m-[m
+ app/projects/TangentGC/page.tsx                    |  15 [32m+[m[31m--[m
+ app/projects/ZeroCO/layout.tsx                     |  15 [32m++[m[31m-[m
+ app/projects/ZeroCO/page.tsx                       |  38 [32m+++[m[31m---[m
+ app/projects/tdg-audio/layout.tsx                  |  18 [32m++[m[31m-[m
+ app/projects/tdg-audio/page.tsx                    |  21 [32m+++[m[31m-[m
+ app/sitemap.ts                                     |  15 [32m++[m[31m-[m
+ app/what-do-we-do/page.tsx                         | 132 [31m---------------------[m
+ app/work/page.tsx                                  |  29 [32m+++[m[31m--[m
+ components/footer.tsx                              |   2 [32m+[m[31m-[m
+ components/inquiry-form.tsx                        |  78 [32m+++++++[m[31m-----[m
+ components/project-carousel.tsx                    |  12 [32m+[m[31m-[m
+ components/project-inquiry-cta.tsx                 |  10 [32m+[m[31m-[m
+ components/project-media-archive.tsx               |   4 [32m+[m[31m-[m
+ components/studio-header.tsx                       |   2 [32m+[m[31m-[m
+ lib/project-assets.ts                              |  74 [32m++++++[m[31m------[m
+ lib/project-media.ts                               |  65 [32m+++++[m[31m-----[m
+ next.config.mjs                                    |  19 [32m+++[m
+ 39 files changed, 551 insertions(+), 622 deletions(-)

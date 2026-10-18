@@ -20,27 +20,33 @@ export const mediaProjects: MediaProject[] = [
     name: "ZeroCO",
     href: "/projects/ZeroCO",
     stills: [
-      { src: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO project still 1" },
-      { src: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO project still 2" },
-      { src: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO project still 3" },
-      { src: "/zero-co-speaker-visual-04.webp", alt: "ZeroCO project still 4" },
-      { src: "/zero-co-speaker-visual-05.webp", alt: "ZeroCO project still 5" },
-      { src: "/zero-co-speaker-visual-06.webp", alt: "ZeroCO project still 6" },
-      { src: "/zero-co-speaker-visual-07.webp", alt: "ZeroCO project still 7" },
+      { src: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO hand wash and hair wash bottles arranged diagonally" },
+      { src: "/zero-co-speaker-visual-02.webp", alt: "Hand holding a ZeroCO wash bottle" },
+      { src: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO wash bottles shown in a horizontal product composition" },
+      { src: "/zero-co-speaker-visual-04.webp", alt: "Angled 3D render of a ZeroCO wash bottle" },
+      { src: "/zero-co-speaker-visual-05.webp", alt: "Front view of a ZeroCO pump bottle" },
+      { src: "/zero-co-speaker-visual-06.webp", alt: "Angled product render of a ZeroCO wash bottle" },
+      { src: "/zero-co-speaker-visual-07.webp", alt: "ZeroCO wash bottles in different label and cap colours" },
     ],
     videos: [
-      { id: "1102749162", title: "Zeroco_Scen1.mp4" },
-      { id: "1102749087", title: "Scene2 Zero" },
-      { id: "1102749120", title: "Scene3 Zero" },
-      { id: "1102749148", title: "Scene4 Zero" },
+      { id: "1102749162", title: "ZeroCO hand wash and hair wash bottles" },
+      { id: "1102749087", title: "ZeroCO wash bottle product arrangement" },
+      { id: "1102749120", title: "Angled ZeroCO wash bottle close-up" },
+      { id: "1102749148", title: "ZeroCO pump bottle product view" },
     ],
   },
   {
     name: "GullyLab",
     href: "/projects/GullyLab",
     stills: [1, 2, 3, 4, 5].map((number) => ({
-      src: `/GullyLab (${number}).webp`,
-      alt: `GullyLab project still ${number}`,
+      src: `/gullylab-${String(number).padStart(2, "0")}.webp`,
+      alt: [
+        "Navy, burgundy, and cream GullyLab sneakers shown in a 3D render",
+        "Top view of burgundy and cream GullyLab sneakers",
+        "Side view of a burgundy and cream GullyLab sneaker",
+        "Close-up of the burgundy upper and cream sole of a GullyLab sneaker",
+        "GullyLab product bottles shown side by side",
+      ][number - 1],
     })),
     videos: [{ id: "1150857148", title: "Gully Lab Animation" }],
   },
@@ -49,7 +55,7 @@ export const mediaProjects: MediaProject[] = [
     href: "/projects/HearO",
     stills: [6, 1, 4, 3, 2, 5].map((number) => ({
       src: `/hearo-product-visual-${String(number).padStart(2, "0")}.webp`,
-      alt: `HearO project still ${number}`,
+      alt: `HearO consumer audio product render, view ${number}`,
     })),
     videos: [],
   },
@@ -58,7 +64,7 @@ export const mediaProjects: MediaProject[] = [
     href: "/projects/Mood",
     stills: [2, 4, 6, 1, 3, 5].map((number) => ({
       src: `/mood-product-visual-${String(number).padStart(2, "0")}.webp`,
-      alt: `Mood project still ${number}`,
+      alt: `Mood bed and bedroom furniture product visual, view ${number}`,
     })),
     videos: [{ id: "1154253992", title: "Mood Nz Bed Animation" }],
   },
@@ -66,16 +72,16 @@ export const mediaProjects: MediaProject[] = [
     name: "Portronics",
     href: "/projects/Portronics",
     stills: [
-      { src: "/Portronics.webp", alt: "Portronics project still 1" },
-      { src: "/Portronics1.webp", alt: "Portronics project still 2" },
-      { src: "/Portronics2.webp", alt: "Portronics project still 3" },
-      { src: "/Portronics3.webp", alt: "Portronics project still 4" },
+      { src: "/Portronics.webp", alt: "Portronics Luxcell Wireless Mini power bank render" },
+      { src: "/Portronics1.webp", alt: "Portronics Luxcell Wireless Mini product detail render" },
+      { src: "/Portronics2.webp", alt: "Portronics Luxcell Wireless Mini product angle" },
+      { src: "/Portronics3.webp", alt: "Portronics Luxcell Wireless Mini rendered product scene" },
     ],
     videos: [{ id: "1102750316", title: "Portronics Animation" }],
   },
   {
     name: "TDG Audio",
-    href: "/projects/TGDAudio",
+    href: "/projects/tdg-audio",
     stills: [
       { src: "/TGD/Final.webp", alt: "TDG Audio final product still" },
       { src: "/TGD/Front.webp", alt: "TDG Audio front view" },
@@ -85,21 +91,18 @@ export const mediaProjects: MediaProject[] = [
     videos: [{ id: "1222345243", title: "TDG Audio product animation" }],
   },
   {
-    name: "Folden Lane",
-    href: "/projects/FoldenLane",
-    stills: [{ src: "/foldenlane.webp", alt: "Folden Lane web content project visual" }],
-    videos: [
-      { id: "1233846508", title: "Folden Lane LinkedIn video" },
-      { id: "1233846509", title: "Folden Lane web content" },
-    ],
-  },
-  {
     name: "TangentGC",
     href: "/projects/TangentGC",
-    stills: [{ src: "/Tangent.webp", alt: "TangentGC project visual" }],
+    stills: [{ src: "/Tangent.webp", alt: "TangentGC product packaging in a 3D animation still" }],
     videos: [
       { id: "1102747582", title: "TangentGC Main animation" },
       { id: "1102748531", title: "TangentGC animation 2" },
     ],
   },
 ];
+
+const projectOrder = ["ZeroCO", "Portronics", "Mood", "HearO", "TDG Audio", "GullyLab", "TangentGC"];
+
+mediaProjects.sort(
+  (first, second) => projectOrder.indexOf(first.name) - projectOrder.indexOf(second.name),
+);

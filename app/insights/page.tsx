@@ -5,17 +5,23 @@ import Footer from "@/components/footer"
 import StudioHeader from "@/components/studio-header"
 
 export const metadata: Metadata = {
-  title: "Insights on 3D Product Visualization and Ecommerce",
+  title: { absolute: "3D Product Visualization Guides | DesignYuv" },
   description:
-    "Practical guides to 3D product visualization, ecommerce imagery, product animation, and creating better product content.",
+    "I share practical guides to 3D product visualization, ecommerce imagery, and product animation for electronics and furniture brands.",
   alternates: {
     canonical: "https://www.designyuv.com/insights",
   },
   openGraph: {
-    title: "Insights | DesignYuv",
-    description:
-      "Guides to 3D product visualization, ecommerce imagery, and product animation.",
+    title: "3D Product Visualization Guides | DesignYuv",
+    description: "I share practical guides to 3D product visualization, ecommerce imagery, and product animation for electronics and furniture brands.",
     url: "https://www.designyuv.com/insights",
+    images: [{ url: "/Portronics.webp", width: 1280, height: 1280, alt: "3D product render of the Portronics Luxcell Wireless Mini" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D Product Visualization Guides | DesignYuv",
+    description: "I share practical guides to 3D product visualization, ecommerce imagery, and product animation for electronics and furniture brands.",
+    images: ["/Portronics.webp"],
   },
 }
 
@@ -24,19 +30,19 @@ const articles = [
     title: "Benefits of 3D Product Visualization for Ecommerce Brands",
     href: "/blog/benefits-3d-product-visualization-ecommerce",
     description:
-      "Explore the benefits of 3D product visualization for ecommerce, from reusable product content and pre-launch visuals to interactive 3D and animation.",
+      "I explain how reusable product content, pre-launch visuals, interactive 3D, and animation can support ecommerce.",
     category: "3D PRODUCT VISUALIZATION",
     date: "OCT 17, 2026",
     image: "/Portronics.webp",
     alt: "Photorealistic 3D product render of a Portronics power bank",
   },
   {
-    title: "Does 3D Product Visualization Improve Ecommerce Sales?",
+    title: "3D Product Visualization for Ecommerce: A Practical Guide",
     href: "/blog/3d-product-visualization-ecommerce",
     description:
-      "A practical look at ecommerce product imagery, animation, evidence, and how brands can measure the results of their visual content.",
+      "I cover ecommerce product imagery, animation, available evidence, and ways to measure product visuals.",
     category: "ECOMMERCE PRODUCT CONTENT",
-    date: "PRODUCT GUIDE",
+    date: "OCT 14, 2026",
     image: "/TGD/Final.webp",
     alt: "3D product visualization of a TDG Audio speaker",
   },

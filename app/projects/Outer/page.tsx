@@ -40,9 +40,9 @@ export default function OuterProjectPage() {
 
           <h1 className="text-4xl md:text-6xl font-bold text-black mb-5 font-space-grotesk">Outer</h1>
           <p className="text-gray-700 leading-relaxed max-w-3xl mb-10">
-            A self-initiated 3D furniture campaign concept inspired by Outer, the outdoor
-            furniture brand. This is personal portfolio work, not a commissioned, affiliated,
-            or endorsed campaign.
+            I created this personal 3D furniture campaign concept inspired by Outer, the
+            outdoor furniture brand. It is independent portfolio work, not a commissioned,
+            affiliated, or endorsed campaign.
           </p>
 
           <Image
@@ -57,26 +57,23 @@ export default function OuterProjectPage() {
 
           <section className="max-w-3xl mb-12" aria-labelledby="outer-problem-heading">
             <h2 id="outer-problem-heading" className="text-3xl md:text-4xl font-bold text-black mb-5 font-space-grotesk">
-              Market the product before the product exists.
+              How I visualize a product before launch.
             </h2>
             <p className="text-gray-700 leading-relaxed mb-5">
-              Products often need launch advertising before a production-ready SKU is
-              available. Waiting for manufacturing and a physical photoshoot can hold up
-              the campaign. 3D product visualization can show a product before it is
-              physically produced, helping a brand prepare launch advertising earlier.
+              I explored how 3D product visualization can present a design before it is
+              physically produced and help prepare launch advertising.
             </p>
             <h3 className="text-xl font-bold text-black mb-3 font-space-grotesk">
-              Make customization fun to explore.
+              I make customization fun to explore.
             </h3>
             <p className="text-gray-700 leading-relaxed mb-6">
-              For social media, product options need more than a feature list. A playful
-              animation can make customization more engaging, show how a product can
-              change, and give people a fun way to explore it.
+              I used playful animation to explore customization and show product options
+              for social media.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              This personal concept takes inspiration from Outer&apos;s focus on outdoor
-              furniture and bringing people closer to nature and one another. It is an
-              independent creative exploration, not official Outer advertising. Read{" "}
+              I based this personal concept on Outer&apos;s focus on outdoor furniture and
+              bringing people closer to nature and one another. It is independent creative
+              work, not official Outer advertising. Read{" "}
               <a
                 href="https://liveouter.com/pages/about"
                 target="_blank"

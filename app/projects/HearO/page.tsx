@@ -47,15 +47,11 @@ export default function Project4Page() {
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
               <p className="text-gray-700">2025</p>
             </div>
-            <div>
-              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Status</h3>
-              <p className="text-gray-700">Assets finalized</p>
-            </div>
           </div>
 
           <div className="prose prose-lg max-w-none font-inter mb-12">
             <p className="text-gray-700 leading-relaxed">
-              For this consumer audio launch, I created a consistent set of product visuals built around controlled angles and polished lighting. The views are composed to make the product easy to understand while giving the image set a cohesive feel across launch and social placements. The assets are finalized.
+              For this consumer audio launch, I created a consistent set of product visuals built around controlled angles and polished lighting. I composed the views to make the product easy to understand and keep the image set cohesive across launch and social placements.
             </p>
           </div>
 
@@ -69,7 +65,7 @@ export default function Project4Page() {
               >
                 <Image
                   src={src}
-                  alt={`HearO project still ${index + 1}`}
+                  alt={`HearO consumer audio product render, view ${index + 1}`}
                   width={600}
                   height={400}
                   className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -86,7 +82,7 @@ export default function Project4Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged HearO project still"
+                alt="Enlarged render of a HearO consumer audio product"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>
@@ -94,13 +90,13 @@ export default function Project4Page() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/GullyLab" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/Mood" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">GullyLab</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Mood</p>
             </Link>
-            <Link href="/projects/TangentGC" className="text-right hover:text-gray-600 transition-colors">
+            <Link href="/projects/tdg-audio" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">TangentGC</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">TDG Audio</p>
             </Link>
           </div>
 

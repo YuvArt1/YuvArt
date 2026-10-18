@@ -18,6 +18,15 @@ export default function Project2Page() {
     "/zero-co-speaker-visual-06.webp",
     "/zero-co-speaker-visual-07.webp",
   ];
+  const stillAlts = [
+    "ZeroCO hand wash and hair wash bottles arranged diagonally",
+    "Hand holding a ZeroCO wash bottle",
+    "ZeroCO wash bottles shown in a horizontal product composition",
+    "Angled 3D render of a ZeroCO wash bottle",
+    "Front view of a ZeroCO pump bottle",
+    "Angled product render of a ZeroCO wash bottle",
+    "ZeroCO wash bottles in different label and cap colours",
+  ];
 
   return (
     <div className="studio-page studio-project-detail">
@@ -41,7 +50,7 @@ export default function Project2Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 font-inter">
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Product</h3>
-              <p className="text-gray-700">ZeroCO Speaker (upcycled tennis ball)</p>
+              <p className="text-gray-700">ZeroCO hand wash and hair wash</p>
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
@@ -49,26 +58,26 @@ export default function Project2Page() {
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Focus</h3>
-              <p className="text-gray-700">Sustainability, portability, everyday use</p>
+              <p className="text-gray-700">Product packaging and product details</p>
             </div>
           </div>
 
           {/* Project Description */}
           <div className="prose prose-lg max-w-none font-inter mb-12">
             <p className="text-gray-700 leading-relaxed mb-6">
-              ZeroCO is a compact speaker made from a used tennis ball, an upcycled shell that gives the product its character, grip, and a soft tactile feel. The idea was simple: take something familiar and overlooked, and turn it into sound you can carry.
+              I created product renders and animations for ZeroCO, showing its hand wash and hair wash bottles, packaging, and product labels in clear views.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              To show its portability, I placed it across everyday scenes: clipped to a backpack on the go, on a desk beside a laptop, resting on a park bench, by a bedside lamp, and on a kitchen counter. Each setup focuses on scale, texture, and lighting to keep it grounded and real.
+              I used composed product views to bring attention to the bottle forms, label details, and colour choices.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              The visuals highlight how the tennis-ball form factor isn’t just a look, it’s functional. It’s durable, easy to grab, and sits naturally on uneven surfaces. The animations are minimal and intentional, keeping the attention on context and usefulness rather than flashy motion.
+              I kept the animation focused on the products and their packaging.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              Overall, the piece is about reuse with purpose. A familiar object, a fresh role, and scenes that show how it fits into daily life without trying too hard.
+              I brought the stills and motion together as one product presentation.
             </p>
           </div>
 
@@ -81,7 +90,7 @@ export default function Project2Page() {
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 className="w-full h-full"
-                title="Zeroco_Scen1.mp4"
+                title="ZeroCO hand wash and hair wash bottles"
               ></iframe>
             </div>
             <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden">
@@ -91,7 +100,7 @@ export default function Project2Page() {
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 className="w-full h-full"
-                title="Scene2 Zero"
+                title="ZeroCO wash bottle product arrangement"
               ></iframe>
             </div>
             <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden">
@@ -101,7 +110,7 @@ export default function Project2Page() {
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 className="w-full h-full"
-                title="Scene3 Zero"
+                title="Angled ZeroCO wash bottle close-up"
               ></iframe>
             </div>
             <div className="aspect-video bg-gray-300 rounded-lg overflow-hidden">
@@ -111,7 +120,7 @@ export default function Project2Page() {
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 className="w-full h-full"
-                title="Scene4 Zero"
+                title="ZeroCO pump bottle product view"
               ></iframe>
             </div>
           </div>
@@ -124,7 +133,7 @@ export default function Project2Page() {
                 <div key={index} className="relative aspect-[4/3] flex items-center justify-center rounded-sm overflow-hidden group hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
                   <img
                     src={src}
-                    alt={`ZeroCO project still ${index + 1}`}
+                    alt={stillAlts[index]}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                     onClick={() => setSelectedImage(src)}
                   />
@@ -141,7 +150,7 @@ export default function Project2Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged ZeroCO project still"
+                alt="ZeroCO wash bottle product render"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>
@@ -149,10 +158,7 @@ export default function Project2Page() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/TangentGC" className="text-left hover:text-gray-600 transition-colors">
-              <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">TangentGC</p>
-            </Link>
+            <div />
             <Link href="/projects/Portronics" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
               <p className="text-lg font-bold text-black font-space-grotesk">Portronics</p>

@@ -12,11 +12,18 @@ export default function GullyLabProjectPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "/GullyLab (1).webp",
-    "/GullyLab (2).webp",
-    "/GullyLab (3).webp",
-    "/GullyLab (4).webp",
-    "/GullyLab (5).webp",
+    "/gullylab-01.webp",
+    "/gullylab-02.webp",
+    "/gullylab-03.webp",
+    "/gullylab-04.webp",
+    "/gullylab-05.webp",
+  ];
+  const imageAlts = [
+    "Navy, burgundy, and cream GullyLab sneakers shown in a 3D render",
+    "Top view of burgundy and cream GullyLab sneakers",
+    "Side view of a burgundy and cream GullyLab sneaker",
+    "Close-up of the burgundy upper and cream sole of a GullyLab sneaker",
+    "GullyLab product bottles shown side by side",
   ];
 
   return (
@@ -51,7 +58,7 @@ export default function GullyLabProjectPage() {
 
           <div className="prose prose-lg max-w-none font-inter mb-12">
             <p className="text-gray-700 leading-relaxed">
-              This project combines a product animation with a set of still images. The animation gives the product a sense of movement, while the stills let its form read clearly in composed views. A consistent visual treatment brings both formats together as one product presentation.
+              I combined product animation with still images, using composed views and a consistent visual treatment to bring both formats together in one product presentation.
             </p>
           </div>
 
@@ -81,7 +88,7 @@ export default function GullyLabProjectPage() {
               >
                 <Image
                   src={src}
-                  alt={`GullyLab project still ${index + 1}`}
+                  alt={imageAlts[index]}
                   width={600}
                   height={400}
                   className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -98,7 +105,7 @@ export default function GullyLabProjectPage() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged GullyLab project still"
+                alt="GullyLab product render"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>
@@ -106,13 +113,13 @@ export default function GullyLabProjectPage() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/Mood" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/tdg-audio" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">Mood</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">TDG Audio</p>
             </Link>
-            <Link href="/projects/HearO" className="text-right hover:text-gray-600 transition-colors">
+            <Link href="/projects/TangentGC" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">HearO</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">TangentGC</p>
             </Link>
           </div>
 

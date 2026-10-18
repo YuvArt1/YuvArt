@@ -9,73 +9,73 @@ import PossibilityGallery from "@/components/possibility-gallery";
 
 const projects = [
   {
-    name: "HearO",
-    product: "Product visuals",
-    description: "A consistent set of polished product visuals for a consumer audio launch, created to show the product from controlled angles.",
-    href: "/projects/HearO",
-    image: "/hearo-product-visual-01.webp",
-    alt: "HearO product visualization",
+    name: "ZeroCO",
+    product: "Tennis-ball speaker",
+    description: "I created product renders and animations showing ZeroCO wash bottles, packaging, and label details.",
+    href: "/projects/ZeroCO",
+    image: "/zero-co-speaker-visual-01.webp",
+    alt: "ZeroCO upcycled tennis-ball speaker in a product scene",
     type: "Product visualization",
-  },
-  {
-    name: "TangentGC",
-    product: "Product animation",
-    description: "Controlled packaging animations reveal the box construction one deliberate movement at a time.",
-    href: "/projects/TangentGC",
-    image: "/Tangent.webp",
-    alt: "TangentGC packaging animation still",
-    type: "Motion graphics",
-  },
-  {
-    name: "Mood",
-    product: "Product visuals suite",
-    description: "A product-visual suite pairing high-fidelity stills with short-form motion to explore color, texture, and material.",
-    href: "/projects/Mood",
-    image: "/mood-product-visual-02.webp",
-    alt: "Mood product visual with considered material and lighting",
-    type: "Stills and motion",
   },
   {
     name: "Portronics",
     product: "Luxcell Wireless Mini",
-    description: "A short product animation moves from a feature reveal to a charging demo and color-variant sequence.",
+    description: "I animated a product breakdown, a charging demonstration, and the product’s colour variants.",
     href: "/projects/Portronics",
     image: "/Portronics2.webp",
-    alt: "Portronics Luxcell Wireless Mini product detail visualization",
+    alt: "Portronics Luxcell Wireless Mini power bank product render",
     type: "Product animation",
+  },
+  {
+    name: "Mood",
+    product: "Bed visuals",
+    description: "I paired high-fidelity stills with short-form motion to show the Mood bed and material details.",
+    href: "/projects/Mood",
+    image: "/mood-product-visual-02.webp",
+    alt: "Mood bed and finish options shown on a product page",
+    type: "Stills and motion",
+  },
+  {
+    name: "HearO",
+    product: "Product visuals",
+    description: "I created product visuals with controlled angles and polished lighting for launch and social placements.",
+    href: "/projects/HearO",
+    image: "/hearo-product-visual-01.webp",
+    alt: "HearO consumer audio product visualization",
+    type: "Product visualization",
   },
 ] as const;
 
 const possibilities = [
-  { label: "Product detail", image: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO speaker product detail" },
-  { label: "Campaign scene", image: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO speaker presented in a campaign scene" },
-  { label: "Product in context", image: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO speaker shown in a different composition" },
+  { label: "Bottle detail", image: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO hand wash and hair wash bottles arranged diagonally" },
+  { label: "Product arrangement", image: "/zero-co-speaker-visual-02.webp", alt: "Hand holding a ZeroCO wash bottle" },
+  { label: "Product view", image: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO wash bottles shown in a horizontal product composition" },
 ] as const;
 
 const benefits = [
-  ["You need more product visuals without more photoshoots.", "New angles, product variations, and campaign assets shouldn't mean starting from scratch every time."],
-  ["You want your product pages to sell better.", "Your products deserve visuals that grab attention, communicate value, and help customers make confident buying decisions."],
-  ["You're launching products faster than you can create content.", "You need high-quality visuals ready for new launches, campaigns, and product variations without slowing your team down."],
-  ["You need more creative freedom.", "Test new concepts, explore different settings, and create campaign visuals without the cost and logistics of a physical shoot."],
-  ["You want every touchpoint to look like your brand.", "From product pages to paid ads, your visuals should feel consistent, intentional, and unmistakably yours."],
+  ["I create more product visuals without repeating every photoshoot.", "I can build new angles, product variations, and campaign assets from a reusable digital scene."],
+  ["I give product pages clearer visuals.", "I focus on accurate details and useful views that help customers understand a product."],
+  ["I prepare visuals for product launches.", "I create product imagery and animation for launch, campaign, and product-variation briefs."],
+  ["I explore more creative directions.", "I can develop new concepts, settings, and campaign visuals in a digital scene."],
+  ["I keep product visuals consistent across touchpoints.", "I create considered visuals for product pages, campaigns, and advertising."],
 ] as const;
 
 const processSteps = [
-  ["01", "Brief", "Share the product, goals, references, and the assets your team needs."],
-  ["02", "Create", "Develop the 3D product visuals and the agreed creative direction."],
-  ["03", "Refine", "Review the work together and make the agreed revisions."],
-  ["04", "Deliver", "Receive final assets in the formats agreed for your project."],
+  ["01", "Brief", "I review the product, goals, references, and requested assets."],
+  ["02", "Create", "I develop the 3D product visuals and agreed creative direction."],
+  ["03", "Refine", "I share the work for review and make the agreed revisions."],
+  ["04", "Deliver", "I deliver final assets in the formats agreed for the project."],
 ] as const;
 
 const questions = [
-  ["What products can you create in 3D?", "I work on product visualization and animation. Share what you make and we can confirm whether the product and brief are a good fit."],
-  ["What do you need to get started?", "Product photos, dimensions, reference links, and any existing 3D files are useful. We can confirm the right inputs after hearing about the project."],
-  ["Can I use the visuals for ecommerce, ads, and social media?", "Yes. We can agree on formats and compositions for the channels and placements you need."],
-  ["Can you create multiple variations of one product?", "Yes, when the product model and project scope support the variations. We can define those deliverables in the brief."],
-  ["How long does a typical project take?", "Timing depends on the product, creative direction, asset list, and review process. I will confirm a schedule once the scope is clear."],
-  ["How are projects priced?", "Projects are quoted around product complexity, creative direction, and the agreed deliverables."],
-  ["How do revisions work?", "The review stages and included revisions are agreed before production begins."],
-  ["When is 3D a good fit compared with photography?", "3D can suit products that need controlled scenes, repeatable views, or digital variations. Photography may be a better fit when real-world context or physical interaction is central."],
+  ["What products can you create in 3D?", "I create product visualization and animation for electronics and furniture. I can confirm whether a product and brief are a good fit after I review the details."],
+  ["What do you need to get started?", "I use product photos, dimensions, reference links, and any existing 3D files to assess the brief. I’ll confirm the right inputs after I learn about the project."],
+  ["Can I use the visuals for ecommerce, ads, and social media?", "Yes. I can agree on formats and compositions for the channels and placements you need."],
+  ["Can you create multiple variations of one product?", "Yes, when the product model and project scope support the variations. I define those deliverables in the brief."],
+  ["How long does a typical project take?", "Timing depends on the product, creative direction, asset list, and review process. I confirm a schedule once the scope is clear."],
+  ["How are projects priced?", "I quote projects around product complexity, creative direction, and the agreed deliverables."],
+  ["How do revisions work?", "I agree on review stages and included revisions before production begins."],
+  ["When is 3D a good fit compared with photography?", "I use 3D for products that need controlled scenes, repeatable views, or digital variations. Photography may be a better fit when real-world context or physical interaction is central."],
 ] as const;
 
 export default function HomePage() {
@@ -86,13 +86,13 @@ export default function HomePage() {
       <main>
         <section className="studio-hero" id="top">
           <div className="studio-hero-copy">
-            <h1>Scale your product content, not your production workload.</h1>
-            <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams at electronics and furniture brands that need more assets, more flexibility, and fewer production bottlenecks.</p>
+            <h1>I create flexible 3D product visuals for electronics and furniture brands.</h1>
+            <p className="studio-hero-description">I create photorealistic 3D product imagery and animation for electronics and furniture brands, with flexible assets for ecommerce, campaigns, and launches.</p>
             <div className="studio-hero-actions">
-              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
-              <Link className="studio-text-link" href="/work">Explore the work <ArrowUpRight size={16} aria-hidden="true" /></Link>
+              <a className="studio-button studio-button-dark" href="#contact">Contact me about a product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <Link className="studio-text-link" href="/work">View my work <ArrowUpRight size={16} aria-hidden="true" /></Link>
             </div>
-            <p className="studio-hero-note">For product brands and the teams building their next launch.</p>
+            <p className="studio-hero-note">I create product visuals for electronics and furniture launches.</p>
           </div>
           <ProjectCarousel />
         </section>
@@ -110,8 +110,8 @@ export default function HomePage() {
               </article>
             ))}
             <div className="studio-fit-cta">
-              <p>If you're ready to get more out of your product visuals, let's talk.</p>
-              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <p>If you’re ready to get more from your product visuals, I’d be glad to hear about the brief.</p>
+              <a className="studio-button studio-button-dark" href="#contact">Contact me about a product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
             </div>
           </div>
         </section>
@@ -121,7 +121,7 @@ export default function HomePage() {
             <div>
               <h2>See what I can create.</h2>
             </div>
-            <p>Explore product imagery, animation, and case studies built around real projects.</p>
+            <p>I create product imagery and animation for electronics and furniture brands.</p>
           </div>
           <div className="studio-project-grid">
             {projects.map((project, index) => (
@@ -136,16 +136,19 @@ export default function HomePage() {
               </article>
             ))}
           </div>
-          <Link className="studio-inline-link" href="/work">View all work <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          <Link className="studio-inline-link" href="/work">View all my work <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link className="studio-inline-link studio-home-insight-link" href="/blog/benefits-3d-product-visualization-ecommerce">
             Read the guide: Benefits of 3D product visualization for ecommerce <ArrowUpRight size={16} aria-hidden="true" />
+          </Link>
+          <Link className="studio-inline-link studio-home-insight-link" href="/blog/3d-product-visualization-ecommerce">
+            3D product visualization for ecommerce: a practical guide <ArrowUpRight size={16} aria-hidden="true" />
           </Link>
         </section>
 
         <section className="studio-contact studio-section" id="contact">
           <div className="studio-contact-copy">
             <h2>Tell me about your product.</h2>
-            <p>Share the product, the deliverables you need, and your ideal timeline. I’ll review the brief and follow up by email.</p>
+            <p>Share the product, the deliverables you need, and your ideal timeline. I’ll review the brief and reply by email.</p>
             <a className="studio-contact-email" href="mailto:hello@designyuv.com">hello@designyuv.com <ArrowUpRight size={16} aria-hidden="true" /></a>
             <a
               className="studio-button studio-button-dark mt-5"
@@ -162,8 +165,8 @@ export default function HomePage() {
         <section className="studio-possibilities studio-section" id="services">
           <div className="studio-section-heading">
             <p className="studio-eyebrow">A PRODUCT, MANY POSSIBILITIES</p>
-            <h2>Build a visual system around the product.</h2>
-            <p>Explore the product from a new angle, bring out a detail, or place it in a campaign-ready scene. The right asset mix depends on your brief.</p>
+            <h2>I build a visual system around the product.</h2>
+            <p>I can show a product from a new angle, bring out a detail, or place it in a campaign-ready scene. I shape each asset mix around the brief.</p>
           </div>
           <PossibilityGallery items={[...possibilities]} />
           <div className="studio-capability-line"><span>STILLS</span><span>MOTION</span><span>CAMPAIGN VISUALS</span><span>PRODUCT VARIATIONS</span></div>
@@ -172,8 +175,8 @@ export default function HomePage() {
         <section className="studio-process studio-section" id="process">
           <div className="studio-process-heading">
             <p className="studio-eyebrow">A CLEAR, COLLABORATIVE PROCESS</p>
-            <h2>From product brief to final files.</h2>
-            <p>Know what is happening at each stage, with scope and review expectations agreed up front.</p>
+            <h2>I take each product from brief to final files.</h2>
+            <p>I agree on scope and review expectations up front, then keep each stage clear.</p>
           </div>
           <div className="studio-process-grid">
             {processSteps.map(([number, title, description]) => (
@@ -190,21 +193,24 @@ export default function HomePage() {
           <div className="studio-proof-copy">
             <p className="studio-eyebrow">THE WORK IS THE PROOF</p>
             <h2>See the thinking and finish for yourself.</h2>
-            <p>Each project page shares real visuals and context on the work. No inflated performance claims, just the product, the creative choices, and the assets made.</p>
-            <Link className="studio-button studio-button-light" href="/work">Explore all projects <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <p>I share the product, my creative choices, and the assets I made on each project page.</p>
+            <Link className="studio-button studio-button-light" href="/work">View all my projects <ArrowUpRight size={17} aria-hidden="true" /></Link>
           </div>
           <div className="studio-proof-projects" aria-label="Featured project names">
-            <Link href="/projects/HearO"><span>01</span>HearO<ArrowUpRight size={18} aria-hidden="true" /></Link>
-            <Link href="/projects/TangentGC"><span>02</span>TangentGC<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/ZeroCO"><span>01</span>ZeroCO<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/Portronics"><span>02</span>Portronics<ArrowUpRight size={18} aria-hidden="true" /></Link>
             <Link href="/projects/Mood"><span>03</span>Mood<ArrowUpRight size={18} aria-hidden="true" /></Link>
-            <Link href="/projects/Portronics"><span>04</span>Portronics<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/HearO"><span>04</span>HearO<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/tdg-audio"><span>05</span>TDG Audio<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/GullyLab"><span>06</span>GullyLab<ArrowUpRight size={18} aria-hidden="true" /></Link>
+            <Link href="/projects/TangentGC"><span>07</span>TangentGC<ArrowUpRight size={18} aria-hidden="true" /></Link>
           </div>
         </section>
 
         <section className="studio-faq studio-section" id="faq">
           <div className="studio-faq-heading">
             <p className="studio-eyebrow">GOOD TO KNOW</p>
-            <h2>Questions before we begin?</h2>
+            <h2>Questions before I begin?</h2>
           </div>
           <div className="studio-faq-list">
             {questions.map(([question, answer]) => (

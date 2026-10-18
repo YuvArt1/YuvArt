@@ -13,12 +13,12 @@ const publishedAt = "2026-10-14";
 const modifiedAt = "2026-10-18";
 
 export const metadata: Metadata = {
-  title: articleTitle,
+  title: { absolute: articleTitle },
   description: articleDescription,
   alternates: {
     canonical: articleUrl,
   },
-  authors: [{ name: "Yuvraj Chavhan", url: "https://www.designyuv.com/about" }],
+  authors: [{ name: "Yuvraj Chauhan", url: "https://www.designyuv.com/about" }],
   openGraph: {
     type: "article",
     title: articleTitle,
@@ -27,17 +27,14 @@ export const metadata: Metadata = {
     publishedTime: publishedAt,
     modifiedTime: modifiedAt,
     authors: ["https://www.designyuv.com/about"],
-    images: [{ url: "/og-image.webp", width: 1200, height: 630, alt: "DesignYuv product visualization" }],
+    images: [{ url: "/Portronics.webp", width: 1280, height: 1280, alt: "3D render of the Portronics Luxcell Wireless Mini power bank" }],
   },
-  keywords: [
-    "3D product visualization for ecommerce",
-    "3D product rendering",
-    "3D product animation",
-    "ecommerce product photography",
-    "CGI product visuals",
-    "product marketing assets",
-    "3D product imagery",
-  ],
+  twitter: {
+    card: "summary_large_image",
+    title: articleTitle,
+    description: articleDescription,
+    images: ["/Portronics.webp"],
+  },
 };
 
 const contents = [
@@ -80,7 +77,7 @@ const jsonLd = {
       dateModified: modifiedAt,
       author: {
         "@type": "Person",
-        name: "Yuvraj Chavhan",
+        name: "Yuvraj Chauhan",
         url: "https://www.designyuv.com/about",
       },
       publisher: {
@@ -120,7 +117,7 @@ export default function EcommerceVisualizationArticle() {
           <p className="studio-article-deck">{articleDescription}</p>
           <div className="studio-article-meta">
             <span>Updated Oct 18, 2026</span>
-            <span>By <Link href="/about">Yuvraj Chavhan</Link></span>
+            <span>By <Link href="/about">Yuvraj Chauhan</Link></span>
           </div>
         </div>
 

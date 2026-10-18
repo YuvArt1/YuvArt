@@ -54,11 +54,11 @@ export default function MoodProjectPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
               <div className="md:col-span-3 prose max-w-none text-gray-700">
                 <p>
-                  Mood is a product visuals suite exploring color, texture and motion. The project combines short-form motion with high-fidelity stills to present the product in context and highlight material details.
+                  I created 3D furniture visuals for the Mood bed, pairing high-fidelity stills with short-form motion to present the furniture in context and highlight material details.
                 </p>
 
                 <p>
-                  The direction focuses on subtle camera moves, tactile lighting and restrained editing to keep attention on the product's design language. Imagery was created to translate across digital and campaign formats.
+                  I used subtle camera moves, tactile lighting, and restrained editing to keep attention on the bed&apos;s design. I composed imagery for digital and campaign formats.
                 </p>
               </div>
 
@@ -81,7 +81,7 @@ export default function MoodProjectPage() {
               <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/mood-product-visual-02.webp"
-                  alt="Mood product animation feature still"
+                  alt="Mood bed shown with furniture finishes in a product-page render"
                   width={1400}
                   height={800}
                   className="w-full h-auto object-cover"
@@ -98,7 +98,7 @@ export default function MoodProjectPage() {
                   >
                     <Image
                       src={src}
-                      alt={`Mood project still ${idx + 3}`}
+                      alt={`Mood bed furniture render, view ${idx + 3}`}
                       width={900}
                       height={675}
                       className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -117,7 +117,7 @@ export default function MoodProjectPage() {
             >
               <Image
                 src={selectedImage}
-                alt="Full-screen Mood project still"
+                alt="Full-screen 3D render of the Mood bed and bedroom furniture"
                 width={1600}
                 height={1200}
                 className="max-w-full max-h-full object-contain"
@@ -127,13 +127,13 @@ export default function MoodProjectPage() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/TGDAudio" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/Portronics" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">TDG Audio</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Portronics</p>
             </Link>
-            <Link href="/projects/GullyLab" className="text-right hover:text-gray-600 transition-colors">
+            <Link href="/projects/HearO" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">GullyLab</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">HearO</p>
             </Link>
           </div>
 

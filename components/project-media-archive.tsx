@@ -24,8 +24,8 @@ export default function ProjectMediaArchive({ mode }: ProjectMediaArchiveProps) 
           <h1>{isImagery ? "Ecommerce product imagery" : "3D product animations"}</h1>
           <p>
             {isImagery
-              ? "Browse product visuals grouped by project. Open any still at full size or visit the complete project."
-              : "Watch the available animations grouped by project, then explore the complete project for more context."}
+              ? "I create ecommerce product imagery for electronics and furniture brands, including product details, material views, and campaign scenes. I group selected stills by project so I can show the images in context."
+              : "I create 3D product animations for electronics and furniture brands, from feature demonstrations to campaign films. I group the videos by project so I can show each piece in context."}
           </p>
         </section>
 

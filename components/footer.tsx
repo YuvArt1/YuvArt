@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-2">
             <h3 className="text-base font-semibold font-space-grotesk text-gray-900">About Yuv</h3>
             <p className="text-gray-800 leading-relaxed font-inter text-xs">
-              I create 3D product visuals for ecommerce brands, with animation and motion design to bring product details to life.
+              I create 3D product visuals, animation, and motion design for electronics and furniture brands.
             </p>
             <div>
               <Link

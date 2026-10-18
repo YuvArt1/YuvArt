@@ -21,22 +21,22 @@ const carouselSlides = projectAssets.flatMap<CarouselSlide>((project): CarouselS
 
   if (project.name === "HearO") {
     return [
-      { ...project, image: "/hearo-product-visual-03.webp", alt: "HearO product visual, frame three" },
-      { ...project, image: "/hearo-product-visual-04.webp", alt: "HearO product visual, frame four" },
-      { ...project, image: "/hearo-product-visual-01.webp", alt: "HearO product visual" },
+      { ...project, image: "/hearo-product-visual-03.webp", alt: "HearO consumer audio product render, view three" },
+      { ...project, image: "/hearo-product-visual-04.webp", alt: "HearO consumer audio product in a bright poolside scene" },
+      { ...project, image: "/hearo-product-visual-01.webp", alt: "HearO consumer audio product render, view one" },
     ];
   }
 
   if (project.name === "GullyLab") {
-    return [{ ...project, image: "/gullylab-carousel.webp", alt: "GullyLab product visual, frame five" }];
+    return [{ ...project, image: "/gullylab-carousel.webp", alt: "GullyLab sneaker and product bottle render" }];
   }
 
   if (project.name === "Mood") {
-    return [{ ...project, image: "/mood-product-visual-04.webp", alt: "Mood product visual, frame four" }];
+    return [{ ...project, image: "/mood-product-visual-04.webp", alt: "Mood bed shown in a styled bedroom render" }];
   }
 
   if (project.name === "Portronics") {
-    return [{ ...project, image: "/Portronics1.webp", alt: "Portronics product animation still" }];
+    return [{ ...project, image: "/Portronics1.webp", alt: "Portronics Luxcell Wireless Mini power bank product render" }];
   }
 
   return [project];
