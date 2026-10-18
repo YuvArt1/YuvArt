@@ -5,6 +5,8 @@ import { ArrowUpRight } from "lucide-react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
+const FORMSPREE_URL = "https://formspree.io/f/xyekvzbz";
+
 export default function InquiryForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -15,26 +17,21 @@ export default function InquiryForm() {
     setErrorMessage("");
 
     const formData = new FormData(event.currentTarget);
-    const payload = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      product: formData.get("product"),
-      deliverables: formData.get("deliverables"),
-      timeline: formData.get("timeline"),
-      details: formData.get("details") || "",
-    };
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(FORMSPREE_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: formData,
+        headers: { Accept: "application/json" },
       });
 
       const json = await res.json();
 
       if (!res.ok) {
-        setErrorMessage(json.error || "Something went wrong. Please try again.");
+        const msg =
+          json?.errors?.map((e: { message: string }) => e.message).join(", ") ||
+          "Something went wrong. Please try again.";
+        setErrorMessage(msg);
         setStatus("error");
         return;
       }
@@ -50,7 +47,10 @@ export default function InquiryForm() {
     return (
       <div className="studio-inquiry-form studio-form-success" role="status">
         <p className="studio-eyebrow">MESSAGE RECEIVED</p>
-        <p>Thanks — your inquiry is in my inbox. I&apos;ll follow up within 1–2 business days.</p>
+        <p>
+          Thanks — your inquiry is in my inbox. I&apos;ll follow up within 1–2
+          business days.
+        </p>
         <p className="studio-form-note">
           In the meantime, you can{" "}
           <a
@@ -70,21 +70,45 @@ export default function InquiryForm() {
       <div className="studio-form-row">
         <label>
           Name <span>*</span>
-          <input name="name" autoComplete="name" required disabled={status === "loading"} />
+          <input
+            name="name"
+            autoComplete="name"
+            required
+            disabled={status === "loading"}
+          />
         </label>
         <label>
           Work email <span>*</span>
-          <input name="email" type="email" autoComplete="email" required disabled={status === "loading"} />
+          <input
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            disabled={status === "loading"}
+          />
         </label>
       </div>
       <label>
         Product or brand <span>*</span>
-        <input name="product" autoComplete="organization" placeholder="What product are you working on?" required disabled={status === "loading"} />
+        <input
+          name="product"
+          autoComplete="organization"
+          placeholder="What product are you working on?"
+          required
+          disabled={status === "loading"}
+        />
       </label>
       <label>
         What deliverables do you need? <span>*</span>
-        <select name="deliverables" defaultValue="" required disabled={status === "loading"}>
-          <option value="" disabled>Select deliverables</option>
+        <select
+          name="deliverables"
+          defaultValue=""
+          required
+          disabled={status === "loading"}
+        >
+          <option value="" disabled>
+            Select deliverables
+          </option>
           <option>Product imagery</option>
           <option>Product animation</option>
           <option>Campaign visuals</option>
@@ -94,8 +118,15 @@ export default function InquiryForm() {
       </label>
       <label>
         Ideal timeline <span>*</span>
-        <select name="timeline" defaultValue="" required disabled={status === "loading"}>
-          <option value="" disabled>Select a timeline</option>
+        <select
+          name="timeline"
+          defaultValue=""
+          required
+          disabled={status === "loading"}
+        >
+          <option value="" disabled>
+            Select a timeline
+          </option>
           <option>As soon as possible</option>
           <option>Within one month</option>
           <option>One to three months</option>
@@ -104,15 +135,27 @@ export default function InquiryForm() {
         </select>
       </label>
       <label>
-        Project details or reference links <span className="studio-optional">Optional</span>
-        <textarea name="details" rows={3} placeholder="A few lines about the product, timing, or content you need." disabled={status === "loading"} />
+        Project details or reference links{" "}
+        <span className="studio-optional">Optional</span>
+        <textarea
+          name="details"
+          rows={3}
+          placeholder="A few lines about the product, timing, or content you need."
+          disabled={status === "loading"}
+        />
       </label>
       <button
         className="studio-button studio-button-dark studio-submit"
         type="submit"
         disabled={status === "loading"}
       >
-        {status === "loading" ? "Sending…" : <>Send inquiry <ArrowUpRight size={17} aria-hidden="true" /></>}
+        {status === "loading" ? (
+          "Sending…"
+        ) : (
+          <>
+            Send inquiry <ArrowUpRight size={17} aria-hidden="true" />
+          </>
+        )}
       </button>
       {status === "error" && (
         <p className="studio-form-status studio-form-error" role="alert">
@@ -120,7 +163,9 @@ export default function InquiryForm() {
           <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly.
         </p>
       )}
-      <p className="studio-form-note">Your message goes straight to my inbox — no email app needed.</p>
+      <p className="studio-form-note">
+        Your message goes straight to my inbox — no email app needed.
+      </p>
     </form>
   );
 }
