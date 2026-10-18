@@ -40,22 +40,34 @@ export default function Project4Page() {
           {/* Details */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 font-inter">
             <div>
-              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Type</h3>
-              <p className="text-gray-700">Product Visuals</p>
+              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Product</h3>
+              <p className="text-gray-700">HearO (consumer audio)</p>
             </div>
             <div>
               <h3 className="font-semibold text-black mb-2 font-space-grotesk">Year</h3>
               <p className="text-gray-700">2025</p>
             </div>
             <div>
-              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Status</h3>
-              <p className="text-gray-700">Assets finalized</p>
+              <h3 className="font-semibold text-black mb-2 font-space-grotesk">Focus</h3>
+              <p className="text-gray-700">Product imagery, ecommerce, social</p>
             </div>
           </div>
 
           <div className="prose prose-lg max-w-none font-inter mb-12">
+            <p className="text-gray-700 leading-relaxed mb-6">
+              HearO is a consumer audio product that needed a cohesive set of visuals ready for its launch. The goal was to create imagery that could work across ecommerce listings, social media posts, and marketing collateral without requiring a separate shoot for each placement.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Every angle was chosen deliberately. Front views for product pages, three-quarter views for social cards, and detail crops for feature callouts. The lighting stays consistent across the set so the images feel like they belong together, whether they appear side by side on a product page or weeks apart in a social feed.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              The material rendering focuses on getting the surface finishes right: the matte body, the mesh grille texture, and the subtle sheen on control surfaces. These details are what make the product look real and tactile on screen, which matters when a customer can't pick it up.
+            </p>
+
             <p className="text-gray-700 leading-relaxed">
-              For this consumer audio launch, I created a consistent set of product visuals built around controlled angles and polished lighting. The views are composed to make the product easy to understand while giving the image set a cohesive feel across launch and social placements. The assets are finalized.
+              The result is a complete image set that gives the brand flexibility. One 3D build, multiple compositions, and a visual language that scales from a Shopify listing to an Instagram carousel without losing consistency.
             </p>
           </div>
 
@@ -69,7 +81,7 @@ export default function Project4Page() {
               >
                 <Image
                   src={src}
-                  alt={`HearO project still ${index + 1}`}
+                  alt={`HearO consumer audio product still ${index + 1}`}
                   width={600}
                   height={400}
                   className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -86,7 +98,7 @@ export default function Project4Page() {
             >
               <img
                 src={selectedImage}
-                alt="Enlarged HearO project still"
+                alt="Enlarged HearO product still"
                 className="max-w-[90%] max-h-[90%] object-contain rounded-lg shadow-2xl"
               />
             </div>
@@ -94,13 +106,13 @@ export default function Project4Page() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/GullyLab" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/ZeroCO" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">GullyLab</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">ZeroCO</p>
             </Link>
-            <Link href="/projects/TangentGC" className="text-right hover:text-gray-600 transition-colors">
+            <Link href="/projects/Mood" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">TangentGC</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Mood</p>
             </Link>
           </div>
 

@@ -6,17 +6,17 @@ import StudioHeader from "@/components/studio-header"
 import { projectAssets } from "@/lib/project-assets"
 
 export const metadata: Metadata = {
-  title: "Selected Work",
+  title: "Selected Work | 3D Product Visualization for Electronics & Furniture Brands",
   description:
-    "Explore selected 3D product animation, motion design, and visual content projects by DesignYuv.",
+    "Explore 3D product visualization, animation, and campaign projects created for electronics and furniture brands. Product stills, motion, and launch-ready visuals by DesignYuv.",
   alternates: {
     canonical: "https://www.designyuv.com/work",
   },
   openGraph: {
-    title: "Selected Work | DesignYuv",
-    description: "Selected product visualization, animation, and design projects by DesignYuv.",
+    title: "Selected Work | 3D Product Visuals for Electronics & Furniture | DesignYuv",
+    description: "Product visualization, animation, and campaign projects for electronics and furniture brands by DesignYuv.",
     url: "https://www.designyuv.com/work",
-    images: [{ url: "/TGD/Final.webp", width: 1200, height: 630, alt: "Selected DesignYuv work" }],
+    images: [{ url: "/zero-co-speaker-visual-01.webp", width: 1200, height: 630, alt: "DesignYuv 3D product visualization for electronics and furniture brands" }],
   },
 }
 

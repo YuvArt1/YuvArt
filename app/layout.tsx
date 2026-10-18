@@ -27,23 +27,28 @@ export const metadata: Metadata = {
     "3D product animation, motion design, and product visualization for brands. DesignYuv turns products and ideas into visuals that capture attention.",
 
   keywords: [
+    // Electronics product visuals
+    "3D product visualization for electronics brands",
+    "product animation for electronics companies",
+    "3D rendering for consumer electronics",
+    "electronics product photography alternative",
+    "3D product visuals for audio brands",
+    "ecommerce product imagery for electronics",
+
+    // Furniture product visuals
+    "3D product visualization for furniture brands",
+    "furniture product animation",
+    "3D rendering for furniture companies",
+    "furniture product photography alternative",
+    "pre-launch furniture advertising",
+
     // Core service terms
-    "3D product animation for D2C brands",
     "3D product animation freelancer",
-    "product animation for Shopify brands",
-    "3D animation studio for small brands",
-    "product visualization for D2C brands",
-    "3D render for D2C product launch",
-    "explainer animation for D2C brands",
-    "motion design for consumer brands",
-    "hire freelance 3D animator",
-
-    // E-commerce product visuals
-    "e-commerce product visuals",
-
-    // Broader
-    "product visualization",
+    "product visualization studio",
+    "hire freelance 3D product animator",
+    "ecommerce product visuals",
     "3D product visualization",
+    "product launch visuals",
   ],
 
   authors: [{ name: "Yuv" }],

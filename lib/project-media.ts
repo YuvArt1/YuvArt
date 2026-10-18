@@ -20,13 +20,13 @@ export const mediaProjects: MediaProject[] = [
     name: "ZeroCO",
     href: "/projects/ZeroCO",
     stills: [
-      { src: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO project still 1" },
-      { src: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO project still 2" },
-      { src: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO project still 3" },
-      { src: "/zero-co-speaker-visual-04.webp", alt: "ZeroCO project still 4" },
-      { src: "/zero-co-speaker-visual-05.webp", alt: "ZeroCO project still 5" },
-      { src: "/zero-co-speaker-visual-06.webp", alt: "ZeroCO project still 6" },
-      { src: "/zero-co-speaker-visual-07.webp", alt: "ZeroCO project still 7" },
+      { src: "/zero-co-speaker-visual-01.webp", alt: "ZeroCO speaker product detail" },
+      { src: "/zero-co-speaker-visual-02.webp", alt: "ZeroCO speaker in campaign scene" },
+      { src: "/zero-co-speaker-visual-03.webp", alt: "ZeroCO speaker product composition" },
+      { src: "/zero-co-speaker-visual-04.webp", alt: "ZeroCO speaker lifestyle context" },
+      { src: "/zero-co-speaker-visual-05.webp", alt: "ZeroCO speaker texture close-up" },
+      { src: "/zero-co-speaker-visual-06.webp", alt: "ZeroCO speaker angle view" },
+      { src: "/zero-co-speaker-visual-07.webp", alt: "ZeroCO speaker environmental shot" },
     ],
     videos: [
       { id: "1102749162", title: "Zeroco_Scen1.mp4" },
@@ -36,20 +36,11 @@ export const mediaProjects: MediaProject[] = [
     ],
   },
   {
-    name: "GullyLab",
-    href: "/projects/GullyLab",
-    stills: [1, 2, 3, 4, 5].map((number) => ({
-      src: `/GullyLab (${number}).webp`,
-      alt: `GullyLab project still ${number}`,
-    })),
-    videos: [{ id: "1150857148", title: "Gully Lab Animation" }],
-  },
-  {
     name: "HearO",
     href: "/projects/HearO",
     stills: [6, 1, 4, 3, 2, 5].map((number) => ({
       src: `/hearo-product-visual-${String(number).padStart(2, "0")}.webp`,
-      alt: `HearO project still ${number}`,
+      alt: `HearO consumer audio product still ${number}`,
     })),
     videos: [],
   },
@@ -58,7 +49,7 @@ export const mediaProjects: MediaProject[] = [
     href: "/projects/Mood",
     stills: [2, 4, 6, 1, 3, 5].map((number) => ({
       src: `/mood-product-visual-${String(number).padStart(2, "0")}.webp`,
-      alt: `Mood project still ${number}`,
+      alt: `Mood furniture product still ${number}`,
     })),
     videos: [{ id: "1154253992", title: "Mood Nz Bed Animation" }],
   },
@@ -66,12 +57,26 @@ export const mediaProjects: MediaProject[] = [
     name: "Portronics",
     href: "/projects/Portronics",
     stills: [
-      { src: "/Portronics.webp", alt: "Portronics project still 1" },
-      { src: "/Portronics1.webp", alt: "Portronics project still 2" },
-      { src: "/Portronics2.webp", alt: "Portronics project still 3" },
-      { src: "/Portronics3.webp", alt: "Portronics project still 4" },
+      { src: "/Portronics.webp", alt: "Portronics Luxcell product still 1" },
+      { src: "/Portronics1.webp", alt: "Portronics Luxcell product still 2" },
+      { src: "/Portronics2.webp", alt: "Portronics Luxcell product still 3" },
+      { src: "/Portronics3.webp", alt: "Portronics Luxcell product still 4" },
     ],
     videos: [{ id: "1102750316", title: "Portronics Animation" }],
+  },
+  {
+    name: "Outer",
+    href: "/projects/Outer",
+    stills: [
+      { src: "/this%20is%20it.png", alt: "Outer furniture campaign hero still" },
+      { src: "/this%20is%20it2nd.png", alt: "Outer furniture campaign detail still" },
+      { src: "/this%20is%20it3nd.png", alt: "Outer furniture campaign close-up still" },
+      { src: "/this%20is%20it4nd.png", alt: "Outer furniture campaign alternate still" },
+    ],
+    videos: [
+      { id: "1128834963", title: "Outer pre-launch campaign film" },
+      { id: "1128940767", title: "Outer customization animation" },
+    ],
   },
   {
     name: "TDG Audio",
@@ -85,18 +90,18 @@ export const mediaProjects: MediaProject[] = [
     videos: [{ id: "1222345243", title: "TDG Audio product animation" }],
   },
   {
-    name: "Folden Lane",
-    href: "/projects/FoldenLane",
-    stills: [{ src: "/foldenlane.webp", alt: "Folden Lane web content project visual" }],
-    videos: [
-      { id: "1233846508", title: "Folden Lane LinkedIn video" },
-      { id: "1233846509", title: "Folden Lane web content" },
-    ],
+    name: "GullyLab",
+    href: "/projects/GullyLab",
+    stills: [1, 2, 3, 4, 5].map((number) => ({
+      src: `/GullyLab (${number}).webp`,
+      alt: `GullyLab electronics product still ${number}`,
+    })),
+    videos: [{ id: "1150857148", title: "Gully Lab Animation" }],
   },
   {
     name: "TangentGC",
     href: "/projects/TangentGC",
-    stills: [{ src: "/Tangent.webp", alt: "TangentGC project visual" }],
+    stills: [{ src: "/Tangent.webp", alt: "TangentGC packaging animation still" }],
     videos: [
       { id: "1102747582", title: "TangentGC Main animation" },
       { id: "1102748531", title: "TangentGC animation 2" },
