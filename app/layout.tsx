@@ -19,15 +19,35 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.designyuv.com"),
 
   title: {
-    default: "3D Product Visualization & Animation for Electronics and Furniture Brands | DesignYuv",
+    default: "DesignYuv | 3D Product Animation Studio",
     template: "%s | DesignYuv",
   },
 
   description:
-    "I create 3D product visualization and animation for electronics and furniture brands, from ecommerce imagery to product films and campaign visuals.",
+    "3D product animation, motion design, and product visualization for brands. DesignYuv turns products and ideas into visuals that capture attention.",
 
-  authors: [{ name: "Yuvraj Chauhan" }],
-  creator: "Yuvraj Chauhan",
+  keywords: [
+    // Core service terms
+    "3D product animation for D2C brands",
+    "3D product animation freelancer",
+    "product animation for Shopify brands",
+    "3D animation studio for small brands",
+    "product visualization for D2C brands",
+    "3D render for D2C product launch",
+    "explainer animation for D2C brands",
+    "motion design for consumer brands",
+    "hire freelance 3D animator",
+
+    // E-commerce product visuals
+    "e-commerce product visuals",
+
+    // Broader
+    "product visualization",
+    "3D product visualization",
+  ],
+
+  authors: [{ name: "Yuv" }],
+  creator: "Yuv",
   publisher: "DesignYuv",
   icons: {
     icon: [{ url: "/icon.webp", type: "image/webp", sizes: "32x32" }],
@@ -50,24 +70,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.designyuv.com",
     siteName: "DesignYuv",
-    title: "3D Product Visualization & Animation for Electronics and Furniture Brands | DesignYuv",
+    title: "DesignYuv | 3D Product Animation Studio",
     description:
-      "I create 3D product visualization and animation for electronics and furniture brands, from ecommerce imagery to product films and campaign visuals.",
+      "3D product animation, motion design, and product visualization for D2C brands.",
     images: [
       {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "3D product visualization and animation for electronics and furniture brands",
+        alt: "DesignYuv - 3D Product Animation & Visuals",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "3D Product Visualization & Animation for Electronics and Furniture Brands | DesignYuv",
+    title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     description:
-      "I create 3D product visualization and animation for electronics and furniture brands, from ecommerce imagery to product films and campaign visuals.",
+      "3D product animation, motion design, and product visualization for D2C brands.",
     images: ["/og-image.webp"],
   },
 
@@ -86,10 +106,10 @@ const jsonLd = {
       url: "https://www.designyuv.com/",
       logo: "https://www.designyuv.com/og-image.webp",
       description:
-        "Yuvraj Chauhan creates 3D product visualization and animation for electronics and furniture brands.",
+        "3D product animation, motion design, and product visualization for brands.",
       founder: {
         "@type": "Person",
-        name: "Yuvraj Chauhan",
+        name: "Yuvraj Chavhan",
       },
       sameAs: [
         "https://www.behance.net/DesignYuv",

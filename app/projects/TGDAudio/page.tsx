@@ -16,12 +16,6 @@ export default function TDGAudioProjectPage() {
     "/TGD/TopDown.webp",
     "/TGD/BottomTop.webp",
   ];
-  const imageAlts = [
-    "TDG Audio product shown in a finished 3D render",
-    "Front view of a TDG Audio product",
-    "Top-down view of a TDG Audio product",
-    "Bottom-up view of a TDG Audio product",
-  ];
 
   const videos = [
     { id: "1222345243", title: "TDG Audio product animation" },
@@ -60,7 +54,7 @@ export default function TDGAudioProjectPage() {
 
           <div className="prose prose-lg max-w-none font-inter mb-12">
             <p className="text-gray-700 leading-relaxed">
-              I created a product animation and a set of stills to present TDG Audio from multiple angles. I kept the views and visual treatment cohesive so the assets work together as a product-focused set.
+              This project pairs a product animation with a set of stills to present TDG Audio from multiple angles. The stills give the product a clear, considered showcase, while the motion adds another way to experience its form. Keeping the views and visual treatment cohesive makes the assets work together as a product-focused set.
             </p>
           </div>
 
@@ -90,7 +84,7 @@ export default function TDGAudioProjectPage() {
                 >
                   <Image
                     src={src}
-                    alt={imageAlts[index]}
+                    alt={`TDG Audio project still ${index + 1}`}
                     width={900}
                     height={675}
                     className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
@@ -107,7 +101,7 @@ export default function TDGAudioProjectPage() {
             >
               <Image
                 src={selectedImage}
-                alt="Full-screen TDG Audio product render"
+                alt="Full-screen TDG Audio project still"
                 width={1600}
                 height={1200}
                 className="max-w-full max-h-full object-contain"
@@ -116,13 +110,10 @@ export default function TDGAudioProjectPage() {
           )}
 
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/HearO" className="text-left hover:text-gray-600 transition-colors">
-              <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">HearO</p>
-            </Link>
-            <Link href="/projects/GullyLab" className="text-right hover:text-gray-600 transition-colors">
+            <div></div>
+            <Link href="/projects/Mood" className="text-right hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">GullyLab</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">Mood</p>
             </Link>
           </div>
 

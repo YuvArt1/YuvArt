@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://www.designyuv.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-10-18T00:00:00.000Z");
+  const lastModified = new Date();
 
   return [
     {
@@ -61,14 +61,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...[
-      "ZeroCO",
-      "Portronics",
-      "Mood",
-      "HearO",
-      "tdg-audio",
       "GullyLab",
-      "TangentGC",
+      "FoldenLane",
+      "HearO",
+      "Mood",
       "Outer",
+      "Portronics",
+      "TangentGC",
+      "TGDAudio",
+      "ZeroCO",
     ].map((project) => ({
       url: `${siteUrl}/projects/${project}`,
       lastModified,

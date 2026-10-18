@@ -1,23 +1,17 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: { absolute: "GullyLab Product Visuals and Animation | DesignYuv" },
+  title: "GullyLab 3D Product Visuals",
   description:
-    "I created composed product visuals and animation for GullyLab, combining still images with a consistent visual treatment.",
+    "3D product visuals for GullyLab - a case study in product animation and visualization by DesignYuv, 2026.",
   alternates: {
     canonical: "https://www.designyuv.com/projects/GullyLab",
   },
   openGraph: {
-    title: "GullyLab Product Visuals and Animation | DesignYuv",
-    description: "I created composed product visuals and animation for GullyLab, combining still images with a consistent visual treatment.",
+    title: "GullyLab | 3D Product Visualization Case Study",
+    description: "3D product visuals for GullyLab by DesignYuv.",
     url: "https://www.designyuv.com/projects/GullyLab",
-    images: [{ url: "/gullylab-01.webp", width: 1200, height: 630, alt: "GullyLab sneakers shown in a 3D product render" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "GullyLab Product Visuals and Animation | DesignYuv",
-    description: "I created composed product visuals and animation for GullyLab, combining still images with a consistent visual treatment.",
-    images: ["/gullylab-01.webp"],
+    images: [{ url: "/GullyLab (1).webp", width: 1200, height: 630, alt: "GullyLab 3D product visualization" }],
   },
 }
 

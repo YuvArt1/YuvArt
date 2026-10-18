@@ -6,15 +6,16 @@ import ProjectInquiryCTA from "@/components/project-inquiry-cta"
 import StudioHeader from "@/components/studio-header"
 
 export const metadata: Metadata = {
-  title: { absolute: "3D Advertising Campaign Concepts | Product Films and Animation" },
+  title: "3D Advertising Campaign Concepts | Product Films and Animation",
   description:
-    "I create self-initiated 3D advertising concepts, including pre-launch product films and social animation for electronics and furniture brands.",
+    "Explore self-initiated 3D advertising campaign concepts by DesignYuv, including pre-launch product films and social media animation.",
   alternates: {
     canonical: "https://www.designyuv.com/campaigns",
   },
   openGraph: {
-    title: "3D Advertising Campaign Concepts | Product Films and Animation",
-    description: "I create self-initiated 3D advertising concepts, including pre-launch product films and social animation for electronics and furniture brands.",
+    title: "3D Advertising Campaign Concepts | DesignYuv",
+    description:
+      "Self-initiated product advertising concepts featuring 3D product films and animation.",
     url: "https://www.designyuv.com/campaigns",
     images: [
       {
@@ -24,12 +25,6 @@ export const metadata: Metadata = {
         alt: "Outer furniture campaign visual",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "3D Advertising Campaign Concepts | Product Films and Animation",
-    description: "I create self-initiated 3D advertising concepts, including pre-launch product films and social animation for electronics and furniture brands.",
-    images: ["/this%20is%20it.png"],
   },
 }
 
@@ -41,11 +36,11 @@ export default function CampaignsPage() {
         <section className="studio-work-page studio-section">
           <div className="studio-work-page-heading">
             <p className="studio-eyebrow">PORTFOLIO / CAMPAIGNS</p>
-            <h1>3D Campaign Concepts</h1>
+            <h1>Full Ad Campaigns</h1>
             <p>
-              I create personal campaign concepts exploring 3D product visualization,
-              pre-launch product films, and social-first animation. These concepts are
-              independent portfolio work, not commissioned campaigns.
+              A collection of self-initiated advertising campaign concepts exploring 3D
+              product visualization, pre-launch product films, and social-first animation.
+              These are personal portfolio projects, not commissioned client campaigns.
             </p>
           </div>
 
@@ -61,27 +56,33 @@ export default function CampaignsPage() {
                 <span className="studio-project-open" aria-hidden="true"><span>↗</span></span>
               </Link>
               <div className="studio-project-meta">
-                <span>My personal concept / Furniture film and animation</span>
+                <span>Personal concept / Furniture film and animation</span>
                 <span>01</span>
               </div>
               <h2><Link href="/projects/Outer">Outer</Link></h2>
-              <p>I created a personal 3D furniture campaign concept exploring pre-launch product visuals and customization animation.</p>
+              <p>
+                A personal 3D furniture campaign concept exploring how to advertise a
+                product before its SKU exists, then bring customization to life in a
+                playful social animation.
+              </p>
             </article>
           </div>
 
           <section className="max-w-3xl mt-16 mb-12">
             <h2 className="text-2xl font-bold text-black mb-4 font-space-grotesk">
-              How I approach product advertising
+              Product advertising made for your brand
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              I use 3D advertising concepts to explore launch content before a physical
-              product is ready. A product film can introduce a design and establish a
-              visual direction for launch.
+              3D advertising can help product teams prepare launch content before a
+              physical SKU is ready. Product visualization makes it possible to present
+              a design before production, while a product film can introduce the product
+              and establish a visual direction for launch.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              I also explore customization through playful animation for social media.
-              My Outer concept is an independent creative exploration inspired by an
-              outdoor furniture brand, not official advertising or commissioned work.
+              This independent concept also explores customization through playful
+              animation designed for social media. The Outer project is a personal
+              creative exploration inspired by the outdoor furniture brand, not official
+              advertising or commissioned work.
             </p>
           </section>
 

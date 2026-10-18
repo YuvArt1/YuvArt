@@ -1,23 +1,17 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: { absolute: "HearO Product Visuals | DesignYuv" },
+  title: "HearO 3D Product Visuals",
   description:
-    "I created product visuals for HearO with controlled angles and polished lighting for launch and social placements.",
+    "3D product visuals for HearO - a case study in product animation and visualization by DesignYuv, 2025.",
   alternates: {
     canonical: "https://www.designyuv.com/projects/HearO",
   },
   openGraph: {
-    title: "HearO Product Visuals | DesignYuv",
-    description: "I created product visuals for HearO with controlled angles and polished lighting for launch and social placements.",
+    title: "HearO | 3D Product Visualization Case Study",
+    description: "3D product visuals for HearO by DesignYuv.",
     url: "https://www.designyuv.com/projects/HearO",
     images: [{ url: "/hearo-product-visual-01.webp", width: 1200, height: 630, alt: "HearO 3D product visualization" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "HearO Product Visuals | DesignYuv",
-    description: "I created product visuals for HearO with controlled angles and polished lighting for launch and social placements.",
-    images: ["/hearo-product-visual-01.webp"],
   },
 }
 

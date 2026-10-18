@@ -54,11 +54,11 @@ export default function Project1Page() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              I animated a downward flap followed by a clean, controlled sideways opening, revealing the box construction one step at a time.
+              The animation starts with a downward flap, then opens sideways, clean and controlled. Everything reveals itself one step at a time, matching the minimal, intentional vibe of the packaging.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              I didn’t use a fixed narrative; I focused on simple, smooth motion that stays true to the way the packaging was designed.
+              There wasn’t a fixed narrative here. The motion was the point, letting the product speak through how it unfolds. Just about keeping it simple, smooth, and true to the way it was designed.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Project1Page() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              I used the sequence to explore rhythm, balance, and a sense of connection between the packages.
+              It's a small story about objects but also about rhythm, balance, and capturing a sense of connection.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
@@ -95,11 +95,14 @@ export default function Project1Page() {
 
           {/* Project Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8 mb-12">
-            <Link href="/projects/GullyLab" className="text-left hover:text-gray-600 transition-colors">
+            <Link href="/projects/HearO" className="text-left hover:text-gray-600 transition-colors">
               <p className="text-xs text-gray-600 font-inter mb-2">← PREVIOUS</p>
-              <p className="text-lg font-bold text-black font-space-grotesk">GullyLab</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">HearO</p>
             </Link>
-            <div />
+            <Link href="/projects/ZeroCO" className="text-right hover:text-gray-600 transition-colors">
+              <p className="text-xs text-gray-600 font-inter mb-2">NEXT →</p>
+              <p className="text-lg font-bold text-black font-space-grotesk">ZeroCO</p>
+            </Link>
           </div>
 
           <ProjectInquiryCTA />
