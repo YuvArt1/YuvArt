@@ -3,27 +3,66 @@
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight } from "lucide-react";
 
+type Status = "idle" | "loading" | "success" | "error";
+
 export default function InquiryForm() {
-  const [draftReady, setDraftReady] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const body = [
-      `Name: ${formData.get("name")}`,
-      `Work email: ${formData.get("email")}`,
-      `Product or brand: ${formData.get("product")}`,
-      `Deliverables: ${formData.get("deliverables")}`,
-      `Ideal timeline: ${formData.get("timeline")}`,
-      `Project details or references: ${formData.get("details") || "Not provided"}`,
-    ].join("\n");
-    const params = new URLSearchParams({
-      subject: `Project inquiry from ${formData.get("name")}`,
-      body,
-    });
+    setStatus("loading");
+    setErrorMessage("");
 
-    window.location.href = `mailto:hello@designyuv.com?${params.toString()}`;
-    setDraftReady(true);
+    const formData = new FormData(event.currentTarget);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      product: formData.get("product"),
+      deliverables: formData.get("deliverables"),
+      timeline: formData.get("timeline"),
+      details: formData.get("details") || "",
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const json = await res.json();
+
+      if (!res.ok) {
+        setErrorMessage(json.error || "Something went wrong. Please try again.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setErrorMessage("Network error. Please check your connection and try again.");
+      setStatus("error");
+    }
+  }
+
+  if (status === "success") {
+    return (
+      <div className="studio-inquiry-form studio-form-success" role="status">
+        <p className="studio-eyebrow">MESSAGE RECEIVED</p>
+        <p>Thanks — your inquiry is in my inbox. I&apos;ll follow up within 1–2 business days.</p>
+        <p className="studio-form-note">
+          In the meantime, you can{" "}
+          <a
+            href="https://cal.com/yuv-raj-pao2g5/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            book a free discovery call <ArrowUpRight size={14} aria-hidden="true" />
+          </a>
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -31,20 +70,20 @@ export default function InquiryForm() {
       <div className="studio-form-row">
         <label>
           Name <span>*</span>
-          <input name="name" autoComplete="name" required />
+          <input name="name" autoComplete="name" required disabled={status === "loading"} />
         </label>
         <label>
           Work email <span>*</span>
-          <input name="email" type="email" autoComplete="email" required />
+          <input name="email" type="email" autoComplete="email" required disabled={status === "loading"} />
         </label>
       </div>
       <label>
         Product or brand <span>*</span>
-        <input name="product" autoComplete="organization" placeholder="What product are you working on?" required />
+        <input name="product" autoComplete="organization" placeholder="What product are you working on?" required disabled={status === "loading"} />
       </label>
       <label>
         What deliverables do you need? <span>*</span>
-        <select name="deliverables" defaultValue="" required>
+        <select name="deliverables" defaultValue="" required disabled={status === "loading"}>
           <option value="" disabled>Select deliverables</option>
           <option>Product imagery</option>
           <option>Product animation</option>
@@ -55,7 +94,7 @@ export default function InquiryForm() {
       </label>
       <label>
         Ideal timeline <span>*</span>
-        <select name="timeline" defaultValue="" required>
+        <select name="timeline" defaultValue="" required disabled={status === "loading"}>
           <option value="" disabled>Select a timeline</option>
           <option>As soon as possible</option>
           <option>Within one month</option>
@@ -66,18 +105,22 @@ export default function InquiryForm() {
       </label>
       <label>
         Project details or reference links <span className="studio-optional">Optional</span>
-        <textarea name="details" rows={3} placeholder="A few lines about the product, timing, or content you need." />
+        <textarea name="details" rows={3} placeholder="A few lines about the product, timing, or content you need." disabled={status === "loading"} />
       </label>
-      <button className="studio-button studio-button-dark studio-submit" type="submit">
-        Prepare inquiry <ArrowUpRight size={17} aria-hidden="true" />
+      <button
+        className="studio-button studio-button-dark studio-submit"
+        type="submit"
+        disabled={status === "loading"}
+      >
+        {status === "loading" ? "Sending…" : <>Send inquiry <ArrowUpRight size={17} aria-hidden="true" /></>}
       </button>
-      {draftReady ? (
-        <p className="studio-form-status" role="status">
-          Your email app should open with a prepared inquiry. Review and send it to complete your message. If it does not open, email <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly or <a href="https://cal.com/yuv-raj-pao2g5/30min" target="_blank" rel="noopener noreferrer">book a free discovery call</a>.
+      {status === "error" && (
+        <p className="studio-form-status studio-form-error" role="alert">
+          {errorMessage} You can also email{" "}
+          <a href="mailto:hello@designyuv.com">hello@designyuv.com</a> directly.
         </p>
-      ) : (
-        <p className="studio-form-note">This prepares an email draft you can review before sending.</p>
       )}
+      <p className="studio-form-note">Your message goes straight to my inbox — no email app needed.</p>
     </form>
   );
 }
