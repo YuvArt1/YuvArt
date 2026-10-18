@@ -6,17 +6,17 @@ import Footer from "@/components/footer"
 import StudioHeader from "@/components/studio-header"
 
 export const metadata: Metadata = {
-  title: "About Yuvraj Chavhan",
+  title: "About Yuvraj Chauhan",
   description:
-    "Meet Yuvraj Chavhan, the 3D product visualization artist behind DesignYuv, creating product imagery with motion and animation.",
+    "Meet Yuvraj Chauhan, the 3D product visualization artist behind DesignYuv, creating product imagery with motion and animation.",
   alternates: {
     canonical: "https://www.designyuv.com/about",
   },
   openGraph: {
-    title: "About Yuvraj Chavhan | 3D Product Visualization",
+    title: "About Yuvraj Chauhan | 3D Product Visualization",
     description: "Meet the 3D product visualization artist behind DesignYuv, with motion and animation as supporting specialisms.",
     url: "https://www.designyuv.com/about",
-    images: [{ url: "/aboutme.webp", width: 480, height: 600, alt: "Yuvraj Chavhan" }],
+    images: [{ url: "/aboutme.webp", width: 480, height: 600, alt: "Yuvraj Chauhan" }],
   },
 }
 
@@ -27,8 +27,8 @@ export default function AboutPage() {
       <main>
         <section className="studio-about-page studio-section">
           <div className="studio-about-image">
-            <Image src="/aboutme.webp" alt="Yuvraj Chavhan, 3D product visualization artist" fill priority sizes="(max-width: 760px) 100vw, 44vw" />
-            <span>YUVRAJ CHAVHAN / DESIGNYUV</span>
+            <Image src="/aboutme.webp" alt="Yuvraj Chauhan, 3D product visualization artist" fill priority sizes="(max-width: 760px) 100vw, 44vw" />
+            <span>YUVRAJ CHAUHAN / DESIGNYUV</span>
           </div>
           <div className="studio-about-copy">
             <p className="studio-eyebrow">ABOUT THE STUDIO</p>

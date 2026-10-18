@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     "product launch visuals",
   ],
 
-  authors: [{ name: "Yuv" }],
+  authors: [{ name: "Yuvraj Chauhan" }],
   creator: "Yuv",
   publisher: "DesignYuv",
   icons: {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     siteName: "DesignYuv",
     title: "DesignYuv | 3D Product Animation Studio",
     description:
-      "3D product animation, motion design, and product visualization for D2C brands.",
+      "3D product animation, motion design, and product visualization for electronics and furniture brands.",
     images: [
       {
         url: "/og-image.webp",
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
     description:
-      "3D product animation, motion design, and product visualization for D2C brands.",
+      "3D product animation, motion design, and product visualization for electronics and furniture brands.",
     images: ["/og-image.webp"],
   },
 
@@ -114,7 +114,7 @@ const jsonLd = {
         "3D product animation, motion design, and product visualization for brands.",
       founder: {
         "@type": "Person",
-        name: "Yuvraj Chavhan",
+        name: "Yuvraj Chauhan",
       },
       sameAs: [
         "https://www.behance.net/DesignYuv",

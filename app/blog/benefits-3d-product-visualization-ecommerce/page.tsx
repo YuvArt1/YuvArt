@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: articleUrl,
   },
-  authors: [{ name: "Yuvraj Chavhan", url: "https://www.designyuv.com/about" }],
+  authors: [{ name: "Yuvraj Chauhan", url: "https://www.designyuv.com/about" }],
   openGraph: {
     type: "article",
     title: "Benefits of 3D Product Visualization for Ecommerce | DesignYuv",
@@ -93,7 +93,7 @@ const jsonLd = {
       dateModified: modifiedAt,
       author: {
         "@type": "Person",
-        name: "Yuvraj Chavhan",
+        name: "Yuvraj Chauhan",
         url: "https://www.designyuv.com/about",
       },
       publisher: {
@@ -232,7 +232,7 @@ export default function ProductVisualizationBenefitsArticle() {
           <div className="studio-article-meta">
             <span>Published Oct 17, 2026</span>
             <span>Updated Oct 18, 2026</span>
-            <span>By <Link href="/about">Yuvraj Chavhan</Link></span>
+            <span>By <Link href="/about">Yuvraj Chauhan</Link></span>
           </div>
         </div>
 
