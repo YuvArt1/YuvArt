@@ -95,8 +95,9 @@ export default function ProjectCarousel() {
             src={activeProject.image}
             alt={activeProject.alt}
             fill
-            priority={activeIndex === zeroCoIndex}
-            sizes="(max-width: 760px) 100vw, 52vw"
+            priority
+            fetchPriority="high"
+            sizes="(max-width: 480px) 100vw, (max-width: 760px) 100vw, 52vw"
             className="studio-cover-image"
           />
         </Link>

@@ -139,7 +139,7 @@ export default function ProjectStillCarousel({ projectName, stills }: ProjectSti
               onClick={(event) => openStill(still, event)}
             >
               <span className="studio-media-still-frame">
-                <Image src={still.src} alt={still.alt} fill sizes="(max-width: 680px) 82vw, (max-width: 1000px) 35vw, 32vw" />
+                <Image src={still.src} alt={still.alt} fill loading={index === 0 ? "eager" : "lazy"} sizes="(max-width: 680px) 82vw, (max-width: 1000px) 35vw, 32vw" />
               </span>
               <span className="studio-media-still-caption">
                 <span>STILL {String(index + 1).padStart(2, "0")}</span>

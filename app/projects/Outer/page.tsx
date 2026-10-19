@@ -20,9 +20,9 @@ const videos = [
 ] as const
 
 const projectImages = [
-  { src: "/this%20is%20it2nd.png", alt: "Outer furniture campaign detail still" },
-  { src: "/this%20is%20it3nd.png", alt: "Outer furniture campaign close-up still" },
-  { src: "/this%20is%20it4nd.png", alt: "Outer furniture campaign alternate still" },
+  { src: "/this-is-it-2nd.webp", alt: "Outer furniture campaign detail still" },
+  { src: "/this-is-it-3rd.webp", alt: "Outer furniture campaign close-up still" },
+  { src: "/this-is-it-4th.webp", alt: "Outer furniture campaign alternate still" },
 ] as const
 
 export default function OuterProjectPage() {
@@ -46,10 +46,10 @@ export default function OuterProjectPage() {
           </p>
 
           <Image
-            src="/this%20is%20it.png"
+            src="/this-is-it.webp"
             alt="Personal 3D furniture campaign concept inspired by Outer outdoor furniture"
-            width={4032}
-            height={2268}
+            width={1600}
+            height={900}
             priority
             sizes="(max-width: 1024px) 100vw, 1024px"
             className="w-full h-auto object-cover mb-12"
@@ -120,6 +120,7 @@ export default function OuterProjectPage() {
                     src={image.src}
                     alt={image.alt}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 680px) 100vw, (max-width: 1024px) 50vw, 480px"
                   />
                 </div>

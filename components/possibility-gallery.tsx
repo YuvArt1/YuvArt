@@ -37,7 +37,7 @@ export default function PossibilityGallery({ items }: { items: Possibility[] }) 
               onClick={() => setSelectedImage(item)}
               aria-label={`View full image: ${item.label}`}
             >
-              <Image src={item.image} alt={item.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
+              <Image src={item.image} alt={item.alt} fill loading="lazy" sizes="(max-width: 760px) 100vw, 33vw" />
               <span className="studio-possibility-expand" aria-hidden="true">View full image</span>
             </button>
             <figcaption><span>0{index + 1}</span>{item.label}</figcaption>

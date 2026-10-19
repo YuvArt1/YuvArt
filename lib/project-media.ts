@@ -68,10 +68,10 @@ export const mediaProjects: MediaProject[] = [
     name: "Outer",
     href: "/projects/Outer",
     stills: [
-      { src: "/this%20is%20it.png", alt: "Outer furniture campaign hero still" },
-      { src: "/this%20is%20it2nd.png", alt: "Outer furniture campaign detail still" },
-      { src: "/this%20is%20it3nd.png", alt: "Outer furniture campaign close-up still" },
-      { src: "/this%20is%20it4nd.png", alt: "Outer furniture campaign alternate still" },
+      { src: "/this-is-it.webp", alt: "Outer furniture campaign hero still" },
+      { src: "/this-is-it-2nd.webp", alt: "Outer furniture campaign detail still" },
+      { src: "/this-is-it-3rd.webp", alt: "Outer furniture campaign close-up still" },
+      { src: "/this-is-it-4th.webp", alt: "Outer furniture campaign alternate still" },
     ],
     videos: [
       { id: "1128834963", title: "Outer pre-launch campaign film" },

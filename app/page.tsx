@@ -127,7 +127,7 @@ export default function HomePage() {
             {projects.map((project, index) => (
               <article className={`studio-project studio-project-${index + 1}`} key={project.name}>
                 <Link href={project.href} className="studio-project-image">
-                  <Image src={project.image} alt={project.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
+                  <Image src={project.image} alt={project.alt} fill loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 760px) 50vw, 33vw" />
                   <span className="studio-project-open" aria-hidden="true"><ArrowUpRight size={20} /></span>
                 </Link>
                 <div className="studio-project-meta"><span>{project.type}</span><span>0{index + 1}</span></div>

@@ -30,7 +30,7 @@ export const projectAssets = [
   {
     name: "Outer",
     href: "/projects/Outer",
-    image: "/this%20is%20it.png",
+    image: "/outer-furniture-campaign-scene.webp",
     alt: "Outer outdoor furniture 3D campaign concept for furniture brands",
     description: "A self-initiated 3D furniture campaign concept. Pre-launch product film and playful customization animation exploring how to advertise before a physical SKU exists.",
   },
