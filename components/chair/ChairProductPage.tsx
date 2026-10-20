@@ -34,6 +34,7 @@ export default function ChairProductPage({
   const viewerRef = useRef<SpinViewerHandle>(null);
   const selectedColor =
     COLORS.find((option) => option.slug === color) ?? COLORS[0];
+  const ProductTitle = embedded ? "h2" : "h1";
 
   return (
     <div className={`chair-page${embedded ? " chair-page-embedded" : ""}`}>
@@ -53,7 +54,9 @@ export default function ChairProductPage({
 
         <div className="chair-details-column">
           <p className="chair-eyebrow">Mira / Seating / 01</p>
-          <h1 className="chair-product-title">Mira Chair, {selectedColor.name}</h1>
+          <ProductTitle className="chair-product-title">
+            Mira Chair, {selectedColor.name}
+          </ProductTitle>
           <p className="chair-price">$1,249</p>
 
           <div className="chair-color-picker">

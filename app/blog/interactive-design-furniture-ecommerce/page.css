@@ -1,7 +1,43 @@
+.chair-inline-article {
+  background: var(--studio-paper);
+}
+
 .chair-inline-page {
-  min-height: 100vh;
-  padding: clamp(18px, 5vw, 68px);
-  background: #fff;
+  min-height: 70vh;
+  padding: 0 clamp(18px, 5vw, 68px) 80px;
+}
+
+.chair-inline-intro {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: clamp(46px, 7vw, 82px) 0 38px;
+  border-bottom: 1px solid var(--studio-line);
+}
+
+.chair-inline-intro .studio-article-back {
+  margin: 0 0 26px;
+}
+
+.chair-inline-intro .studio-eyebrow {
+  margin-bottom: 14px;
+}
+
+.chair-inline-intro h1 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--studio-ink);
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.chair-inline-intro > p:last-child {
+  max-width: 65ch;
+  margin: 18px 0 0;
+  color: var(--studio-muted);
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .chair-inline-frame {
@@ -11,6 +47,31 @@
   padding: clamp(12px, 2vw, 28px);
   border: 2px solid #202725;
   background: #fff;
+}
+
+.chair-inline-description {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 72px 0 20px;
+  color: #454840;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.chair-inline-description .studio-eyebrow {
+  margin-bottom: 12px;
+}
+
+.chair-inline-description h2 {
+  margin: 0 0 22px;
+  color: var(--studio-ink);
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.12;
+}
+
+.chair-inline-description p:not(.studio-eyebrow) {
+  margin: 0 0 18px;
 }
 
 .chair-inline-frame .chair-page {
@@ -31,7 +92,19 @@
 
 @media (max-width: 800px) {
   .chair-inline-page {
-    padding: 12px;
+    padding: 0 12px 56px;
+  }
+
+  .chair-inline-intro {
+    padding: 42px 8px 26px;
+  }
+
+  .chair-inline-intro h1 {
+    font-size: clamp(38px, 11vw, 54px);
+  }
+
+  .chair-inline-intro > p:last-child {
+    font-size: 14px;
   }
 
   .chair-inline-frame {
@@ -48,5 +121,11 @@
 
   .chair-inline-frame .chair-viewer {
     aspect-ratio: 4 / 5;
+  }
+
+  .chair-inline-description {
+    padding: 46px 8px 10px;
+    font-size: 14px;
+    line-height: 1.8;
   }
 }
