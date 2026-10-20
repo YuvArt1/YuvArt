@@ -1,0 +1,52 @@
+.chair-inline-page {
+  min-height: 100vh;
+  padding: clamp(18px, 5vw, 68px);
+  background: #fff;
+}
+
+.chair-inline-frame {
+  width: min(1500px, 100%);
+  min-height: calc(100vh - clamp(36px, 10vw, 136px));
+  margin: 0 auto;
+  padding: clamp(12px, 2vw, 28px);
+  border: 2px solid #202725;
+  background: #fff;
+}
+
+.chair-inline-frame .chair-page {
+  min-height: inherit;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.chair-inline-frame .chair-product-layout {
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+  gap: clamp(32px, 5vw, 80px);
+  padding-top: clamp(28px, 4vw, 54px);
+}
+
+.chair-inline-frame .chair-viewer {
+  aspect-ratio: 4 / 4.5;
+}
+
+@media (max-width: 800px) {
+  .chair-inline-page {
+    padding: 12px;
+  }
+
+  .chair-inline-frame {
+    min-height: calc(100vh - 24px);
+    padding: 10px;
+    border-width: 1px;
+  }
+
+  .chair-inline-frame .chair-product-layout {
+    display: flex;
+    gap: 0;
+    padding-top: 18px;
+  }
+
+  .chair-inline-frame .chair-viewer {
+    aspect-ratio: 4 / 5;
+  }
+}

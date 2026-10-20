@@ -55,6 +55,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${siteUrl}/blog/interactive-design-furniture-ecommerce`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/chair`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     ...[
       "ZeroCO",
       "HearO",

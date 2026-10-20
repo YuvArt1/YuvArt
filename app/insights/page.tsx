@@ -27,6 +27,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: "Interactive Design for Furniture Ecommerce",
+    href: "/blog/interactive-design-furniture-ecommerce",
+    description:
+      "A practical look at making furniture product pages more useful with interactive views, color choices, and thoughtful performance.",
+    category: "FURNITURE ECOMMERCE",
+    date: "OCT 20, 2026",
+    image: "/chair/blue/00.webp",
+    alt: "Mira Chair in petrol blue, shown as a product detail preview",
+  },
+  {
     title: "Benefits of 3D Product Visualization for Ecommerce Brands",
     href: "/blog/benefits-3d-product-visualization-ecommerce",
     description:
