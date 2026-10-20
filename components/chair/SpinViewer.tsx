@@ -42,6 +42,7 @@ type IdleDeadlineLike = {
 type IdleBrowserWindow = Window & {
   requestIdleCallback?: (
     callback: (deadline: IdleDeadlineLike) => void,
+    options?: { timeout: number },
   ) => number;
   cancelIdleCallback?: (handle: number) => void;
 };
@@ -59,7 +60,9 @@ function scheduleIdle(callback: () => void): () => void {
   const idleWindow = window as IdleBrowserWindow;
 
   if (idleWindow.requestIdleCallback && idleWindow.cancelIdleCallback) {
-    const handle = idleWindow.requestIdleCallback(() => callback());
+    const handle = idleWindow.requestIdleCallback(() => callback(), {
+      timeout: 1000,
+    });
     return () => idleWindow.cancelIdleCallback?.(handle);
   }
 
@@ -308,7 +311,10 @@ function SpinViewer(
 
     const defaultColor = COLORS[0].slug;
     void loadFrame(defaultColor, 0).then(
-      startRotation,
+      () => {
+        startBackgroundLoading(defaultColor);
+        startRotation();
+      },
       (error: unknown) => {
         reportImageError(frameUrl(defaultColor, 0), error);
       },
@@ -320,7 +326,12 @@ function SpinViewer(
       document.removeEventListener("pointerdown", onTouchStart);
       stopBackgroundRef.current();
     };
-  }, [loadFrame, reportImageError, updateFrame]);
+  }, [
+    loadFrame,
+    reportImageError,
+    startBackgroundLoading,
+    updateFrame,
+  ]);
 
   const changeColor = useCallback(
     async (nextColor: ChairColorSlug) => {
@@ -362,9 +373,20 @@ function SpinViewer(
 
   useImperativeHandle(ref, () => ({ selectColor: changeColor }), [changeColor]);
 
+  const requestFrame = (
+    colorSlug: ChairColorSlug,
+    frameNumber: number,
+  ) => {
+    void loadFrame(colorSlug, frameNumber).catch((error: unknown) =>
+      reportImageError(frameUrl(colorSlug, frameNumber), error),
+    );
+  };
+
   const stepFrame = (amount: number) => {
     stopRotationRef.current();
-    updateFrame(frameRef.current + amount);
+    const nextFrame = modulo(frameRef.current + amount, CHAIR_FRAME_COUNT);
+    updateFrame(nextFrame);
+    requestFrame(colorRef.current, nextFrame);
   };
 
   const onPointerDown = (event: ReactPointerEvent<HTMLCanvasElement>) => {
@@ -381,7 +403,12 @@ function SpinViewer(
     const drag = dragRef.current;
     if (!drag || drag.pointerId !== event.pointerId) return;
     const frameDelta = Math.round((drag.startX - event.clientX) / 8);
-    updateFrame(drag.startFrame + frameDelta);
+    const nextFrame = modulo(
+      drag.startFrame + frameDelta,
+      CHAIR_FRAME_COUNT,
+    );
+    updateFrame(nextFrame);
+    requestFrame(colorRef.current, nextFrame);
   };
 
   const onPointerUp = (event: ReactPointerEvent<HTMLCanvasElement>) => {
