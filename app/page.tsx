@@ -6,6 +6,26 @@ import InquiryForm from "@/components/inquiry-form";
 import StudioHeader from "@/components/studio-header";
 import ProjectCarousel from "@/components/project-carousel";
 import PossibilityGallery from "@/components/possibility-gallery";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "3D Product Visuals & Campaign Assets | DesignYuv",
+  },
+  description:
+    "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands that need more SKUs, variations, and launch content—without repeated photoshoots.",
+  openGraph: {
+    title: "3D Product Visuals & Campaign Assets | DesignYuv",
+    description:
+      "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands that need more SKUs, variations, and launch content—without repeated photoshoots.",
+    url: "https://www.designyuv.com/",
+  },
+  twitter: {
+    title: "3D Product Visuals & Campaign Assets | DesignYuv",
+    description:
+      "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands that need more SKUs, variations, and launch content—without repeated photoshoots.",
+  },
+};
 
 const projects = [
   {
@@ -73,7 +93,7 @@ const questions = [
   ["Can I use the visuals for ecommerce, ads, and social media?", "Yes. We can agree on formats and compositions for the channels and placements you need."],
   ["Can you create multiple variations of one product?", "Yes, when the product model and project scope support the variations. We can define those deliverables in the brief."],
   ["How long does a typical project take?", "Timing depends on the product, creative direction, asset list, and review process. I will confirm a schedule once the scope is clear."],
-  ["How are projects priced?", "Projects are quoted around product complexity, creative direction, and the agreed deliverables."],
+  ["How are projects priced?", "Projects typically start at $500. Final pricing depends on product complexity, creative direction, and the agreed deliverables."],
   ["How do revisions work?", "The review stages and included revisions are agreed before production begins."],
   ["When is 3D a good fit compared with photography?", "3D can suit products that need controlled scenes, repeatable views, or digital variations. Photography may be a better fit when real-world context or physical interaction is central."],
 ] as const;
@@ -86,11 +106,11 @@ export default function HomePage() {
       <main>
         <section className="studio-hero" id="top">
           <div className="studio-hero-copy">
-            <h1>Scale your product content, not your production workload.</h1>
-            <p className="studio-hero-description">Photorealistic 3D product imagery for ecommerce, creative, and marketing teams at electronics and furniture brands that need more assets, more flexibility, and fewer production bottlenecks.</p>
+            <h1>Turn one product into a full library of launch-ready visuals.</h1>
+            <p className="studio-hero-description">Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands that need more SKUs, variations, and launch content—without repeated photoshoots.</p>
             <div className="studio-hero-actions">
-              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
-              <Link className="studio-text-link" href="/work">Explore the work <ArrowUpRight size={16} aria-hidden="true" /></Link>
+              <a className="studio-button studio-button-dark" href="#contact">Get a product visual audit <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <a className="studio-text-link" href="https://cal.com/yuv-raj-pao2g5/30min" target="_blank" rel="noopener noreferrer">Book a free discovery call <ArrowUpRight size={16} aria-hidden="true" /></a>
             </div>
             <p className="studio-hero-note">For product brands and the teams building their next launch.</p>
           </div>
@@ -111,7 +131,7 @@ export default function HomePage() {
             ))}
             <div className="studio-fit-cta">
               <p>If you're ready to get more out of your product visuals, let's talk.</p>
-              <a className="studio-button studio-button-dark" href="#contact">Discuss your next product launch <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <a className="studio-button studio-button-dark" href="#contact">Get a product visual audit <ArrowUpRight size={17} aria-hidden="true" /></a>
             </div>
           </div>
         </section>
@@ -119,9 +139,9 @@ export default function HomePage() {
         <section className="studio-work studio-section" id="work">
           <div className="studio-work-heading">
             <div>
-              <h2>See what I can create.</h2>
+              <h2>Product visuals built for launches, product pages, and campaigns.</h2>
             </div>
-            <p>Explore product imagery, animation, and case studies built around real projects.</p>
+            <p>Explore 3D imagery, product animation, and visual systems created for consumer electronics, packaging, and furniture brands.</p>
           </div>
           <div className="studio-project-grid">
             {projects.map((project, index) => (
@@ -162,8 +182,8 @@ export default function HomePage() {
         <section className="studio-possibilities studio-section" id="services">
           <div className="studio-section-heading">
             <p className="studio-eyebrow">A PRODUCT, MANY POSSIBILITIES</p>
-            <h2>Build a visual system around the product.</h2>
-            <p>Explore the product from a new angle, bring out a detail, or place it in a campaign-ready scene. The right asset mix depends on your brief.</p>
+            <h2>One 3D model. A full library of product assets.</h2>
+            <p>Create product details, campaign scenes, contextual visuals, variations, and motion from a single digital product model.</p>
           </div>
           <PossibilityGallery items={[...possibilities]} />
           <div className="studio-capability-line"><span>STILLS</span><span>MOTION</span><span>CAMPAIGN VISUALS</span><span>PRODUCT VARIATIONS</span></div>

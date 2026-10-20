@@ -37,7 +37,7 @@ export default function StudioHeader({ currentPage = "home" }: StudioHeaderProps
           </div>
         </details>
         <Link className="studio-mobile-insights" href="/insights" aria-current={currentPage === "insights" ? "page" : undefined}>Insights</Link>
-        <Link className="studio-nav-cta" href={`${homeHref}#contact`}>Discuss your next product launch <ArrowUpRight size={16} aria-hidden="true" /></Link>
+        <Link className="studio-nav-cta" href={`${homeHref}#contact`}>Get a product visual audit <ArrowUpRight size={16} aria-hidden="true" /></Link>
       </nav>
     </header>
   );

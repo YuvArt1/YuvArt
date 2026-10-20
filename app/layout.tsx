@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.designyuv.com"),
 
   title: {
-    default: "DesignYuv | 3D Product Animation Studio",
+    default: "DesignYuv | 3D Product Visuals & Campaign Assets",
     template: "%s | DesignYuv",
   },
 
   description:
-    "3D product animation, motion design, and product visualization for brands. DesignYuv turns products and ideas into visuals that capture attention.",
+    "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands.",
 
   keywords: [
     // Electronics product visuals
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.designyuv.com",
     siteName: "DesignYuv",
-    title: "DesignYuv | 3D Product Animation Studio",
+    title: "DesignYuv | 3D Product Visuals & Campaign Assets",
     description:
-      "3D product animation, motion design, and product visualization for electronics and furniture brands.",
+      "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands.",
     images: [
       {
         url: "/og-image.webp",
@@ -90,9 +90,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "DesignYuv | 3D Product Animation & Visuals for D2C Brands",
+    title: "DesignYuv | 3D Product Visuals & Campaign Assets",
     description:
-      "3D product animation, motion design, and product visualization for electronics and furniture brands.",
+      "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands.",
     images: ["/og-image.webp"],
   },
 
@@ -111,7 +111,7 @@ const jsonLd = {
       url: "https://www.designyuv.com/",
       logo: "https://www.designyuv.com/og-image.webp",
       description:
-        "3D product animation, motion design, and product visualization for brands.",
+        "Photorealistic 3D product visuals, animations, and campaign assets for furniture and electronics brands.",
       founder: {
         "@type": "Person",
         name: "Yuvraj Chauhan",
