@@ -4,9 +4,10 @@ import { ArrowUpRight } from "lucide-react";
 import Footer from "@/components/footer";
 import InquiryForm from "@/components/inquiry-form";
 import StudioHeader from "@/components/studio-header";
-import ProjectCarousel from "@/components/project-carousel";
+import ChairProductPage from "@/components/chair/ChairProductPage";
 import PossibilityGallery from "@/components/possibility-gallery";
 import type { Metadata } from "next";
+import "./chair/chair.css";
 
 export const metadata: Metadata = {
   title: {
@@ -114,7 +115,9 @@ export default function HomePage() {
             </div>
             <p className="studio-hero-note">For product brands and the teams building their next launch.</p>
           </div>
-          <ProjectCarousel />
+          <div className="studio-hero-chair">
+            <ChairProductPage compact />
+          </div>
         </section>
 
         <section className="studio-benefits studio-section">

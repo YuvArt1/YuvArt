@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import SpinViewer from "@/components/chair/SpinViewer";
@@ -26,8 +27,10 @@ function AddToCartButton({
 
 export default function ChairProductPage({
   embedded = false,
+  compact = false,
 }: {
   embedded?: boolean;
+  compact?: boolean;
 }) {
   const [color, setColor] = useState<ChairColorSlug>(COLORS[0].slug);
   const [added, setAdded] = useState(false);
@@ -37,13 +40,17 @@ export default function ChairProductPage({
   const ProductTitle = embedded ? "h2" : "h1";
 
   return (
-    <div className={`chair-page${embedded ? " chair-page-embedded" : ""}`}>
-      <header className="chair-topbar">
-        <a className="chair-wordmark" href="/chair" aria-label="Mira home">
-          Mira Objects
-        </a>
-        <a href="/">Independent furniture, thoughtfully made</a>
-      </header>
+    <div
+      className={`chair-page${embedded ? " chair-page-embedded" : ""}${compact ? " chair-page-hero-demo" : ""}`}
+    >
+      {!compact && (
+        <header className="chair-topbar">
+          <a className="chair-wordmark" href="/chair" aria-label="Mira home">
+            Mira Objects
+          </a>
+          <a href="/">Independent furniture, thoughtfully made</a>
+        </header>
+      )}
 
       <section className="chair-product-layout" aria-label="Mira Chair">
         <SpinViewer
@@ -53,11 +60,11 @@ export default function ChairProductPage({
         />
 
         <div className="chair-details-column">
-          <p className="chair-eyebrow">Mira / Seating / 01</p>
+          <p className="chair-eyebrow">{compact ? "INTERACTIVE 3D DEMO" : "Mira / Seating / 01"}</p>
           <ProductTitle className="chair-product-title">
-            Mira Chair, {selectedColor.name}
+            {compact ? "Mira Chair" : `Mira Chair, ${selectedColor.name}`}
           </ProductTitle>
-          <p className="chair-price">$1,249</p>
+          {!compact && <p className="chair-price">$1,249</p>}
 
           <div className="chair-color-picker">
             <p className="chair-color-label">
@@ -79,60 +86,70 @@ export default function ChairProductPage({
             </div>
           </div>
 
-          <AddToCartButton added={added} onAdd={() => setAdded(true)} />
-          <p className="chair-delivery">
-            Complimentary delivery in 2–3 weeks. Easy 30-day returns.
-          </p>
+          {compact ? (
+            <Link className="chair-demo-link" href="/chair">
+              Explore the interactive chair
+            </Link>
+          ) : (
+            <>
+              <AddToCartButton added={added} onAdd={() => setAdded(true)} />
+              <p className="chair-delivery">
+                Complimentary delivery in 2–3 weeks. Easy 30-day returns.
+              </p>
 
-          <div className="chair-accordions">
-            <details className="chair-accordion" open>
-              <summary>About the chair</summary>
-              <div className="chair-accordion-content">
-                <p>
-                  A generous, curved seat balances a soft upholstered cushion
-                  with the warmth of solid oak. Made for long conversations and
-                  unhurried afternoons.
-                </p>
+              <div className="chair-accordions">
+                <details className="chair-accordion" open>
+                  <summary>About the chair</summary>
+                  <div className="chair-accordion-content">
+                    <p>
+                      A generous, curved seat balances a soft upholstered cushion
+                      with the warmth of solid oak. Made for long conversations and
+                      unhurried afternoons.
+                    </p>
+                  </div>
+                </details>
+                <details className="chair-accordion">
+                  <summary>Dimensions</summary>
+                  <div className="chair-accordion-content">
+                    <dl className="chair-dimensions">
+                      <dt>Width × depth × height</dt>
+                      <dd>63 × 58 × 82 cm</dd>
+                      <dt>Seat height</dt>
+                      <dd>46 cm</dd>
+                    </dl>
+                  </div>
+                </details>
+                <details className="chair-accordion">
+                  <summary>Materials & care</summary>
+                  <div className="chair-accordion-content">
+                    <p>
+                      Molded polypropylene shell, wool-blend cushion, solid oak
+                      legs, and powder-coated steel supports. Wipe the shell with a
+                      soft damp cloth; spot-clean the cushion.
+                    </p>
+                  </div>
+                </details>
+                <details className="chair-accordion">
+                  <summary>Delivery & returns</summary>
+                  <div className="chair-accordion-content">
+                    <p>
+                      Your chair is made to order and arrives in 2–3 weeks.
+                      Delivery is complimentary, with 30 days to return it.
+                    </p>
+                  </div>
+                </details>
               </div>
-            </details>
-            <details className="chair-accordion">
-              <summary>Dimensions</summary>
-              <div className="chair-accordion-content">
-                <dl className="chair-dimensions">
-                  <dt>Width × depth × height</dt>
-                  <dd>63 × 58 × 82 cm</dd>
-                  <dt>Seat height</dt>
-                  <dd>46 cm</dd>
-                </dl>
-              </div>
-            </details>
-            <details className="chair-accordion">
-              <summary>Materials & care</summary>
-              <div className="chair-accordion-content">
-                <p>
-                  Molded polypropylene shell, wool-blend cushion, solid oak
-                  legs, and powder-coated steel supports. Wipe the shell with a
-                  soft damp cloth; spot-clean the cushion.
-                </p>
-              </div>
-            </details>
-            <details className="chair-accordion">
-              <summary>Delivery & returns</summary>
-              <div className="chair-accordion-content">
-                <p>
-                  Your chair is made to order and arrives in 2–3 weeks.
-                  Delivery is complimentary, with 30 days to return it.
-                </p>
-              </div>
-            </details>
-          </div>
+            </>
+          )}
         </div>
       </section>
 
-      <div className="chair-mobile-bar">
-        <span className="chair-mobile-price">$1,249</span>
-        <AddToCartButton added={added} onAdd={() => setAdded(true)} />
-      </div>
+      {!compact && (
+        <div className="chair-mobile-bar">
+          <span className="chair-mobile-price">$1,249</span>
+          <AddToCartButton added={added} onAdd={() => setAdded(true)} />
+        </div>
+      )}
     </div>
   );
 }
