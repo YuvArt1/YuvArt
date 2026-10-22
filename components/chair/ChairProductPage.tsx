@@ -53,6 +53,30 @@ export default function ChairProductPage({
       )}
 
       <section className="chair-product-layout" aria-label="Mira Chair">
+        {compact && (
+          <div className="chair-demo-controls">
+            <p className="chair-demo-invitation">Try it yourself</p>
+            <div className="chair-color-picker">
+              <p className="chair-color-label">
+                Color: <span>{selectedColor.name}</span>
+              </p>
+              <div className="chair-swatch-list" aria-label="Choose a color">
+                {COLORS.map((option) => (
+                  <button
+                    key={option.slug}
+                    className="chair-swatch"
+                    type="button"
+                    style={{ "--swatch-color": option.hex } as CSSProperties}
+                    data-label={option.name}
+                    aria-label={option.name}
+                    aria-pressed={option.slug === color}
+                    onClick={() => viewerRef.current?.selectColor(option.slug)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
         <SpinViewer
           ref={viewerRef}
           color={color}
@@ -60,31 +84,37 @@ export default function ChairProductPage({
         />
 
         <div className="chair-details-column">
-          <p className="chair-eyebrow">{compact ? "INTERACTIVE 3D DEMO" : "Mira / Seating / 01"}</p>
-          <ProductTitle className="chair-product-title">
-            {compact ? "Mira Chair" : `Mira Chair, ${selectedColor.name}`}
-          </ProductTitle>
-          {!compact && <p className="chair-price">$1,249</p>}
+          {!compact && (
+            <>
+              <p className="chair-eyebrow">Mira / Seating / 01</p>
+              <ProductTitle className="chair-product-title">
+                Mira Chair, {selectedColor.name}
+              </ProductTitle>
+              <p className="chair-price">$1,249</p>
+            </>
+          )}
 
-          <div className="chair-color-picker">
-            <p className="chair-color-label">
-              Color: <span>{selectedColor.name}</span>
-            </p>
-            <div className="chair-swatch-list" aria-label="Choose a color">
-              {COLORS.map((option) => (
-                <button
-                  key={option.slug}
-                  className="chair-swatch"
-                  type="button"
-                  style={{ "--swatch-color": option.hex } as CSSProperties}
-                  data-label={option.name}
-                  aria-label={option.name}
-                  aria-pressed={option.slug === color}
-                  onClick={() => viewerRef.current?.selectColor(option.slug)}
-                />
-              ))}
+          {!compact && (
+            <div className="chair-color-picker">
+              <p className="chair-color-label">
+                Color: <span>{selectedColor.name}</span>
+              </p>
+              <div className="chair-swatch-list" aria-label="Choose a color">
+                {COLORS.map((option) => (
+                  <button
+                    key={option.slug}
+                    className="chair-swatch"
+                    type="button"
+                    style={{ "--swatch-color": option.hex } as CSSProperties}
+                    data-label={option.name}
+                    aria-label={option.name}
+                    aria-pressed={option.slug === color}
+                    onClick={() => viewerRef.current?.selectColor(option.slug)}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {compact ? (
             <Link className="chair-demo-link" href="/chair">
