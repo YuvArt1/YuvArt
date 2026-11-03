@@ -27,6 +27,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: "3D Carpet Visualization: 3 Ways It Helps You Sell",
+    href: "/blog/3d-carpet-visualization",
+    description:
+      "See how room comparisons, realistic carpet scenes, and interactive day-to-night previews help customers choose with confidence.",
+    category: "FLOORING / 3D VISUALIZATION",
+    date: "NOV 3, 2026",
+    image: "/floor%20blog/seolink/0001.webp",
+    alt: "Bright room with a textured carpet floor, shown in a 3D flooring visualization",
+  },
+  {
     title: "Interactive Design for Furniture Ecommerce",
     href: "/blog/interactive-design-furniture-ecommerce",
     description:

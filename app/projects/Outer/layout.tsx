@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Outer | 3D Furniture Campaign Concept | DesignYuv",
     description: "Pre-launch product film and customization animation for outdoor furniture — a self-initiated campaign concept in 3D.",
     url: "https://www.designyuv.com/projects/Outer",
-    images: [{ url: "/this%20is%20it.png", width: 1200, height: 630, alt: "Outer outdoor furniture 3D campaign concept" }],
+    images: [{ url: "/this-is-it.webp", width: 1600, height: 900, alt: "Outer outdoor furniture 3D campaign concept" }],
   },
 }
 

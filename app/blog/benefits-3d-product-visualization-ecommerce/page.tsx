@@ -103,7 +103,7 @@ const jsonLd = {
       },
       image: [
         "https://www.designyuv.com/Portronics.webp",
-        "https://www.designyuv.com/hearo-product-visual-04.png",
+        "https://www.designyuv.com/hearo-product-visual-04.webp",
         "https://www.designyuv.com/mood-product-visual-02.webp",
         "https://www.designyuv.com/mood-product-visual-04.webp",
         "https://www.designyuv.com/outer-furniture-campaign-scene.webp",
@@ -132,7 +132,7 @@ const electronicsImages = [
     caption: "Product render for an electronic device.",
   },
   {
-    src: "/hearo-product-visual-04.png",
+    src: "/hearo-product-visual-04.webp",
     alt: "3D render of a HearO consumer audio product in a bright poolside setting",
     caption: "HearO product visual in an outdoor lifestyle scene.",
   },

@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     url: "https://www.designyuv.com/campaigns",
     images: [
       {
-        url: "/this%20is%20it.png",
-        width: 4032,
-        height: 2268,
+        url: "/this-is-it.webp",
+        width: 1600,
+        height: 900,
         alt: "Outer furniture campaign visual",
       },
     ],
@@ -48,7 +48,7 @@ export default function CampaignsPage() {
             <article className="studio-project">
               <Link href="/projects/Outer" className="studio-project-image">
                 <Image
-                  src="/this%20is%20it.png"
+                  src="/this-is-it.webp"
                   alt="Outer dining table in a warm campaign setting"
                   fill
                   sizes="(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 33vw"
