@@ -375,13 +375,6 @@ export default function CarpetVisualizationArticle() {
                 they&apos;re considering. They can see a before and after without paying
                 for an install first.
               </p>
-              <figure className="floor-daynight-figure floor-before-after-figure">
-                <BeforeAfterFloorViewer />
-                <figcaption>
-                  Compare the original room with nine alternate floors using the slider
-                  and floor selector.
-                </figcaption>
-              </figure>
               <figure className="floor-article-figure floor-article-figure-wide floor-article-collage">
                 <Image
                   src="/floor%20blog/linkedin-post.webp"
@@ -392,6 +385,13 @@ export default function CarpetVisualizationArticle() {
                 />
                 <figcaption>
                   A look at every after-floor option available in the comparison.
+                </figcaption>
+              </figure>
+              <figure className="floor-daynight-figure floor-before-after-figure">
+                <BeforeAfterFloorViewer />
+                <figcaption>
+                  Drag the center handle to compare before and after, then choose a
+                  floor material to preview.
                 </figcaption>
               </figure>
               <p>Previews can also help answer questions customers don&apos;t always ask out loud:</p>

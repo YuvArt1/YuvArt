@@ -37,7 +37,7 @@ export default function BeforeAfterFloorViewer() {
           />
           <div
             className="floor-before-after-reveal"
-            style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
+            style={{ clipPath: `inset(0 0 0 ${position}%)` }}
           >
             <Image
               src={imagePath(selectedFloor.src)}
@@ -57,38 +57,49 @@ export default function BeforeAfterFloorViewer() {
             style={{ left: `${position}%` }}
             aria-hidden="true"
           />
-        </div>
-        <label className="floor-before-after-range-label" htmlFor="floor-comparison">
-          Drag to compare before and after
+          <span
+            className="floor-before-after-handle"
+            style={{ left: `${position}%` }}
+            aria-hidden="true"
+          >
+            ↔
+          </span>
           <input
-            id="floor-comparison"
+            className="floor-before-after-range"
             type="range"
             min="0"
             max="100"
             value={position}
-            aria-label="Before and after comparison"
+            aria-label="Drag to compare the before and after floor"
             aria-valuetext={`${position}% showing after with ${selectedFloor.label}`}
             onChange={(event) => setPosition(Number(event.target.value))}
           />
-        </label>
+        </div>
+        <p className="floor-before-after-hint">Drag the handle to compare</p>
       </div>
       <div className="floor-before-after-selector">
-        <label htmlFor="after-floor-choice">Choose an after floor</label>
-        <select
-          id="after-floor-choice"
-          value={selectedFloor.src}
-          onChange={(event) => {
-            const floor = afterFloors.find((option) => option.src === event.target.value);
-            if (floor) setSelectedFloor(floor);
-          }}
-        >
+        <p className="floor-before-after-selector-title">Choose a floor</p>
+        <div className="floor-before-after-options">
           {afterFloors.map((floor) => (
-            <option key={floor.src} value={floor.src}>
-              {floor.label}
-            </option>
+            <button
+              className="floor-before-after-option"
+              type="button"
+              key={floor.src}
+              aria-pressed={selectedFloor.src === floor.src}
+              onClick={() => setSelectedFloor(floor)}
+            >
+              <span className="floor-before-after-option-image">
+                <Image
+                  src={imagePath(floor.src)}
+                  alt=""
+                  fill
+                  sizes="56px"
+                />
+              </span>
+              <span>{floor.label}</span>
+            </button>
           ))}
-        </select>
-        <p>Compare the same room before and after each floor option.</p>
+        </div>
       </div>
     </div>
   );
