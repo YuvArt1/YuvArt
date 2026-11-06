@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Footer from "@/components/footer";
 import StudioHeader from "@/components/studio-header";
+import BeforeAfterFloorViewer from "./BeforeAfterFloorViewer";
 import FloorDayNightViewer from "./FloorDayNightViewer";
 import "./page.css";
 
@@ -46,11 +47,6 @@ const missingImages = {
     title: "Carpet fiber detail",
     description:
       "A close-up showing carpet fibers, yarn twist, and tufts.",
-  },
-  beforeAfter: {
-    title: "Customer room before and after",
-    description:
-      "One living room before and after replacing worn beige carpet with soft grey plush.",
   },
   options: {
     title: "Three carpet choices for one room",
@@ -176,7 +172,7 @@ const jsonLd = {
     url: "https://www.designyuv.com",
   },
   image: [
-    "https://www.designyuv.com/floor%20blog/seolink/0001.webp",
+    "https://www.designyuv.com/floor%20blog/linkedin-post.webp",
     ...linkedFloorImages.map((image) => `https://www.designyuv.com${image.src}`),
   ],
 };
@@ -192,10 +188,10 @@ export const metadata: Metadata = {
     url: articleUrl,
     images: [
       {
-        url: "/floor%20blog/seolink/0001.webp",
-        width: 800,
-        height: 800,
-        alt: "Textured carpet in a bright room, shown in a 3D flooring visualization",
+        url: "/floor%20blog/linkedin-post.webp",
+        width: 5000,
+        height: 5000,
+        alt: "Collage of alternate floor finishes for the same room",
       },
     ],
   },
@@ -203,7 +199,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: articleTitle,
     description: articleDescription,
-    images: ["/floor%20blog/seolink/0001.webp"],
+    images: ["/floor%20blog/linkedin-post.webp"],
   },
 };
 
@@ -379,10 +375,25 @@ export default function CarpetVisualizationArticle() {
                 they&apos;re considering. They can see a before and after without paying
                 for an install first.
               </p>
-              <ComingSoonFigure
-                title={missingImages.beforeAfter.title}
-                description={missingImages.beforeAfter.description}
-              />
+              <figure className="floor-daynight-figure floor-before-after-figure">
+                <BeforeAfterFloorViewer />
+                <figcaption>
+                  Compare the original room with nine alternate floors using the slider
+                  and floor selector.
+                </figcaption>
+              </figure>
+              <figure className="floor-article-figure floor-article-figure-wide floor-article-collage">
+                <Image
+                  src="/floor%20blog/linkedin-post.webp"
+                  alt="A collage showing all nine alternate floor finishes in the same room"
+                  width={5000}
+                  height={5000}
+                  sizes="(max-width: 760px) 100vw, 760px"
+                />
+                <figcaption>
+                  A look at every after-floor option available in the comparison.
+                </figcaption>
+              </figure>
               <p>Previews can also help answer questions customers don&apos;t always ask out loud:</p>
               <ul>
                 <li>Will a dark carpet make my small room look smaller?</li>
