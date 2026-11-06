@@ -317,10 +317,9 @@ export default function CarpetVisualizationArticle() {
                 <li>A neutral and a bold option, if you stock both.</li>
               </ul>
               <p className="floor-article-tip">
-                <strong>Tip:</strong> Render each room in daylight and again in warm
-                evening light. A grey carpet can look cool and flat at noon and warmer
-                under lamps at night. Showing both helps customers understand how the
-                material changes in different lighting.
+                <strong>Tip:</strong> Try rendering each room in daylight and again in
+                warm evening light. You can show how a grey carpet may look cool and flat
+                at noon, then warmer under lamps at night.
               </p>
               <figure className="floor-daynight-figure">
                 <FloorDayNightViewer />
@@ -383,9 +382,9 @@ export default function CarpetVisualizationArticle() {
                 <li>One top-down view showing the color and pattern across the room.</li>
               </ul>
               <p className="floor-article-tip">
-                <strong>Tip:</strong> Build each room once and reuse it. When a new range
-                arrives, swap the carpet material and re-render. The catalog stays
-                visually matched without starting over.
+                <strong>Tip:</strong> Build each room once, then reuse it for new ranges.
+                Just swap the carpet material and re-render to keep your catalog
+                visually consistent without starting over.
               </p>
             </section>
 
@@ -424,8 +423,9 @@ export default function CarpetVisualizationArticle() {
                 description={missingImages.carpetOrRug.description}
               />
               <p className="floor-article-tip">
-                <strong>Tip:</strong> Limit the options. Three renders—a safe pick, a
-                bolder one, and a budget one—are easier to choose between than twenty.
+                <strong>Tip:</strong> Give your customers a short list to compare. Start
+                with three renders—a safe pick, a bolder one, and a budget one—instead of
+                overwhelming them with twenty.
               </p>
             </section>
 
