@@ -421,6 +421,36 @@
   height: auto;
 }
 
+.floor-article-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.floor-article-example {
+  min-width: 0;
+  margin: 0;
+}
+
+.floor-article-example-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #e7e8df;
+}
+
+.floor-article-example-image img {
+  object-fit: cover;
+}
+
+.floor-article-example figcaption {
+  padding-top: 8px;
+  color: var(--studio-muted);
+  font-size: 11px;
+}
+
 .floor-article-faq {
   margin-top: 28px;
 }
@@ -456,6 +486,10 @@
   .floor-article-options-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .floor-article-example-grid {
+    gap: 8px;
   }
 
   .floor-article-option {

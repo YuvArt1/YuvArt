@@ -84,6 +84,24 @@ const linkedFloorImages = [
   },
 ] as const;
 
+const carpetExampleImages = [
+  {
+    src: "/floor%20blog/before%20after/topshot-brown.webp",
+    alt: "The room with a dark brown plank floor",
+    name: "Dark brown",
+  },
+  {
+    src: "/floor%20blog/before%20after/topshot-orange.webp",
+    alt: "The room with a warm orange-toned plank floor",
+    name: "Warm orange",
+  },
+  {
+    src: "/floor%20blog/before%20after/another-pattern.webp",
+    alt: "The room with a light geometric wood-pattern floor",
+    name: "Geometric pattern",
+  },
+] as const;
+
 function ComingSoonFigure({
   title,
   description,
@@ -326,23 +344,32 @@ export default function CarpetVisualizationArticle() {
                 first roll ships. Reusing the same camera style and mood also helps a
                 catalog feel consistent.
               </p>
-              <div className="floor-article-coming-soon-grid">
-                <ComingSoonFigure
-                  title={missingImages.bedroom.title}
-                  description={missingImages.bedroom.description}
+              <figure className="floor-article-figure floor-article-figure-wide floor-article-collage">
+                <Image
+                  src="/floor%20blog/linkedin-post.webp"
+                  alt="A collage of different floor finishes shown in the same room"
+                  width={5000}
+                  height={5000}
+                  sizes="(max-width: 760px) 100vw, 760px"
                 />
-                <ComingSoonFigure
-                  title={missingImages.livingRoom.title}
-                  description={missingImages.livingRoom.description}
-                />
-                <ComingSoonFigure
-                  title={missingImages.stairs.title}
-                  description={missingImages.stairs.description}
-                />
-                <ComingSoonFigure
-                  title={missingImages.detail.title}
-                  description={missingImages.detail.description}
-                />
+                <figcaption>
+                  A range of floor finishes can be presented together in one visual.
+                </figcaption>
+              </figure>
+              <div className="floor-article-example-grid">
+                {carpetExampleImages.map((image) => (
+                  <figure className="floor-article-example" key={image.src}>
+                    <span className="floor-article-example-image">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        sizes="(max-width: 760px) 100vw, 33vw"
+                      />
+                    </span>
+                    <figcaption>{image.name} floor</figcaption>
+                  </figure>
+                ))}
               </div>
               <p>
                 Close-ups matter as much as wide shots. A tight crop of fibers, yarn
@@ -375,18 +402,6 @@ export default function CarpetVisualizationArticle() {
                 they&apos;re considering. They can see a before and after without paying
                 for an install first.
               </p>
-              <figure className="floor-article-figure floor-article-figure-wide floor-article-collage">
-                <Image
-                  src="/floor%20blog/linkedin-post.webp"
-                  alt="A collage showing all nine alternate floor finishes in the same room"
-                  width={5000}
-                  height={5000}
-                  sizes="(max-width: 760px) 100vw, 760px"
-                />
-                <figcaption>
-                  A look at every after-floor option available in the comparison.
-                </figcaption>
-              </figure>
               <figure className="floor-daynight-figure floor-before-after-figure">
                 <BeforeAfterFloorViewer />
                 <figcaption>
