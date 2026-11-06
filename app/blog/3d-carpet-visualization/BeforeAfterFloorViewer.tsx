@@ -4,15 +4,15 @@ import Image from "next/image";
 import { useState } from "react";
 
 const afterFloors = [
-  { src: "topshot-pattern.webp", label: "Topshot pattern" },
-  { src: "topshot.webp", label: "Topshot" },
-  { src: "topshot-brown-2.webp", label: "Topshot brown 2" },
-  { src: "topshot-brown.webp", label: "Topshot brown" },
-  { src: "topshot-orange.webp", label: "Topshot orange" },
-  { src: "topshot-yellow.webp", label: "Topshot yellow" },
-  { src: "topshot-yelo.webp", label: "Topshot yelo" },
-  { src: "u9th.webp", label: "U9th" },
-  { src: "another-pattern.webp", label: "Another pattern" },
+  { src: "topshot-pattern.webp", label: "Light Natural Oak Plank Flooring" },
+  { src: "topshot.webp", label: "Natural Oak Wood Flooring" },
+  { src: "topshot-brown-2.webp", label: "Walnut Herringbone Parquet" },
+  { src: "topshot-brown.webp", label: "Dark Walnut Wood Flooring" },
+  { src: "topshot-orange.webp", label: "Reddish Mahogany Wood Flooring" },
+  { src: "topshot-yellow.webp", label: "Mixed Oak Checkerboard Parquet" },
+  { src: "topshot-yelo.webp", label: "Rustic Brown Oak Plank Flooring" },
+  { src: "u9th.webp", label: "Geometric Oak Parquet Flooring" },
+  { src: "another-pattern.webp", label: "Dark Walnut Versailles Parquet" },
 ] as const;
 
 const imagePath = (filename: string) =>
